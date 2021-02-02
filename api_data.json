@@ -1,56 +1,10 @@
 [
   {
     "type": "get",
-    "url": "/v1/analytics/channel/",
-    "title": "analytics channel",
-    "version": "1.0.0",
-    "name": "analytics_channel",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics channel</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/channel/top/{count}/{order}",
-    "title": "analytics channel/top/{count}/{order}",
-    "version": "1.0.0",
-    "name": "analytics_channel/top/{count}/{order}",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics channel/top/{count}/{order}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/top/{count}/{order}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
     "url": "/v1/analytics/channel/engage",
-    "title": "analytics channel engage",
+    "title": "Get Channel Engage",
     "version": "1.0.0",
-    "name": "analytics_channel_engage",
+    "name": "Get_Channel_Engage",
     "group": "Analytics",
     "permission": [
       {
@@ -71,9 +25,9 @@
   {
     "type": "get",
     "url": "/v1/analytics/channel/engage-by-date",
-    "title": "analytics channel engage-by-date",
+    "title": "Get Channel Engage-by-date",
     "version": "1.0.0",
-    "name": "analytics_channel_engage-by-date",
+    "name": "Get_Channel_Engage-by-date",
     "group": "Analytics",
     "permission": [
       {
@@ -94,9 +48,9 @@
   {
     "type": "get",
     "url": "/v1/analytics/channel/engage-detail",
-    "title": "analytics channel engage-detail",
+    "title": "Get Channel Engage-detail",
     "version": "1.0.0",
-    "name": "analytics_channel_engage-detail",
+    "name": "Get_Channel_Engage-detail",
     "group": "Analytics",
     "permission": [
       {
@@ -117,9 +71,9 @@
   {
     "type": "get",
     "url": "/v1/analytics/channel/impression-by-date",
-    "title": "analytics channel impression-by-date",
+    "title": "Get Channel Impression-by-date",
     "version": "1.0.0",
-    "name": "analytics_channel_impression-by-date",
+    "name": "Get_Channel_Impression-by-date",
     "group": "Analytics",
     "permission": [
       {
@@ -139,33 +93,10 @@
   },
   {
     "type": "get",
-    "url": "/v1/analytics/channel/playlist-views-by-date",
-    "title": "analytics channel playlist-views-by-date",
-    "version": "1.0.0",
-    "name": "analytics_channel_playlist-views-by-date",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics channel playlist-views-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/playlist-views-by-date",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
     "url": "/v1/analytics/channel/publish",
-    "title": "analytics channel publish",
+    "title": "Get Channel Publish",
     "version": "1.0.0",
-    "name": "analytics_channel_publish",
+    "name": "Get_Channel_Publish",
     "group": "Analytics",
     "permission": [
       {
@@ -186,9 +117,9 @@
   {
     "type": "get",
     "url": "/v1/analytics/channel/publish-by-date",
-    "title": "analytics channel publish-by-date",
+    "title": "Get Channel Publish-by-date",
     "version": "1.0.0",
-    "name": "analytics_channel_publish-by-date",
+    "name": "Get_Channel_Publish-by-date",
     "group": "Analytics",
     "permission": [
       {
@@ -209,9 +140,9 @@
   {
     "type": "get",
     "url": "/v1/analytics/channel/reach",
-    "title": "analytics channel reach",
+    "title": "Get Channel Reach",
     "version": "1.0.0",
-    "name": "analytics_channel_reach",
+    "name": "Get_Channel_Reach",
     "group": "Analytics",
     "permission": [
       {
@@ -231,8 +162,1250 @@
   },
   {
     "type": "get",
+    "url": "/v1/analytics/channel/reach-by-traffic-source",
+    "title": "Get Channel Reach-by-traffic-source",
+    "version": "1.0.0",
+    "name": "Get_Channel_Reach-by-traffic-source",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics channel reach-by-traffic-source</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/reach-by-traffic-source",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/channel/revenue",
+    "title": "Get Channel Revenue",
+    "version": "1.0.0",
+    "name": "Get_Channel_Revenue",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics channel revenue</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/revenue",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/channel/summary",
+    "title": "Get Channel Summary",
+    "version": "1.0.0",
+    "name": "Get_Channel_Summary",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics channel summary</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/summary",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/channel/views",
+    "title": "Get Channel Views",
+    "version": "1.0.0",
+    "name": "Get_Channel_Views",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics channel views</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/views",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/channel/views-by-date",
+    "title": "Get Channel Views-by-date",
+    "version": "1.0.0",
+    "name": "Get_Channel_Views-by-date",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics channel views-by-date</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/views-by-date",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/comments",
+    "title": "Get Comments",
+    "version": "1.0.0",
+    "name": "Get_Comments",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group comments</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/comments",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/comments",
+    "title": "Get Comments",
+    "version": "1.0.0",
+    "name": "Get_Comments",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish comments</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/comments",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/comments-by-date",
+    "title": "Get Comments-by-date",
+    "version": "1.0.0",
+    "name": "Get_Comments-by-date",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group comments-by-date</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/comments-by-date",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/comments-by-date",
+    "title": "Get Comments-by-date",
+    "version": "1.0.0",
+    "name": "Get_Comments-by-date",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish comments-by-date</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/comments-by-date",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/tags",
+    "title": "Get Group Tags",
+    "version": "1.0.0",
+    "name": "Get_Group_Tags",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group tags</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/tags",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/trend",
+    "title": "Get Group Trend",
+    "version": "1.0.0",
+    "name": "Get_Group_Trend",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group trend</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/trend",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/watch",
+    "title": "Get Group Watch",
+    "version": "1.0.0",
+    "name": "Get_Group_Watch",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group watch</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/watch",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/likes",
+    "title": "Get Likes",
+    "version": "1.0.0",
+    "name": "Get_Likes",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group likes</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/likes",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/likes",
+    "title": "Get Likes",
+    "version": "1.0.0",
+    "name": "Get_Likes",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish likes</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/likes",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/likes-by-date",
+    "title": "Get Likes-by-date",
+    "version": "1.0.0",
+    "name": "Get_Likes-by-date",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group likes-by-date</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/likes-by-date",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/channel/",
+    "title": "Get Many",
+    "version": "1.0.0",
+    "name": "Get_Many",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics channel</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/",
+    "title": "Get Many",
+    "version": "1.0.0",
+    "name": "Get_Many",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/",
+    "title": "Get Many",
+    "version": "1.0.0",
+    "name": "Get_Many",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/{id}",
+    "title": "Get One",
+    "version": "1.0.0",
+    "name": "Get_One",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group {id}</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/{id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/{id}",
+    "title": "Get One",
+    "version": "1.0.0",
+    "name": "Get_One",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get analytics publish {id}</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/{id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/channel/playlist-views-by-date",
+    "title": "Get Playlist-views-by-date",
+    "version": "1.0.0",
+    "name": "Get_Playlist-views-by-date",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics channel playlist-views-by-date</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/playlist-views-by-date",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/tags",
+    "title": "Get Publish Tags",
+    "version": "1.0.0",
+    "name": "Get_Publish_Tags",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish tags</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/tags",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/watch",
+    "title": "Get Publish Watch",
+    "version": "1.0.0",
+    "name": "Get_Publish_Watch",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish watch</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/watch",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/shares",
+    "title": "Get Shares",
+    "version": "1.0.0",
+    "name": "Get_Shares",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group shares</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/shares",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/shares",
+    "title": "Get Shares",
+    "version": "1.0.0",
+    "name": "Get_Shares",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish shares</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/shares",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/shares-by-date",
+    "title": "Get Shares-by-date",
+    "version": "1.0.0",
+    "name": "Get_Shares-by-date",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group shares-by-date</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/shares-by-date",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/shares-by-date",
+    "title": "Get Shares-by-date",
+    "version": "1.0.0",
+    "name": "Get_Shares-by-date",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish shares-by-date</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/shares-by-date",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/channel/subscribers",
+    "title": "Get Subscribers",
+    "version": "1.0.0",
+    "name": "Get_Subscribers",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics channel subscribers</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/subscribers",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/channel/subscribers-by-date",
+    "title": "Get Subscribers-by-date",
+    "version": "1.0.0",
+    "name": "Get_Subscribers-by-date",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics channel subscribers-by-date</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/subscribers-by-date",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/summary/",
+    "title": "Get Summary",
+    "version": "1.0.0",
+    "name": "Get_Summary",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics summary</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/summary/",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/summary",
+    "title": "Get Summary",
+    "version": "1.0.0",
+    "name": "Get_Summary",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish summary</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/summary",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/top/{count}/{order}",
+    "title": "Get Top",
+    "version": "1.0.0",
+    "name": "Get_Top",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish top/{count}/{order}</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/top/{count}/{order}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/channel/top/{count}/{order}",
+    "title": "Get Top Channel",
+    "version": "1.0.0",
+    "name": "Get_Top_Channel",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics channel/top/{count}/{order}</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/top/{count}/{order}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/summary/top/{count}/{order}",
+    "title": "Get Top Summary",
+    "version": "1.0.0",
+    "name": "Get_Top_Summary",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics summary top {count} {order}</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/summary/top/{count}/{order}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/views",
+    "title": "Get Views",
+    "version": "1.0.0",
+    "name": "Get_Views",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group views</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/views",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/views",
+    "title": "Get Views",
+    "version": "1.0.0",
+    "name": "Get_Views",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish views</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/views",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/views-by-date",
+    "title": "Get Views-by-date",
+    "version": "1.0.0",
+    "name": "Get_Views-by-date",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group views-by-date</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/views-by-date",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/views-by-date",
+    "title": "Get Views-by-date",
+    "version": "1.0.0",
+    "name": "Get_Views-by-date",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish views-by-date</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/views-by-date",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/views-by-traffic-source",
+    "title": "Get Views-by-traffic-source",
+    "version": "1.0.0",
+    "name": "Get_Views-by-traffic-source",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group views-by-traffic-source</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/views-by-traffic-source",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/views-by-traffic-source",
+    "title": "Get Views-by-traffic-source",
+    "version": "1.0.0",
+    "name": "Get_Views-by-traffic-source",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish views-by-traffic-source</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/views-by-traffic-source",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/channel/watch",
+    "title": "Get Watch",
+    "version": "1.0.0",
+    "name": "Get_Watch",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics channel watch</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/watch",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/channel/watch-by-date",
+    "title": "Get Watch-by-date",
+    "version": "1.0.0",
+    "name": "Get_Watch-by-date",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics channel watch-by-date</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/watch-by-date",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/revenue",
+    "title": "Get group revenue",
+    "version": "1.0.0",
+    "name": "Get_group_revenue",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group revenue</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/revenue",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/revenue-by-ad-type",
+    "title": "Get group revenue-by--ad-type",
+    "version": "1.0.0",
+    "name": "Get_group_revenue-by--ad-type",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group revenue-by--ad-type</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/revenue-by-ad-type",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/group/revenue-by-date",
+    "title": "Get group revenue-by-date",
+    "version": "1.0.0",
+    "name": "Get_group_revenue-by-date",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics group revenue-by-date</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/revenue-by-date",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/revenue",
+    "title": "Get publish revenue",
+    "version": "1.0.0",
+    "name": "Get_publish_revenue",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish revenue</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/revenue",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/revenue-by-ad-type",
+    "title": "Get publish revenue-by-ad-type",
+    "version": "1.0.0",
+    "name": "Get_publish_revenue-by-ad-type",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish revenue-by-ad-type</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/revenue-by-ad-type",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/revenue-by-date",
+    "title": "Get publish revenue-by-date",
+    "version": "1.0.0",
+    "name": "Get_publish_revenue-by-date",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish revenue-by-date</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/revenue-by-date",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/trend",
+    "title": "Get publish trend",
+    "version": "1.0.0",
+    "name": "Get_publish_trend",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish trend</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/trend",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/report/{platform}",
+    "title": "Get report platform",
+    "version": "1.0.0",
+    "name": "Get_report_platform",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics report {platform}</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/report/{platform}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/report/tags",
+    "title": "Get report tags",
+    "version": "1.0.0",
+    "name": "Get_report_tags",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics report tags</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/report/tags",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/report/tags-by-page",
+    "title": "Get report tags-by-page",
+    "version": "1.0.0",
+    "name": "Get_report_tags-by-page",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics report tags-by-page</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/report/tags-by-page",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/report/trend",
+    "title": "Get report trend",
+    "version": "1.0.0",
+    "name": "Get_report_trend",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics report trend</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/report/trend",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/publish/sync-publish-statistics",
+    "title": "Get sync-publish-statistics",
+    "version": "1.0.0",
+    "name": "Get_sync-publish-statistics",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>analytics publish sync-publish-statistics</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/sync-publish-statistics",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Analytics"
+  },
+  {
+    "type": "get",
     "url": "/v1/analytics/channel/reach-by-date",
-    "title": "analytics channel reach-by-date",
+    "title": "Get Reach-by-date",
     "version": "1.0.0",
     "name": "analytics_channel_reach-by-date",
     "group": "Analytics",
@@ -254,1190 +1427,17 @@
   },
   {
     "type": "get",
-    "url": "/v1/analytics/channel/reach-by-traffic-source",
-    "title": "analytics channel reach-by-traffic-source",
-    "version": "1.0.0",
-    "name": "analytics_channel_reach-by-traffic-source",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics channel reach-by-traffic-source</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/reach-by-traffic-source",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/channel/revenue",
-    "title": "analytics channel revenue",
-    "version": "1.0.0",
-    "name": "analytics_channel_revenue",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics channel revenue</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/revenue",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/channel/subscribers",
-    "title": "analytics channel subscribers",
-    "version": "1.0.0",
-    "name": "analytics_channel_subscribers",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics channel subscribers</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/subscribers",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/channel/subscribers-by-date",
-    "title": "analytics channel subscribers-by-date",
-    "version": "1.0.0",
-    "name": "analytics_channel_subscribers-by-date",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics channel subscribers-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/subscribers-by-date",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/channel/summary",
-    "title": "analytics channel summary",
-    "version": "1.0.0",
-    "name": "analytics_channel_summary",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics channel summary</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/summary",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/channel/views",
-    "title": "analytics channel views",
-    "version": "1.0.0",
-    "name": "analytics_channel_views",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics channel views</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/views",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/channel/views-by-date",
-    "title": "analytics channel views-by-date",
-    "version": "1.0.0",
-    "name": "analytics_channel_views-by-date",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics channel views-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/views-by-date",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/channel/watch",
-    "title": "analytics channel watch",
-    "version": "1.0.0",
-    "name": "analytics_channel_watch",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics channel watch</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/watch",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/channel/watch-by-date",
-    "title": "analytics channel watch-by-date",
-    "version": "1.0.0",
-    "name": "analytics_channel_watch-by-date",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics channel watch-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/watch-by-date",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/",
-    "title": "analytics group",
-    "version": "1.0.0",
-    "name": "analytics_group",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/comments",
-    "title": "analytics group comments",
-    "version": "1.0.0",
-    "name": "analytics_group_comments",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group comments</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/comments",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/comments-by-date",
-    "title": "analytics group comments-by-date",
-    "version": "1.0.0",
-    "name": "analytics_group_comments-by-date",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group comments-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/comments-by-date",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/likes",
-    "title": "analytics group likes",
-    "version": "1.0.0",
-    "name": "analytics_group_likes",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group likes</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/likes",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/likes-by-date",
-    "title": "analytics group likes-by-date",
-    "version": "1.0.0",
-    "name": "analytics_group_likes-by-date",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group likes-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/likes-by-date",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/revenue",
-    "title": "analytics group revenue",
-    "version": "1.0.0",
-    "name": "analytics_group_revenue",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group revenue</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/revenue",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/revenue-by-ad-type",
-    "title": "analytics group revenue-by--ad-type",
-    "version": "1.0.0",
-    "name": "analytics_group_revenue-by--ad-type",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group revenue-by--ad-type</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/revenue-by-ad-type",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/revenue-by-date",
-    "title": "analytics group revenue-by-date",
-    "version": "1.0.0",
-    "name": "analytics_group_revenue-by-date",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group revenue-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/revenue-by-date",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/shares",
-    "title": "analytics group shares",
-    "version": "1.0.0",
-    "name": "analytics_group_shares",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group shares</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/shares",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/shares-by-date",
-    "title": "analytics group shares-by-date",
-    "version": "1.0.0",
-    "name": "analytics_group_shares-by-date",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group shares-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/shares-by-date",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/tags",
-    "title": "analytics group tags",
-    "version": "1.0.0",
-    "name": "analytics_group_tags",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group tags</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/tags",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/trend",
-    "title": "analytics group trend",
-    "version": "1.0.0",
-    "name": "analytics_group_trend",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group trend</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/trend",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/views",
-    "title": "analytics group views",
-    "version": "1.0.0",
-    "name": "analytics_group_views",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group views</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/views",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/views-by-date",
-    "title": "analytics group views-by-date",
-    "version": "1.0.0",
-    "name": "analytics_group_views-by-date",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group views-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/views-by-date",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/views-by-traffic-source",
-    "title": "analytics group views-by-traffic-source",
-    "version": "1.0.0",
-    "name": "analytics_group_views-by-traffic-source",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group views-by-traffic-source</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/views-by-traffic-source",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/watch",
-    "title": "analytics group watch",
-    "version": "1.0.0",
-    "name": "analytics_group_watch",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group watch</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/watch",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/group/{id}",
-    "title": "analytics group {id}",
-    "version": "1.0.0",
-    "name": "analytics_group_{id}",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics group {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/group/{id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/",
-    "title": "analytics publish",
-    "version": "1.0.0",
-    "name": "analytics_publish",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/comments",
-    "title": "analytics publish comments",
-    "version": "1.0.0",
-    "name": "analytics_publish_comments",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish comments</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/comments",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/comments-by-date",
-    "title": "analytics publish comments-by-date",
-    "version": "1.0.0",
-    "name": "analytics_publish_comments-by-date",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish comments-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/comments-by-date",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/likes",
-    "title": "analytics publish likes",
-    "version": "1.0.0",
-    "name": "analytics_publish_likes",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish likes</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/likes",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/revenue",
-    "title": "analytics publish revenue",
-    "version": "1.0.0",
-    "name": "analytics_publish_revenue",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish revenue</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/revenue",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/revenue-by-ad-type",
-    "title": "analytics publish revenue-by-ad-type",
-    "version": "1.0.0",
-    "name": "analytics_publish_revenue-by-ad-type",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish revenue-by-ad-type</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/revenue-by-ad-type",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/revenue-by-date",
-    "title": "analytics publish revenue-by-date",
-    "version": "1.0.0",
-    "name": "analytics_publish_revenue-by-date",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish revenue-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/revenue-by-date",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/shares",
-    "title": "analytics publish shares",
-    "version": "1.0.0",
-    "name": "analytics_publish_shares",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish shares</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/shares",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/shares-by-date",
-    "title": "analytics publish shares-by-date",
-    "version": "1.0.0",
-    "name": "analytics_publish_shares-by-date",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish shares-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/shares-by-date",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/summary",
-    "title": "analytics publish summary",
-    "version": "1.0.0",
-    "name": "analytics_publish_summary",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish summary</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/summary",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/sync-publish-statistics",
-    "title": "analytics publish sync-publish-statistics",
-    "version": "1.0.0",
-    "name": "analytics_publish_sync-publish-statistics",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish sync-publish-statistics</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/sync-publish-statistics",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/tags",
-    "title": "analytics publish tags",
-    "version": "1.0.0",
-    "name": "analytics_publish_tags",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish tags</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/tags",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/top/{count}/{order}",
-    "title": "analytics publish top/{count}/{order}",
-    "version": "1.0.0",
-    "name": "analytics_publish_top/{count}/{order}",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish top/{count}/{order}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/top/{count}/{order}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/trend",
-    "title": "analytics publish trend",
-    "version": "1.0.0",
-    "name": "analytics_publish_trend",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish trend</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/trend",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/views",
-    "title": "analytics publish views",
-    "version": "1.0.0",
-    "name": "analytics_publish_views",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish views</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/views",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/views-by-date",
-    "title": "analytics publish views-by-date",
-    "version": "1.0.0",
-    "name": "analytics_publish_views-by-date",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish views-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/views-by-date",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/views-by-traffic-source",
-    "title": "analytics publish views-by-traffic-source",
-    "version": "1.0.0",
-    "name": "analytics_publish_views-by-traffic-source",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish views-by-traffic-source</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/views-by-traffic-source",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/watch",
-    "title": "analytics publish watch",
-    "version": "1.0.0",
-    "name": "analytics_publish_watch",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish watch</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/watch",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/publish/{id}",
-    "title": "analytics publish {id}",
-    "version": "1.0.0",
-    "name": "analytics_publish_{id}",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics publish {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/publish/{id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/report/tags",
-    "title": "analytics report tags",
-    "version": "1.0.0",
-    "name": "analytics_report_tags",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics report tags</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/report/tags",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/report/tags-by-page",
-    "title": "analytics report tags-by-page",
-    "version": "1.0.0",
-    "name": "analytics_report_tags-by-page",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics report tags-by-page</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/report/tags-by-page",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/report/trend",
-    "title": "analytics report trend",
-    "version": "1.0.0",
-    "name": "analytics_report_trend",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics report trend</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/report/trend",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/report/{platform}",
-    "title": "analytics report {platform}",
-    "version": "1.0.0",
-    "name": "analytics_report_{platform}",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics report {platform}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/report/{platform}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/summary/",
-    "title": "analytics summary",
-    "version": "1.0.0",
-    "name": "analytics_summary",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics summary</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/summary/",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
-    "url": "/v1/analytics/summary/top/{count}/{order}",
-    "title": "analytics summary/top/{count}/{order}",
-    "version": "1.0.0",
-    "name": "analytics_summary/top/{count}/{order}",
-    "group": "Analytics",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>analytics summary/top/{count}/{order}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/summary/top/{count}/{order}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Analytics"
-  },
-  {
-    "type": "get",
     "url": "/v1/archive/",
-    "title": "archive",
+    "title": "Get All",
     "version": "1.0.0",
-    "name": "archive",
+    "name": "Get_All",
     "group": "Archive",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>archive</p>",
+    "description": "<p>Get All</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -1450,86 +1450,17 @@
   },
   {
     "type": "get",
-    "url": "/v1/archive/{id}",
-    "title": "archive {id}",
-    "version": "1.0.0",
-    "name": "archive_{id}",
-    "group": "Archive",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>archive {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/archive/{id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Archive"
-  },
-  {
-    "type": "put",
-    "url": "/v1/archive/{id}",
-    "title": "archive {id}",
-    "version": "1.0.0",
-    "name": "archive_{id}",
-    "group": "Archive",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>archive {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/archive/{id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Archive"
-  },
-  {
-    "type": "post",
-    "url": "/v1/archive/remove-multi",
-    "title": "archive {id}",
-    "version": "1.0.0",
-    "name": "archive_{id}",
-    "group": "Archive",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>archive {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/archive/remove-multi",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Archive"
-  },
-  {
-    "type": "get",
     "url": "/v1/archive/{id}/download",
-    "title": "archive {id}/download",
+    "title": "Get Asset",
     "version": "1.0.0",
-    "name": "archive_{id}/download",
+    "name": "Get_Asset",
     "group": "Archive",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>archive {id}/download</p>",
+    "description": "<p>Get Asset</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -1542,17 +1473,40 @@
   },
   {
     "type": "get",
-    "url": "/v1/archive/{id}/download/preview",
-    "title": "archive {id}/download/preview",
+    "url": "/v1/archive/{id}",
+    "title": "Get One",
     "version": "1.0.0",
-    "name": "archive_{id}/download/preview",
+    "name": "Get_One",
     "group": "Archive",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>archive {id}/download/preview</p>",
+    "description": "<p>Get One</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/archive/{id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Archive"
+  },
+  {
+    "type": "get",
+    "url": "/v1/archive/{id}/download/preview",
+    "title": "Get One Preview",
+    "version": "1.0.0",
+    "name": "Get_One_Preview",
+    "group": "Archive",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get One Preview</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -1566,20 +1520,66 @@
   {
     "type": "patch",
     "url": "/v1/archive/{id}/thumbnail/{thumbnail_id}",
-    "title": "archive {id}/thumbnail/{thumbnail_id}",
+    "title": "Patch A Thumbnail",
     "version": "1.0.0",
-    "name": "archive_{id}/thumbnail/{thumbnail_id}",
+    "name": "Patch_A_Thumbnail",
     "group": "Archive",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>archive {id}/thumbnail/{thumbnail_id}</p>",
+    "description": "<p>Patch A Thumbnail</p>",
     "examples": [
       {
         "title": "Example usage:",
         "content": "curl -i https://sns-dev-api.gemiso.com/v1/archive/{id}/thumbnail/{thumbnail_id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Archive"
+  },
+  {
+    "type": "post",
+    "url": "/v1/archive/remove-multi",
+    "title": "Post Remove-multi",
+    "version": "1.0.0",
+    "name": "Post_Remove-multi",
+    "group": "Archive",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Post Remove-multi</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/archive/remove-multi",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Archive"
+  },
+  {
+    "type": "put",
+    "url": "/v1/archive/{id}",
+    "title": "Put One",
+    "version": "1.0.0",
+    "name": "Put_One",
+    "group": "Archive",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Put One</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/archive/{id}",
         "type": "json"
       }
     ],
@@ -1656,29 +1656,91 @@
       }
     ],
     "description": "<p>refresh</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/auth/refresh",
-        "type": "json"
-      }
-    ],
     "filename": "apidocs/v1/all.js",
     "groupTitle": "Auth"
   },
   {
     "type": "get",
-    "url": "/v1/channels/",
-    "title": "channels",
+    "url": "/v1/categories/{platform}",
+    "title": "Get Categories",
     "version": "1.0.0",
-    "name": "channels",
+    "name": "Get_Categories",
+    "group": "Categories",
+    "permission": [
+      {
+        "name": "Everyone"
+      }
+    ],
+    "description": "<p>Get Categories</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/categories/{platform}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Categories"
+  },
+  {
+    "type": "delete",
+    "url": "/v1/channels/{id}/{platform}/revoke-sns-token",
+    "title": "Delete Revoke-sns-token",
+    "version": "1.0.0",
+    "name": "Delete_Revoke-sns-token",
     "group": "Channels",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>channels</p>",
+    "description": "<p>Delete Revoke-sns-token</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/channels/{id}/{platform}/revoke-sns-token",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Channels"
+  },
+  {
+    "type": "get",
+    "url": "/v1/channels/all",
+    "title": "Get Channels All",
+    "version": "1.0.0",
+    "name": "Get_All",
+    "group": "Channels",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get All</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/channels/all",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Channels"
+  },
+  {
+    "type": "get",
+    "url": "/v1/channels/",
+    "title": "Get Channels",
+    "version": "1.0.0",
+    "name": "Get_Channels",
+    "group": "Channels",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get Channels</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -1691,67 +1753,21 @@
   },
   {
     "type": "get",
-    "url": "/v1/channels/all",
-    "title": "channels all",
+    "url": "/v1/channels/fb/pages",
+    "title": "Get FB Pages",
     "version": "1.0.0",
-    "name": "channels_all",
+    "name": "Get_FB_Pages",
     "group": "Channels",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>channels all</p>",
+    "description": "<p>Get FB Pages</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/channels/all",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Channels"
-  },
-  {
-    "type": "post",
-    "url": "/v1/channels/remove-multi",
-    "title": "channels remove-multi",
-    "version": "1.0.0",
-    "name": "channels_remove-multi",
-    "group": "Channels",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>channels remove-multi</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/channels/remove-multi",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Channels"
-  },
-  {
-    "type": "put",
-    "url": "/v1/channels/update-multi",
-    "title": "channels update-multi",
-    "version": "1.0.0",
-    "name": "channels_update-multi",
-    "group": "Channels",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>channels update-multi</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/channels/update-multi",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/channels/fb/pages",
         "type": "json"
       }
     ],
@@ -1761,16 +1777,16 @@
   {
     "type": "get",
     "url": "/v1/channels/{id}",
-    "title": "channels {id}",
+    "title": "Get One",
     "version": "1.0.0",
-    "name": "channels_{id}",
+    "name": "Get_One",
     "group": "Channels",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>channels {id}</p>",
+    "description": "<p>Get One</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -1784,16 +1800,16 @@
   {
     "type": "get",
     "url": "/v1/channels/{id}/{platform}",
-    "title": "channels {id}/{platform}",
+    "title": "Get Platform",
     "version": "1.0.0",
-    "name": "channels_{id}/{platform}",
+    "name": "Get_Platform",
     "group": "Channels",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>channels {id}/{platform}</p>",
+    "description": "<p>Get Platform</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -1807,16 +1823,16 @@
   {
     "type": "patch",
     "url": "/v1/channels/{id}/{platform}/set-channel-image",
-    "title": "channels {id}/{platform}/set-channel-image",
+    "title": "Patch Set-channel-image",
     "version": "1.0.0",
-    "name": "channels_{id}/{platform}/set-channel-image",
+    "name": "Patch_Set-channel-image",
     "group": "Channels",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>channels {id}/{platform}/set-channel-image</p>",
+    "description": "<p>Patch Set-channel-image</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -1830,16 +1846,16 @@
   {
     "type": "patch",
     "url": "/v1/channels/{id}/{platform}/sync-channel-image",
-    "title": "channels {id}/{platform}/sync-channel-image",
+    "title": "Patch Sync-channel-image",
     "version": "1.0.0",
-    "name": "channels_{id}/{platform}/sync-channel-image",
+    "name": "Patch_Sync-channel-image",
     "group": "Channels",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>channels {id}/{platform}/sync-channel-image</p>",
+    "description": "<p>Patch Sync-channel-image</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -1853,16 +1869,16 @@
   {
     "type": "patch",
     "url": "/v1/channels/{id}/{platform}/sync-channel-statistics",
-    "title": "channels {id}/{platform}/sync-channel-statistics",
+    "title": "Patch Sync-channel-statistics",
     "version": "1.0.0",
-    "name": "channels_{id}/{platform}/sync-channel-statistics",
+    "name": "Patch_Sync-channel-statistics",
     "group": "Channels",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>channels {id}/{platform}/sync-channel-statistics</p>",
+    "description": "<p>Patch Sync-channel-statistics</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -1876,16 +1892,16 @@
   {
     "type": "patch",
     "url": "/v1/channels/{id}/{platform}/sync-publish",
-    "title": "channels {id}/{platform}/sync-publish",
+    "title": "Patch Sync-publish",
     "version": "1.0.0",
-    "name": "channels_{id}/{platform}/sync-publish",
+    "name": "Patch_Sync-publish",
     "group": "Channels",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>channels {id}/{platform}/sync-publish</p>",
+    "description": "<p>Patch Sync-publish</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -1899,16 +1915,16 @@
   {
     "type": "patch",
     "url": "/v1/channels/{id}/{platform}/sync-publish-statistics",
-    "title": "channels {id}/{platform}/sync-publish-statistics",
+    "title": "Patch Sync-publish-statistics",
     "version": "1.0.0",
-    "name": "channels_{id}/{platform}/sync-publish-statistics",
+    "name": "Patch_Sync-publish-statistics",
     "group": "Channels",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>channels {id}/{platform}/sync-publish-statistics</p>",
+    "description": "<p>Patch Sync-publish-statistics</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -1920,41 +1936,18 @@
     "groupTitle": "Channels"
   },
   {
-    "type": "get",
-    "url": "/v1/channels/fb/pages",
-    "title": "channels fb/pages",
-    "version": "1.0.0",
-    "name": "fb_pages",
-    "group": "Channels",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>channels fb/pages</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/channels/fb/pages",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Channels"
-  },
-  {
     "type": "post",
     "url": "/v1/channels/{id}/{platform}/get-auth-url",
-    "title": "get-auth-url",
+    "title": "Post Get-auth-url",
     "version": "1.0.0",
-    "name": "get-auth-url",
+    "name": "Post_Get-auth-url",
     "group": "Channels",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>get-auth-url</p>",
+    "description": "<p>Post Get-auth-url</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -1966,22 +1959,45 @@
     "groupTitle": "Channels"
   },
   {
-    "type": "delete",
-    "url": "/v1/channels/{id}/{platform}/revoke-sns-token",
-    "title": "revoke-sns-token",
+    "type": "post",
+    "url": "/v1/channels/remove-multi",
+    "title": "Post Remove-multi",
     "version": "1.0.0",
-    "name": "revoke-sns-token",
+    "name": "Post_Remove-multi",
     "group": "Channels",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>channels {id}/{platform}/revoke-sns-token</p>",
+    "description": "<p>Post Remove-multi</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/channels/{id}/{platform}/revoke-sns-token",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/channels/remove-multi",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Channels"
+  },
+  {
+    "type": "put",
+    "url": "/v1/channels/update-multi",
+    "title": "Put Update-multi",
+    "version": "1.0.0",
+    "name": "Put_Update-multi",
+    "group": "Channels",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Put Update-multi</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/channels/update-multi",
         "type": "json"
       }
     ],
@@ -1991,16 +2007,16 @@
   {
     "type": "put",
     "url": "/v1/channels/{id}/{platform}/update-sns-token",
-    "title": "update-sns-token",
+    "title": "Put Update-sns-token",
     "version": "1.0.0",
-    "name": "update-sns-token",
+    "name": "Put_Update-sns-token",
     "group": "Channels",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>update-sns-token</p>",
+    "description": "<p>Put Update-sns-token</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2013,33 +2029,109 @@
   },
   {
     "type": "get",
-    "url": "/v1/departments/",
-    "title": "departments",
+    "url": "/v1/countries",
+    "title": "Get Countries",
     "version": "1.0.0",
-    "name": "departments",
-    "group": "Departments",
+    "name": "Get_Countries",
+    "group": "Countries",
+    "permission": [
+      {
+        "name": "Everyone"
+      }
+    ],
+    "description": "<p>Get Countries</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/countries",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Countries"
+  },
+  {
+    "type": "get",
+    "url": "/v1/dashboard/analytics",
+    "title": "Get Analytics",
+    "version": "1.0.0",
+    "name": "Get_Analytics",
+    "group": "Dashboard",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>departments</p>",
+    "description": "<p>get dashboard analytics</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/dashboard/analytics",
+        "type": "json"
+      }
+    ],
     "filename": "apidocs/v1/all.js",
-    "groupTitle": "Departments"
+    "groupTitle": "Dashboard"
+  },
+  {
+    "type": "get",
+    "url": "/v1/dashboard/",
+    "title": "Get Dashboard",
+    "version": "1.0.0",
+    "name": "Get_Dashboard",
+    "group": "Dashboard",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get Dashboard</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/dashboard/",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Dashboard"
+  },
+  {
+    "type": "get",
+    "url": "/v1/dashboard/scheduled",
+    "title": "Get Schedule",
+    "version": "1.0.0",
+    "name": "Get_Schedule",
+    "group": "Dashboard",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>get dashboard scheduled</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/dashboard/scheduled",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Dashboard"
   },
   {
     "type": "post",
     "url": "/v1/departments/",
-    "title": "departments",
+    "title": "Create One",
     "version": "1.0.0",
-    "name": "departments",
+    "name": "Create_One",
     "group": "Departments",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>departments</p>",
+    "description": "<p>Create One</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2051,18 +2143,41 @@
     "groupTitle": "Departments"
   },
   {
-    "type": "get",
-    "url": "/v1/departments/all",
-    "title": "departments all",
+    "type": "delete",
+    "url": "/v1/departments/{id}",
+    "title": "Delete One",
     "version": "1.0.0",
-    "name": "departments_all",
+    "name": "Delete_One",
     "group": "Departments",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>departments all</p>",
+    "description": "<p>Delete One</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/departments/{id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Departments"
+  },
+  {
+    "type": "get",
+    "url": "/v1/departments/all",
+    "title": "Get All Departments",
+    "version": "1.0.0",
+    "name": "Get_All_Departments",
+    "group": "Departments",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get All Departments</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2074,18 +2189,57 @@
     "groupTitle": "Departments"
   },
   {
-    "type": "post",
-    "url": "/v1/departments/remove-multi",
-    "title": "departments remove-multi",
+    "type": "get",
+    "url": "/v1/departments/",
+    "title": "Get Departments",
     "version": "1.0.0",
-    "name": "departments_remove-multi",
+    "name": "Get_Departments",
     "group": "Departments",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>departments remove-multi</p>",
+    "description": "<p>Get Departments</p>",
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Departments"
+  },
+  {
+    "type": "get",
+    "url": "/v1/departments/{id}",
+    "title": "Get One",
+    "version": "1.0.0",
+    "name": "Get_One",
+    "group": "Departments",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get One</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/departments/{id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Departments"
+  },
+  {
+    "type": "post",
+    "url": "/v1/departments/remove-multi",
+    "title": "Post Remove-multi",
+    "version": "1.0.0",
+    "name": "Post_Remove-multi",
+    "group": "Departments",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Post Remove-multi</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2098,40 +2252,17 @@
   },
   {
     "type": "put",
-    "url": "/v1/departments/update-multi",
-    "title": "departments update-multi",
-    "version": "1.0.0",
-    "name": "departments_update-multi",
-    "group": "Departments",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>departments update-multi</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/departments/update-multi",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Departments"
-  },
-  {
-    "type": "get",
     "url": "/v1/departments/{id}",
-    "title": "departments {id}",
+    "title": "Put One",
     "version": "1.0.0",
-    "name": "departments_{id}",
+    "name": "Put_One",
     "group": "Departments",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>departments {id}</p>",
+    "description": "<p>Put One</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2144,21 +2275,21 @@
   },
   {
     "type": "put",
-    "url": "/v1/departments/{id}",
-    "title": "departments {id}",
+    "url": "/v1/departments/update-multi",
+    "title": "Put Update-multi",
     "version": "1.0.0",
-    "name": "departments_{id}",
+    "name": "Put_Update-multi",
     "group": "Departments",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>departments {id}</p>",
+    "description": "<p>Put Update-multi</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/departments/{id}",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/departments/update-multi",
         "type": "json"
       }
     ],
@@ -2167,40 +2298,40 @@
   },
   {
     "type": "delete",
-    "url": "/v1/departments/{id}",
-    "title": "departments {id}",
+    "url": "/v1/downloads/{id}",
+    "title": "Delete One",
     "version": "1.0.0",
-    "name": "departments_{id}",
-    "group": "Departments",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>departments {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/departments/{id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Departments"
-  },
-  {
-    "type": "get",
-    "url": "/v1/downloads/",
-    "title": "downloads",
-    "version": "1.0.0",
-    "name": "downloads",
+    "name": "Delete_One",
     "group": "Downloads",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>downloads</p>",
+    "description": "<p>Delete One</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/downloads/{id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Downloads"
+  },
+  {
+    "type": "get",
+    "url": "/v1/downloads/",
+    "title": "Get Many",
+    "version": "1.0.0",
+    "name": "Get_Many",
+    "group": "Downloads",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get Many</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2212,18 +2343,41 @@
     "groupTitle": "Downloads"
   },
   {
-    "type": "post",
-    "url": "/v1/downloads/",
-    "title": "downloads",
+    "type": "get",
+    "url": "/v1/downloads/{id}",
+    "title": "Get One",
     "version": "1.0.0",
-    "name": "downloads",
+    "name": "Get_One",
     "group": "Downloads",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>downloads</p>",
+    "description": "<p>Get One</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/downloads/{id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Downloads"
+  },
+  {
+    "type": "post",
+    "url": "/v1/downloads/",
+    "title": "Post Asset",
+    "version": "1.0.0",
+    "name": "Post_Asset",
+    "group": "Downloads",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Post Asset</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2237,16 +2391,16 @@
   {
     "type": "post",
     "url": "/v1/downloads/remove-multi",
-    "title": "downloads remove-multi",
+    "title": "Post Remove-multi",
     "version": "1.0.0",
-    "name": "downloads_remove-multi",
+    "name": "Post_Remove-multi",
     "group": "Downloads",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>downloads remove-multi</p>",
+    "description": "<p>Post Remove-multi</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2260,16 +2414,16 @@
   {
     "type": "post",
     "url": "/v1/downloads/retry-multi",
-    "title": "downloads retry-multi",
+    "title": "Post Retry-multi",
     "version": "1.0.0",
-    "name": "downloads_retry-multi",
+    "name": "Post_Retry-multi",
     "group": "Downloads",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>downloads retry-multi</p>",
+    "description": "<p>Post Retry-multi</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2283,16 +2437,16 @@
   {
     "type": "post",
     "url": "/v1/downloads/stop-multi",
-    "title": "downloads stop-multi",
+    "title": "Post Stop-multi",
     "version": "1.0.0",
-    "name": "downloads_stop-multi",
+    "name": "Post_Stop-multi",
     "group": "Downloads",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>downloads stop-multi</p>",
+    "description": "<p>Post Stop-multi</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2304,41 +2458,18 @@
     "groupTitle": "Downloads"
   },
   {
-    "type": "get",
-    "url": "/v1/downloads/{id}",
-    "title": "downloads {id}",
-    "version": "1.0.0",
-    "name": "downloads_{id}",
-    "group": "Downloads",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>downloads {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/downloads/{id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Downloads"
-  },
-  {
     "type": "put",
     "url": "/v1/downloads/{id}",
-    "title": "downloads {id}",
+    "title": "Put One",
     "version": "1.0.0",
-    "name": "downloads_{id}",
+    "name": "Put_One",
     "group": "Downloads",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>downloads {id}</p>",
+    "description": "<p>Put One</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2350,41 +2481,18 @@
     "groupTitle": "Downloads"
   },
   {
-    "type": "delete",
-    "url": "/v1/downloads/{id}",
-    "title": "downloads {id}",
-    "version": "1.0.0",
-    "name": "downloads_{id}",
-    "group": "Downloads",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>downloads {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/downloads/{id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Downloads"
-  },
-  {
-    "type": "get",
+    "type": "post",
     "url": "/v1/groups/",
-    "title": "groups",
+    "title": "Create A Group",
     "version": "1.0.0",
-    "name": "groups",
+    "name": "Create_A_Group",
     "group": "Groups",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>groups</p>",
+    "description": "<p>Create A Group</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2396,22 +2504,68 @@
     "groupTitle": "Groups"
   },
   {
-    "type": "post",
-    "url": "/v1/groups/",
-    "title": "groups",
+    "type": "delete",
+    "url": "/v1/groups/{id}",
+    "title": "Delete One",
     "version": "1.0.0",
-    "name": "groups",
+    "name": "Delete_One",
     "group": "Groups",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>groups</p>",
+    "description": "<p>Delete One</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/groups/{id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Groups"
+  },
+  {
+    "type": "get",
+    "url": "/v1/groups/",
+    "title": "Get Many",
+    "version": "1.0.0",
+    "name": "Get_Many",
+    "group": "Groups",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get Many</p>",
     "examples": [
       {
         "title": "Example usage:",
         "content": "curl -i https://sns-dev-api.gemiso.com/v1/groups/",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Groups"
+  },
+  {
+    "type": "get",
+    "url": "/v1/groups/{id}",
+    "title": "Get One",
+    "version": "1.0.0",
+    "name": "Get_One",
+    "group": "Groups",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get One</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/groups/{id}",
         "type": "json"
       }
     ],
@@ -2421,16 +2575,16 @@
   {
     "type": "post",
     "url": "/v1/groups/remove-multi",
-    "title": "groups remove-multi",
+    "title": "Post Remove-multi",
     "version": "1.0.0",
-    "name": "groups_remove-multi",
+    "name": "Post_Remove-multi",
     "group": "Groups",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>groups remove-multi</p>",
+    "description": "<p>Post Remove-multi</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2442,18 +2596,18 @@
     "groupTitle": "Groups"
   },
   {
-    "type": "get",
+    "type": "put",
     "url": "/v1/groups/{id}",
-    "title": "groups {id}",
+    "title": "Put One",
     "version": "1.0.0",
-    "name": "groups_{id}",
+    "name": "Put_One",
     "group": "Groups",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>groups {id}</p>",
+    "description": "<p>Put One</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2465,64 +2619,87 @@
     "groupTitle": "Groups"
   },
   {
-    "type": "put",
-    "url": "/v1/groups/{id}",
-    "title": "groups {id}",
+    "type": "get",
+    "url": "/v1/languages",
+    "title": "Get Languages",
     "version": "1.0.0",
-    "name": "groups_{id}",
-    "group": "Groups",
+    "name": "Get_Languages",
+    "group": "Languages",
     "permission": [
       {
-        "name": "Auth"
+        "name": "Everyone"
       }
     ],
-    "description": "<p>groups {id}</p>",
+    "description": "<p>Get Languages</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/groups/{id}",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/languages",
         "type": "json"
       }
     ],
     "filename": "apidocs/v1/all.js",
-    "groupTitle": "Groups"
+    "groupTitle": "Languages"
+  },
+  {
+    "type": "get",
+    "url": "/v1/youtube-languages",
+    "title": "Get Youtube-languages",
+    "version": "1.0.0",
+    "name": "Get_Youtube-languages",
+    "group": "Languages",
+    "permission": [
+      {
+        "name": "Everyone"
+      }
+    ],
+    "description": "<p>Get Youtube-languages</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/youtube-languages",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Languages"
   },
   {
     "type": "delete",
-    "url": "/v1/groups/{id}",
-    "title": "groups {id}",
+    "url": "/v1/live/{id}",
+    "title": "Delete One",
     "version": "1.0.0",
-    "name": "groups_{id}",
-    "group": "Groups",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>groups {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/groups/{id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Groups"
-  },
-  {
-    "type": "get",
-    "url": "/v1/live/",
-    "title": "live",
-    "version": "1.0.0",
-    "name": "live",
+    "name": "Delete_One",
     "group": "Live",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>live</p>",
+    "description": "<p>Delete One</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/live/{id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Live"
+  },
+  {
+    "type": "get",
+    "url": "/v1/live/",
+    "title": "Get All",
+    "version": "1.0.0",
+    "name": "Get_All",
+    "group": "Live",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get All</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2536,16 +2713,16 @@
   {
     "type": "get",
     "url": "/v1/live/{id}",
-    "title": "live {id}",
+    "title": "Get One",
     "version": "1.0.0",
-    "name": "live_{id}",
+    "name": "Get_One",
     "group": "Live",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>live {id}</p>",
+    "description": "<p>Get One</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2559,39 +2736,16 @@
   {
     "type": "put",
     "url": "/v1/live/{id}",
-    "title": "live {id}",
+    "title": "Put One",
     "version": "1.0.0",
-    "name": "live_{id}",
+    "name": "Put_One",
     "group": "Live",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>live {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/live/{id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Live"
-  },
-  {
-    "type": "delete",
-    "url": "/v1/live/{id}",
-    "title": "live {id}",
-    "version": "1.0.0",
-    "name": "live_{id}",
-    "group": "Live",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>live {id}</p>",
+    "description": "<p>Put One</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2605,16 +2759,16 @@
   {
     "type": "post",
     "url": "/v1/archive/upload",
-    "title": "live {id}",
+    "title": "Upload One",
     "version": "1.0.0",
-    "name": "live_{id}",
+    "name": "Upload_One",
     "group": "Live",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>live {id}</p>",
+    "description": "<p>Upload One</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2624,6 +2778,22 @@
     ],
     "filename": "apidocs/v1/all.js",
     "groupTitle": "Live"
+  },
+  {
+    "type": "get",
+    "url": "/v1/menu/all",
+    "title": "Get All",
+    "version": "1.0.0",
+    "name": "Get_All",
+    "group": "Menu",
+    "permission": [
+      {
+        "name": "Users"
+      }
+    ],
+    "description": "<p>Get all menu with permission</p>",
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Menu"
   },
   {
     "type": "get",
@@ -2638,75 +2808,54 @@
       }
     ],
     "description": "<p>Get 'child_menu' with user permission (or admin)</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/menu/",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Menu"
-  },
-  {
-    "type": "get",
-    "url": "/v1/menu/all",
-    "title": "Menu all",
-    "version": "1.0.0",
-    "name": "Menu_all",
-    "group": "Menu",
-    "permission": [
-      {
-        "name": "Users"
-      }
-    ],
-    "description": "<p>Get all menu with permission</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/menu/all",
-        "type": "json"
-      }
-    ],
     "filename": "apidocs/v1/all.js",
     "groupTitle": "Menu"
   },
   {
     "type": "get",
     "url": "/v1/notification/",
-    "title": "Menu notification",
+    "title": "Get Notification",
     "version": "1.0.0",
-    "name": "Menu_notification",
+    "name": "Get_Notification",
     "group": "Menu",
     "permission": [
       {
         "name": "Everyone"
       }
     ],
-    "description": "<p>description</p>",
-    "examples": [
+    "description": "<p>Get Notification</p>",
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Menu"
+  },
+  {
+    "type": "get",
+    "url": "/v1/menu/shortcuts",
+    "title": "Get Shortcuts",
+    "version": "1.0.0",
+    "name": "Get_Shortcuts",
+    "group": "Menu",
+    "permission": [
       {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/notification/",
-        "type": "json"
+        "name": "Users"
       }
     ],
+    "description": "<p>get shortcuts</p>",
     "filename": "apidocs/v1/all.js",
     "groupTitle": "Menu"
   },
   {
     "type": "post",
     "url": "/v1/notification/mark-as-read",
-    "title": "Menu notification mark-as-read",
+    "title": "Post Mark-as-read",
     "version": "1.0.0",
-    "name": "Menu_notification_mark-as-read",
+    "name": "Post_Mark-as-read",
     "group": "Menu",
     "permission": [
       {
         "name": "Everyone"
       }
     ],
-    "description": "<p>description</p>",
+    "description": "<p>Post Mark-as-read</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2719,40 +2868,17 @@
   },
   {
     "type": "get",
-    "url": "/v1/menu/shortcuts",
-    "title": "Menu shortcuts",
-    "version": "1.0.0",
-    "name": "Menu_shortcuts",
-    "group": "Menu",
-    "permission": [
-      {
-        "name": "Users"
-      }
-    ],
-    "description": "<p>get shortcuts</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/menu/shortcuts",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Menu"
-  },
-  {
-    "type": "get",
     "url": "/v1/monitoring/",
-    "title": "monitoring",
+    "title": "Get Many",
     "version": "1.0.0",
-    "name": "monitoring",
+    "name": "Get_Many",
     "group": "Monitoring",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>monitoring</p>",
+    "description": "<p>Get Many</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2766,16 +2892,16 @@
   {
     "type": "get",
     "url": "/v1/monitoring/{id}",
-    "title": "monitoring {id}",
+    "title": "Get One",
     "version": "1.0.0",
-    "name": "monitoring_{id}",
+    "name": "Get_One",
     "group": "Monitoring",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>monitoring {id}</p>",
+    "description": "<p>Get One</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2789,16 +2915,16 @@
   {
     "type": "post",
     "url": "/v1/notice/",
-    "title": "notice",
+    "title": "Create Notice",
     "version": "1.0.0",
-    "name": "notice",
+    "name": "Create_Notice",
     "group": "Notice",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>notice</p>",
+    "description": "<p>Create Notice</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2810,18 +2936,87 @@
     "groupTitle": "Notice"
   },
   {
-    "type": "post",
-    "url": "/v1/notice/remove-multi",
-    "title": "notice remove-multi",
+    "type": "delete",
+    "url": "/v1/notice/{id}",
+    "title": "Delete One",
     "version": "1.0.0",
-    "name": "notice_remove-multi",
+    "name": "Delete_One",
     "group": "Notice",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>notice remove-multi</p>",
+    "description": "<p>Delete One</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/notice/{id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Notice"
+  },
+  {
+    "type": "get",
+    "url": "/v1/notice/",
+    "title": "Get Many",
+    "version": "1.0.0",
+    "name": "Get_Many",
+    "group": "Notice",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get Many</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/notice/",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Notice"
+  },
+  {
+    "type": "get",
+    "url": "/v1/notice/{id}",
+    "title": "Get One",
+    "version": "1.0.0",
+    "name": "Get_One",
+    "group": "Notice",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get One</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/notice/{id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Notice"
+  },
+  {
+    "type": "post",
+    "url": "/v1/notice/remove-multi",
+    "title": "Post Remove-multi",
+    "version": "1.0.0",
+    "name": "Post_Remove-multi",
+    "group": "Notice",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Post Remove-multi</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2833,41 +3028,18 @@
     "groupTitle": "Notice"
   },
   {
-    "type": "get",
-    "url": "/v1/notice/",
-    "title": "notice retry-multi",
-    "version": "1.0.0",
-    "name": "notice_retry-multi",
-    "group": "Notice",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>notice retry-multi</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/notice/",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Notice"
-  },
-  {
     "type": "post",
     "url": "/v1/sns/sync-facebook-instagram",
-    "title": "notice sync-facebook-instagram",
+    "title": "Post Sync-facebook-instagram",
     "version": "1.0.0",
-    "name": "notice_sync-facebook-instagram",
+    "name": "Post_Sync-facebook-instagram",
     "group": "Notice",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>notice sync-facebook-instagram</p>",
+    "description": "<p>Post Sync-facebook-instagram</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2880,40 +3052,17 @@
   },
   {
     "type": "put",
-    "url": "/v1/notice/update-multi",
-    "title": "notice update-multi",
-    "version": "1.0.0",
-    "name": "notice_update-multi",
-    "group": "Notice",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>notice update-multi</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/notice/update-multi",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Notice"
-  },
-  {
-    "type": "get",
     "url": "/v1/notice/{id}",
-    "title": "notice {id}",
+    "title": "Put One",
     "version": "1.0.0",
-    "name": "notice_{id}",
+    "name": "Put_One",
     "group": "Notice",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>notice {id}</p>",
+    "description": "<p>Put One</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -2926,132 +3075,40 @@
   },
   {
     "type": "put",
-    "url": "/v1/notice/{id}",
-    "title": "notice {id}",
+    "url": "/v1/notice/update-multi",
+    "title": "Put Update-multi",
     "version": "1.0.0",
-    "name": "notice_{id}",
+    "name": "Put_Update-multi",
     "group": "Notice",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>notice {id}</p>",
+    "description": "<p>Put Update-multi</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/notice/{id}",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/notice/update-multi",
         "type": "json"
       }
     ],
     "filename": "apidocs/v1/all.js",
     "groupTitle": "Notice"
-  },
-  {
-    "type": "delete",
-    "url": "/v1/notice/{id}",
-    "title": "notice {id}",
-    "version": "1.0.0",
-    "name": "notice_{id}",
-    "group": "Notice",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>notice {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/notice/{id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Notice"
-  },
-  {
-    "type": "get",
-    "url": "/v1/categories/{platform}",
-    "title": "categories",
-    "version": "1.0.0",
-    "name": "categories",
-    "group": "Others",
-    "permission": [
-      {
-        "name": "Everyone"
-      }
-    ],
-    "description": "<p>categories/{platform}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/categories/{platform}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Others"
-  },
-  {
-    "type": "get",
-    "url": "/v1/countries",
-    "title": "countries",
-    "version": "1.0.0",
-    "name": "countries",
-    "group": "Others",
-    "permission": [
-      {
-        "name": "Everyone"
-      }
-    ],
-    "description": "<p>countries</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/countries",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Others"
-  },
-  {
-    "type": "get",
-    "url": "/v1/languages",
-    "title": "languages",
-    "version": "1.0.0",
-    "name": "languages",
-    "group": "Others",
-    "permission": [
-      {
-        "name": "Everyone"
-      }
-    ],
-    "description": "<p>language</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/languages",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Others"
   },
   {
     "type": "post",
     "url": "/v1/localization/translate",
-    "title": "localization translate",
+    "title": "Post Localization Translate",
     "version": "1.0.0",
-    "name": "localization_translate",
+    "name": "Post_Localization_Translate",
     "group": "Others",
     "permission": [
       {
         "name": "Everyone"
       }
     ],
-    "description": "<p>localization translate</p>",
+    "description": "<p>Post Localization Translate</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3063,45 +3120,22 @@
     "groupTitle": "Others"
   },
   {
-    "type": "get",
-    "url": "/v1/youtube-languages",
-    "title": "youtube-languages",
+    "type": "post",
+    "url": "/v1/playlist/{id}/add-publish",
+    "title": "Create Playlist",
     "version": "1.0.0",
-    "name": "youtube-languages",
-    "group": "Others",
-    "permission": [
-      {
-        "name": "Everyone"
-      }
-    ],
-    "description": "<p>youtube-languages</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/youtube-languages",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Others"
-  },
-  {
-    "type": "get",
-    "url": "/v1/playlist/",
-    "title": "playlist",
-    "version": "1.0.0",
-    "name": "playlist",
+    "name": "Create_Playlist",
     "group": "Playlist",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>playlist</p>",
+    "description": "<p>Create Playlist</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/playlist/",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/playlist/{id}/add-publish",
         "type": "json"
       }
     ],
@@ -3109,22 +3143,22 @@
     "groupTitle": "Playlist"
   },
   {
-    "type": "post",
-    "url": "/v1/playlist/",
-    "title": "playlist",
+    "type": "delete",
+    "url": "/v1/playlist/{id}",
+    "title": "Delete Playlist",
     "version": "1.0.0",
-    "name": "playlist",
+    "name": "Delete_Playlist",
     "group": "Playlist",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>playlist</p>",
+    "description": "<p>Delete Playlist</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/playlist/",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/playlist/{id}",
         "type": "json"
       }
     ],
@@ -3134,16 +3168,16 @@
   {
     "type": "get",
     "url": "/v1/playlist/all",
-    "title": "playlist all",
+    "title": "Get All Playlist",
     "version": "1.0.0",
-    "name": "playlist_all",
+    "name": "Get_All_Playlist",
     "group": "Playlist",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>playlist all</p>",
+    "description": "<p>Get All Playlist</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3156,132 +3190,17 @@
   },
   {
     "type": "get",
-    "url": "/v1/playlist/with-publish/{publish_id}",
-    "title": "playlist with-publish/{publish_id}",
-    "version": "1.0.0",
-    "name": "playlist_with-publish/{publish_id}",
-    "group": "Playlist",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>playlist with-publish/{publish_id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/playlist/with-publish/{publish_id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Playlist"
-  },
-  {
-    "type": "get",
-    "url": "/v1/playlist/{id}",
-    "title": "playlist {id}",
-    "version": "1.0.0",
-    "name": "playlist_{id}",
-    "group": "Playlist",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>playlist {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/playlist/{id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Playlist"
-  },
-  {
-    "type": "put",
-    "url": "/v1/playlist/{id}",
-    "title": "playlist {id}",
-    "version": "1.0.0",
-    "name": "playlist_{id}",
-    "group": "Playlist",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>playlist {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/playlist/{id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Playlist"
-  },
-  {
-    "type": "delete",
-    "url": "/v1/playlist/{id}",
-    "title": "playlist {id}",
-    "version": "1.0.0",
-    "name": "playlist_{id}",
-    "group": "Playlist",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>playlist {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/playlist/{id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Playlist"
-  },
-  {
-    "type": "post",
-    "url": "/v1/playlist/{id}/add-publish",
-    "title": "playlist {id}/add-publish",
-    "version": "1.0.0",
-    "name": "playlist_{id}/add-publish",
-    "group": "Playlist",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>playlist {id}/add-publish</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/playlist/{id}/add-publish",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Playlist"
-  },
-  {
-    "type": "get",
     "url": "/v1/playlist/{id}/list",
-    "title": "playlist {id}/list",
+    "title": "Get List",
     "version": "1.0.0",
-    "name": "playlist_{id}/list",
+    "name": "Get_List",
     "group": "Playlist",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>playlist {id}/list</p>",
+    "description": "<p>Get List</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3293,18 +3212,110 @@
     "groupTitle": "Playlist"
   },
   {
-    "type": "post",
-    "url": "/v1/playlist/{id}/move-publish",
-    "title": "playlist {id}/move-publish",
+    "type": "get",
+    "url": "/v1/playlist/{id}",
+    "title": "Get One",
     "version": "1.0.0",
-    "name": "playlist_{id}/move-publish",
+    "name": "Get_One",
     "group": "Playlist",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>playlist {id}/move-publish</p>",
+    "description": "<p>Get One</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/playlist/{id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Playlist"
+  },
+  {
+    "type": "get",
+    "url": "/v1/playlist/",
+    "title": "Get Playlist",
+    "version": "1.0.0",
+    "name": "Get_Playlist",
+    "group": "Playlist",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get Playlist</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/playlist/",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Playlist"
+  },
+  {
+    "type": "get",
+    "url": "/v1/playlist/with-publish/{publish_id}",
+    "title": "Get Playlist With Publish",
+    "version": "1.0.0",
+    "name": "Get_Playlist_With_Publish",
+    "group": "Playlist",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get Playlist With Publish</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/playlist/with-publish/{publish_id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Playlist"
+  },
+  {
+    "type": "post",
+    "url": "/v1/playlist/",
+    "title": "Post Playlist",
+    "version": "1.0.0",
+    "name": "Post_Playlist",
+    "group": "Playlist",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Post Playlist</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/playlist/",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Playlist"
+  },
+  {
+    "type": "post",
+    "url": "/v1/playlist/{id}/move-publish",
+    "title": "Post Playlist",
+    "version": "1.0.0",
+    "name": "Post_Playlist",
+    "group": "Playlist",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Post Playlist</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3318,16 +3329,16 @@
   {
     "type": "post",
     "url": "/v1/playlist/{id}/remove-publish",
-    "title": "playlist {id}/remove-publish",
+    "title": "Post Remove-publish",
     "version": "1.0.0",
-    "name": "playlist_{id}/remove-publish",
+    "name": "Post_Remove-publish",
     "group": "Playlist",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>playlist {id}/remove-publish</p>",
+    "description": "<p>Post Remove-publish</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3339,41 +3350,41 @@
     "groupTitle": "Playlist"
   },
   {
-    "type": "get",
-    "url": "/v1/publish/",
-    "title": "publish",
+    "type": "put",
+    "url": "/v1/playlist/{id}",
+    "title": "Put Playlist",
     "version": "1.0.0",
-    "name": "publish",
-    "group": "Publish",
+    "name": "Put_Playlist",
+    "group": "Playlist",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>get publish</p>",
+    "description": "<p>Put Playlist</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/playlist/{id}",
         "type": "json"
       }
     ],
     "filename": "apidocs/v1/all.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Playlist"
   },
   {
     "type": "post",
     "url": "/v1/publish/",
-    "title": "publish",
+    "title": "Create One",
     "version": "1.0.0",
-    "name": "publish",
+    "name": "Create_One",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>get publish</p>",
+    "description": "<p>Create One</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3385,22 +3396,22 @@
     "groupTitle": "Publish"
   },
   {
-    "type": "put",
-    "url": "/v1/publish/",
-    "title": "publish",
+    "type": "delete",
+    "url": "/v1/publish/{id}/bookmark/remove",
+    "title": "Delete Bookmark",
     "version": "1.0.0",
-    "name": "publish",
+    "name": "Delete_Bookmark",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>put publish</p>",
+    "description": "<p>Delete Bookmark</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{id}/bookmark/remove",
         "type": "json"
       }
     ],
@@ -3408,22 +3419,45 @@
     "groupTitle": "Publish"
   },
   {
-    "type": "get",
-    "url": "/v1/publish/channel",
-    "title": "publish channel",
+    "type": "delete",
+    "url": "/v1/publish/{publish_id}/localization/{localized_id}",
+    "title": "Delete Localization",
     "version": "1.0.0",
-    "name": "publish_channel",
+    "name": "Delete_Localization",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>get publish channel</p>",
+    "description": "<p>Delete Localization</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/channel",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/{localized_id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Publish"
+  },
+  {
+    "type": "delete",
+    "url": "/v1/publish/{publish_id}/localization/",
+    "title": "Delete Localization",
+    "version": "1.0.0",
+    "name": "Delete_Localization",
+    "group": "Publish",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Delete Localization</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/",
         "type": "json"
       }
     ],
@@ -3433,9 +3467,9 @@
   {
     "type": "get",
     "url": "/v1/publish/gets",
-    "title": "publish gets",
+    "title": "Get All",
     "version": "1.0.0",
-    "name": "publish_gets",
+    "name": "Get_All",
     "group": "Publish",
     "permission": [
       {
@@ -3454,156 +3488,18 @@
     "groupTitle": "Publish"
   },
   {
-    "type": "post",
-    "url": "/v1/publish/remove-multi",
-    "title": "publish remove-multi",
-    "version": "1.0.0",
-    "name": "publish_remove-multi",
-    "group": "Publish",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>put publish remove-multi</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/remove-multi",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Publish"
-  },
-  {
-    "type": "post",
-    "url": "/v1/publish/update-multi",
-    "title": "publish update-multi",
-    "version": "1.0.0",
-    "name": "publish_update-multi",
-    "group": "Publish",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>post publish update-multi</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/update-multi",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Publish"
-  },
-  {
-    "type": "post",
-    "url": "/v1/publish/upload",
-    "title": "publish upload",
-    "version": "1.0.0",
-    "name": "publish_upload",
-    "group": "Publish",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>put publish upload</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/upload",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Publish"
-  },
-  {
-    "type": "get",
-    "url": "/v1/publish/{id}",
-    "title": "publish {id}",
-    "version": "1.0.0",
-    "name": "publish_{id}",
-    "group": "Publish",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>get publish {id}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{id}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Publish"
-  },
-  {
-    "type": "put",
-    "url": "/v1/publish/{id}/bookmark/add",
-    "title": "publish {id}/bookmark/add",
-    "version": "1.0.0",
-    "name": "publish_{id}/bookmark/add",
-    "group": "Publish",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>put publish {id}/bookmark/add</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{id}/bookmark/add",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Publish"
-  },
-  {
-    "type": "delete",
-    "url": "/v1/publish/{id}/bookmark/remove",
-    "title": "publish {id}/bookmark/remove",
-    "version": "1.0.0",
-    "name": "publish_{id}/bookmark/remove",
-    "group": "Publish",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>delete publish {id}/bookmark/remove</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{id}/bookmark/remove",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Publish"
-  },
-  {
     "type": "get",
     "url": "/v1/publish/{id}/download",
-    "title": "publish {id}/download",
+    "title": "Get Asset",
     "version": "1.0.0",
-    "name": "publish_{id}/download",
+    "name": "Get_Asset",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>get publish {id}/download</p>",
+    "description": "<p>Get Asset</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3616,17 +3512,63 @@
   },
   {
     "type": "get",
-    "url": "/v1/publish/{id}/history",
-    "title": "publish {id}/history",
+    "url": "/v1/publish/{publish_id}/localization/by-language/{language_code?}",
+    "title": "Get By Language",
     "version": "1.0.0",
-    "name": "publish_{id}/history",
+    "name": "Get_By_Language",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>get publish {id}/history</p>",
+    "description": "<p>Get By Language</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/by-language/{language_code?}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Publish"
+  },
+  {
+    "type": "get",
+    "url": "/v1/publish/channel",
+    "title": "Get Channel",
+    "version": "1.0.0",
+    "name": "Get_Channel",
+    "group": "Publish",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get Channel</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/channel",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Publish"
+  },
+  {
+    "type": "get",
+    "url": "/v1/publish/{id}/history",
+    "title": "Get History",
+    "version": "1.0.0",
+    "name": "Get_History",
+    "group": "Publish",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get History</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3638,22 +3580,114 @@
     "groupTitle": "Publish"
   },
   {
-    "type": "post",
-    "url": "/v1/publish/{id}/thumbnail/upload",
-    "title": "publish {id}/thumbnail/upload",
+    "type": "get",
+    "url": "/v1/publish/{publish_id}/localization/{language_code?}",
+    "title": "Get Language",
     "version": "1.0.0",
-    "name": "publish_{id}/thumbnail/upload",
+    "name": "Get_Language",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>post publish {id}/thumbnail/upload</p>",
+    "description": "<p>Get Language</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{id}/thumbnail/upload",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/{language_code?}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Publish"
+  },
+  {
+    "type": "get",
+    "url": "/v1/publish/",
+    "title": "Get List",
+    "version": "1.0.0",
+    "name": "Get_List",
+    "group": "Publish",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>get list publish</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Publish"
+  },
+  {
+    "type": "get",
+    "url": "/v1/publish/{id}",
+    "title": "Get One",
+    "version": "1.0.0",
+    "name": "Get_One",
+    "group": "Publish",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get One</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{id}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Publish"
+  },
+  {
+    "type": "get",
+    "url": "/v1/publish/{publish_id}/subtitle/list/{language_code?}",
+    "title": "Get Subtitle List",
+    "version": "1.0.0",
+    "name": "Get_Subtitle_List",
+    "group": "Publish",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get Subtitle List</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/subtitle/list/{language_code?}",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Publish"
+  },
+  {
+    "type": "get",
+    "url": "/v1/publish/{publish_id}/subtitle/list-by-language/{language_code?}",
+    "title": "Get Subtitle List-by-language",
+    "version": "1.0.0",
+    "name": "Get_Subtitle_List-by-language",
+    "group": "Publish",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Get Subtitle List-by-language</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/subtitle/list-by-language/{language_code?}",
         "type": "json"
       }
     ],
@@ -3663,16 +3697,16 @@
   {
     "type": "patch",
     "url": "/v1/publish/{id}/thumbnail/{thumbnail_id}",
-    "title": "publish {id}/thumbnail/{thumbnail_id}",
+    "title": "Patch A Thumbnail",
     "version": "1.0.0",
-    "name": "publish_{id}/thumbnail/{thumbnail_id}",
+    "name": "Patch_A_Thumbnail",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>patch publish {id}/thumbnail/{thumbnail_id}</p>",
+    "description": "<p>Patch A Thumbnail</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3685,17 +3719,40 @@
   },
   {
     "type": "patch",
-    "url": "/v1/publish/{id}/thumbnail/{thumbnail_id}/remove",
-    "title": "publish {id}/thumbnail/{thumbnail_id}/remove",
+    "url": "/v1/publish/{id}/video/replace-archive",
+    "title": "Patch Replace-archive",
     "version": "1.0.0",
-    "name": "publish_{id}/thumbnail/{thumbnail_id}/remove",
+    "name": "Patch_Replace-archive",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>patch publish {id}/thumbnail/{thumbnail_id}/remove</p>",
+    "description": "<p>Patch Replace-archive</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{id}/video/replace-archive",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Publish"
+  },
+  {
+    "type": "patch",
+    "url": "/v1/publish/{id}/thumbnail/{thumbnail_id}/remove",
+    "title": "Patch Thumbnail Remove",
+    "version": "1.0.0",
+    "name": "Patch_Thumbnail_Remove",
+    "group": "Publish",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Patch Thumbnail Remove</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3707,41 +3764,18 @@
     "groupTitle": "Publish"
   },
   {
-    "type": "post",
-    "url": "/v1/publish/{id}/video/add",
-    "title": "publish {id}/video/add",
-    "version": "1.0.0",
-    "name": "publish_{id}/video/add",
-    "group": "Publish",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>patch publish {id}/video/add</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{id}/video/add",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Publish"
-  },
-  {
     "type": "patch",
     "url": "/v1/publish/{id}/video/add-archive",
-    "title": "publish {id}/video/add",
+    "title": "Patch Video Archive",
     "version": "1.0.0",
-    "name": "publish_{id}/video/add",
+    "name": "Patch_Video_Archive",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>patch publish {id}/video/add</p>",
+    "description": "<p>Patch Video Archive</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3755,16 +3789,16 @@
   {
     "type": "patch",
     "url": "/v1/publish/{id}/video/remove",
-    "title": "publish {id}/video/remove",
+    "title": "Patch Video Remove",
     "version": "1.0.0",
-    "name": "publish_{id}/video/remove",
+    "name": "Patch_Video_Remove",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>patch publish {id}/video/remove</p>",
+    "description": "<p>Patch Video Remove</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3777,17 +3811,86 @@
   },
   {
     "type": "post",
-    "url": "/v1/publish/{id}/video/replace",
-    "title": "publish {id}/video/replace",
+    "url": "/v1/publish/{publish_id}/localization/",
+    "title": "Post Localization",
     "version": "1.0.0",
-    "name": "publish_{id}/video/replace",
+    "name": "Post_Localization",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>patch publish {id}/video/replace</p>",
+    "description": "<p>Post Localization</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Publish"
+  },
+  {
+    "type": "post",
+    "url": "/v1/publish/remove-multi",
+    "title": "Post Remove-Multi",
+    "version": "1.0.0",
+    "name": "Post_Remove-Multi",
+    "group": "Publish",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Post Remove-Multi</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/remove-multi",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Publish"
+  },
+  {
+    "type": "post",
+    "url": "/v1/publish/{id}/video/add",
+    "title": "Post Video Add",
+    "version": "1.0.0",
+    "name": "Post_Video_Add",
+    "group": "Publish",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Post Video Add</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{id}/video/add",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Publish"
+  },
+  {
+    "type": "post",
+    "url": "/v1/publish/{id}/video/replace",
+    "title": "Post Video Replace",
+    "version": "1.0.0",
+    "name": "Post_Video_Replace",
+    "group": "Publish",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Post Video Replace</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3799,114 +3902,22 @@
     "groupTitle": "Publish"
   },
   {
-    "type": "patch",
-    "url": "/v1/publish/{id}/video/replace-archive",
-    "title": "publish {id}/video/replace-archive",
+    "type": "put",
+    "url": "/v1/publish/{id}/bookmark/add",
+    "title": "Put Bookmark",
     "version": "1.0.0",
-    "name": "publish_{id}/video/replace-archive",
+    "name": "Put_Bookmark",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>patch publish {id}/video/replace-archive</p>",
+    "description": "<p>Put Bookmark</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{id}/video/replace-archive",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Publish"
-  },
-  {
-    "type": "post",
-    "url": "/v1/publish/{publish_id}/localization/",
-    "title": "publish {publish_id}/localization/",
-    "version": "1.0.0",
-    "name": "publish_{publish_id}/localization/",
-    "group": "Publish",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>post publish {publish_id}/localization/</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Publish"
-  },
-  {
-    "type": "delete",
-    "url": "/v1/publish/{publish_id}/localization/",
-    "title": "publish {publish_id}/localization/",
-    "version": "1.0.0",
-    "name": "publish_{publish_id}/localization/",
-    "group": "Publish",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>delete publish {publish_id}/localization/</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Publish"
-  },
-  {
-    "type": "get",
-    "url": "/v1/publish/{publish_id}/localization/by-language/{language_code?}",
-    "title": "publish {publish_id}/localization/by-language/{language_code?}",
-    "version": "1.0.0",
-    "name": "publish_{publish_id}/localization/by-language/{language_code?}",
-    "group": "Publish",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>get publish {publish_id}/localization/by-language/{language_code?}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/by-language/{language_code?}",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Publish"
-  },
-  {
-    "type": "get",
-    "url": "/v1/publish/{publish_id}/localization/{language_code?}",
-    "title": "publish {publish_id}/localization/{language_code?}",
-    "version": "1.0.0",
-    "name": "publish_{publish_id}/localization/{language_code?}",
-    "group": "Publish",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>get publish {publish_id}/localization/{language_code?}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/{language_code?}",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{id}/bookmark/add",
         "type": "json"
       }
     ],
@@ -3916,16 +3927,16 @@
   {
     "type": "put",
     "url": "/v1/publish/{publish_id}/localization/{localized_id}",
-    "title": "publish {publish_id}/localization/{localized_id}",
+    "title": "Put Localization",
     "version": "1.0.0",
-    "name": "publish_{publish_id}/localization/{localized_id}",
+    "name": "Put_Localization",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>put publish {publish_id}/localization/{localized_id}</p>",
+    "description": "<p>Put Localization</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3937,22 +3948,22 @@
     "groupTitle": "Publish"
   },
   {
-    "type": "delete",
-    "url": "/v1/publish/{publish_id}/localization/{localized_id}",
-    "title": "publish {publish_id}/localization/{localized_id}",
+    "type": "put",
+    "url": "/v1/publish/",
+    "title": "Put One",
     "version": "1.0.0",
-    "name": "publish_{publish_id}/localization/{localized_id}",
+    "name": "Put_One",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>delete publish {publish_id}/localization/{localized_id}</p>",
+    "description": "<p>put publish</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/{localized_id}",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/",
         "type": "json"
       }
     ],
@@ -3962,16 +3973,16 @@
   {
     "type": "put",
     "url": "/v1/publish/{publish_id}/subtitle/",
-    "title": "publish {publish_id}/subtitle/",
+    "title": "Put Subtitle",
     "version": "1.0.0",
-    "name": "publish_{publish_id}/subtitle/",
+    "name": "Put_Subtitle",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>publish {publish_id}/subtitle/</p>",
+    "description": "<p>Put Subtitle</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -3983,22 +3994,22 @@
     "groupTitle": "Publish"
   },
   {
-    "type": "get",
-    "url": "/v1/publish/{publish_id}/subtitle/list-by-language/{language_code?}",
-    "title": "publish {publish_id}/subtitle/list-by-language/{language_code?}",
+    "type": "post",
+    "url": "/v1/publish/update-multi",
+    "title": "Update Many",
     "version": "1.0.0",
-    "name": "publish_{publish_id}/subtitle/list-by-language/{language_code?}",
+    "name": "Update_Many",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>publish {publish_id}/subtitle/list-by-language/{language_code?}</p>",
+    "description": "<p>Update Many</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/subtitle/list-by-language/{language_code?}",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/update-multi",
         "type": "json"
       }
     ],
@@ -4006,22 +4017,22 @@
     "groupTitle": "Publish"
   },
   {
-    "type": "get",
-    "url": "/v1/publish/{publish_id}/subtitle/list/{language_code?}",
-    "title": "publish {publish_id}/subtitle/list/{language_code?}",
+    "type": "post",
+    "url": "/v1/publish/upload",
+    "title": "Upload One",
     "version": "1.0.0",
-    "name": "publish_{publish_id}/subtitle/list/{language_code?}",
+    "name": "Upload_One",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>publish {publish_id}/subtitle/list/{language_code?}</p>",
+    "description": "<p>Upload One</p>",
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/subtitle/list/{language_code?}",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/upload",
         "type": "json"
       }
     ],
@@ -4031,16 +4042,16 @@
   {
     "type": "post",
     "url": "/v1/publish/{publish_id}/subtitle/upload",
-    "title": "publish {publish_id}/subtitle/upload",
+    "title": "Upload Subtitle",
     "version": "1.0.0",
-    "name": "publish_{publish_id}/subtitle/upload",
+    "name": "Upload_Subtitle",
     "group": "Publish",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>publish {publish_id}/subtitle/upload</p>",
+    "description": "<p>Upload Subtitle</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -4052,18 +4063,41 @@
     "groupTitle": "Publish"
   },
   {
+    "type": "post",
+    "url": "/v1/publish/{id}/thumbnail/upload",
+    "title": "Upload Thumbnail",
+    "version": "1.0.0",
+    "name": "Upload_Thumbnail",
+    "group": "Publish",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Upload Thumbnail</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/publish/{id}/thumbnail/upload",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Publish"
+  },
+  {
     "type": "delete",
     "url": "/v1/roles/{id}",
-    "title": "roles delete {id}",
+    "title": "Delete One",
     "version": "1.0.0",
-    "name": "roles_delete_{id}",
+    "name": "Delete_One",
     "group": "Roles",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>권한그룹 삭제</p>",
+    "description": "<p>Delete permission group</p>",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -4092,21 +4126,21 @@
   {
     "type": "get",
     "url": "/v1/roles/",
-    "title": "roles get",
+    "title": "Get All",
     "version": "1.0.0",
-    "name": "roles_get",
+    "name": "Get_All",
     "group": "Roles",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>권한그룹  리스트 조회</p>",
+    "description": "<p>List of authority groups</p>",
     "parameter": {
       "examples": [
         {
           "title": "Get-Parameter:",
-          "content": "params={\n    \"page\" : 1, //  (선택) 페이지(기본값 1)\n    \"page_size\" : 30, // (선택) 페이지크기(기본값 10)\n    \"order\" : \"created_at desc\", // (선택) 정렬 [created_at:등록일(기본값), name:권한그룹명] [asc -오름차순, desc - 내림차순(기본값)]\n    \"duration\" : { // (선택) 기간검색\n        \"start_date\":\"\", // 검색시작일\n        \"end_date\":\"\", // 검색종료일\n        \"scope\":\"\" // 기간필드 [created_at:등록일]\n    },\n    \"keyword\":{ // 키워드 검색\n        \"keyword\":\"\", // 검색키워드\n        \"scope\":[] // (선택) 검색 필드 (name:권한그룹명, 기본값(전체))\n    },\n    \"active_yn\": \"Y\" // (선택) // 활성화 여부\n}",
+          "content": "params={\n\"page\": 1, // (optional) page (default 1)\n\"page_size\": 30, // (optional) page size (default 10)\n\"order\": \"created_at desc\", // (optional) sort [created_at: registration date (default), name: authority group name] [asc -ascending order, desc-descending order (default)]\n\"duration\": {// (optional) period search\n\"start_date\":\"\", // search start date\n\"end_date\":\"\", // search end date\n\"scope\":\"\" // Period field [created_at:registration date]\n},\n\"keyword\":{ // keyword search\n\"keyword\":\"\", // search keyword\n\"scope\":[] // (optional) search field (name: permission group name, default (all))\n},\n\"active_yn\": \"Y\" // (optional) // whether active\n}",
           "type": "json"
         }
       ]
@@ -4115,7 +4149,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"list\": [\n            {\n                \"id\": 1, // 권한그룹 id\n                \"name\": \"admin\", // 권한그룹 명\n                \"display_name\": \"관리자\", // 권한그룹 표시명\n                \"description\": \"관리자에 주어지는 권한\", // 권한그룹 설명\n                \"dashboard_type\": \"analytics\", // 대쉬보드 유형\n                \"active_yn\": \"Y\", // 활성여부\n                \"created_at\": \"2020.11.25 14:33:10\", // 생성일시\n                \"updated_at\": \"2020.11.25 14:33:10\", // 수정일시\n                \"users_count\": 2 // 사용하는 사용자수\n            }, ...\n        ],\n        \"paging\": {\n            \"current_page\": 1, // 현재페이지\n            \"first_page_url\": \"http://localhost/v1/roles?page_size=10&order=created_at%20desc&keyword%5Bkeyword%5D=&keyword%5Bscope%5D%5B0%5D=name&page=1\",\n            \"from\": 1,\n            \"last_page\": 1,\n            \"last_page_url\": \"http://localhost/v1/roles?page_size=10&order=created_at%20desc&keyword%5Bkeyword%5D=&keyword%5Bscope%5D%5B0%5D=name&page=1\",\n            \"next_page_url\": null,\n            \"path\": \"http://localhost/v1/roles\",\n            \"per_page\": 10,\n            \"prev_page_url\": null,\n            \"to\": 3,\n            \"total\": 3 // 총 건수\n        }\n    }\n}",
+          "content": "   {\n       \"result\": true,\n       \"locale\": \"ko\",\n       \"message\": null,\n       \"data\": {\n           \"list\": [\n               {\n\"id\": 1, // authorization group id\n\"name\": \"admin\", // permission group name\n\"display_name\": \"Administrator\", // permission group display name\n\"description\": \"Permission given to the administrator\", // Description of the permission group\n\"dashboard_type\": \"analytics\", // dashboard type\n\"active_yn\": \"Y\", // active or not\n\"created_at\": \"2020.11.25 14:33:10\", // Creation date\n\"updated_at\": \"2020.11.25 14:33:10\", // date of revision\n\"users_count\": 2 // number of users to use\n                }, ...\n           ],\n           \"paging\": {\n               \"current_page\": 1, // 현재페이지\n               \"first_page_url\": \"http://localhost/v1/roles?page_size=10&order=created_at%20desc&keyword%5Bkeyword%5D=&keyword%5Bscope%5D%5B0%5D=name&page=1\",\n               \"from\": 1,\n               \"last_page\": 1,\n               \"last_page_url\": \"http://localhost/v1/roles?page_size=10&order=created_at%20desc&keyword%5Bkeyword%5D=&keyword%5Bscope%5D%5B0%5D=name&page=1\",\n               \"next_page_url\": null,\n               \"path\": \"http://localhost/v1/roles\",\n               \"per_page\": 10,\n               \"prev_page_url\": null,\n               \"to\": 3,\n               \"total\": 3 // 총 건수\n           }\n       }\n   }",
           "type": "json"
         }
       ]
@@ -4126,16 +4160,16 @@
   {
     "type": "get",
     "url": "/v1/roles/all",
-    "title": "roles get all",
+    "title": "Get All",
     "version": "1.0.0",
-    "name": "roles_get_all",
+    "name": "Get_All",
     "group": "Roles",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>권한그룹 목록</p>",
+    "description": "<p>List of authority groups</p>",
     "success": {
       "fields": {
         "Success 200": [
@@ -4185,16 +4219,16 @@
   {
     "type": "get",
     "url": "/v1/roles/{id}",
-    "title": "roles get {id}",
+    "title": "Get One",
     "version": "1.0.0",
-    "name": "roles_get_{id}",
+    "name": "Get_One",
     "group": "Roles",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>권한그룹 조회</p>",
+    "description": "<p>Authority group inquiry</p>",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -4203,7 +4237,7 @@
             "type": "int",
             "optional": false,
             "field": "role_id",
-            "description": "<p>권한그룹 id</p>"
+            "description": "<p>Authorization group id</p>"
           }
         ]
       }
@@ -4223,16 +4257,16 @@
   {
     "type": "post",
     "url": "/v1/roles/",
-    "title": "roles post",
+    "title": "Create Roles",
     "version": "1.0.0",
-    "name": "roles_post",
+    "name": "Post_Roles",
     "group": "Roles",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>권한그룹 생성</p>",
+    "description": "<p>Create permission group</p>",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -4240,7 +4274,7 @@
             "group": "Parameter",
             "optional": false,
             "field": "Post-Body",
-            "description": "<p>{ &quot;name&quot;: &quot;권한그룹&quot;, // (필수) 권한그룹명 &quot;dashboard_type&quot;: &quot;worker&quot;, // (필수) 대쉬보드 유형 &quot;active_yn&quot;: &quot;Y&quot;, // (필수) 활성 여부 &quot;role_permissions&quot;: [ // (선택) 메뉴 권한 코드 &quot;read-publishing&quot;, ... ] }</p>"
+            "description": "<p>{ &quot;name&quot;: &quot;permission group&quot;, // (required) permission group name &quot;dashboard_type&quot;: &quot;worker&quot;, // (required) dashboard type &quot;active_yn&quot;: &quot;Y&quot;, // (required) active or not &quot;role_permissions&quot;: [// (optional) menu permission code &quot;read-publishing&quot;, ... ] }</p>"
           }
         ]
       }
@@ -4259,53 +4293,17 @@
   },
   {
     "type": "put",
-    "url": "/v1/roles/update-multi",
-    "title": "roles put update-multi",
-    "version": "1.0.0",
-    "name": "roles_put_update-multi",
-    "group": "Roles",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>권한그룹 일괄수정</p>",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "int",
-            "optional": false,
-            "field": "role_id",
-            "description": "<p>id</p>"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Put-Body",
-          "content": "{\n   \"ids\": [1, 2], // (필수) 권한 id array\n   \"data\": {\n       \"active_yn\": \"Y\" // 활성화 여부\n   }\n }",
-          "type": "json"
-        }
-      ]
-    },
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Roles"
-  },
-  {
-    "type": "put",
     "url": "/v1/roles/{id}",
-    "title": "roles put {id}",
+    "title": "Put One",
     "version": "1.0.0",
-    "name": "roles_put_{id}",
+    "name": "Put_One",
     "group": "Roles",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>권한그룹 수정</p>",
+    "description": "<p>Modify permission group</p>",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -4321,7 +4319,7 @@
       "examples": [
         {
           "title": "{",
-          "content": "{\n    \"name\": \"권한그룹\", // (필수) 권한그룹명\n    \"dashboard_type\": \"worker\", // (필수) 대쉬보드 유형\n    \"active_yn\": \"Y\", // (필수) 활성 여부\n    \"role_permissions\": [ // (선택) 메뉴 권한 코드\n        \"read-publishing\", \n        ...\n    ]\n  }",
+          "content": "{\n\"name\": \"permission group\", // (required) permission group name\n\"dashboard_type\": \"worker\", // (required) dashboard type\n\"active_yn\": \"Y\", // (required) active or not\n\"role_permissions\": [// (optional) menu permission code\n\"read-publishing\",\n...\n]\n}",
           "type": "json"
         }
       ]
@@ -4339,18 +4337,100 @@
     "groupTitle": "Roles"
   },
   {
+    "type": "put",
+    "url": "/v1/roles/update-multi",
+    "title": "Put Update-multi",
+    "version": "1.0.0",
+    "name": "Put_Update-multi",
+    "group": "Roles",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Batch modification of permission groups</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "role_id",
+            "description": "<p>id</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Put-Body",
+          "content": "{\n\"ids\": [1, 2], // (required) permission id array\n\"data\": {\n\"active_yn\": \"Y\" // whether active\n}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Roles"
+  },
+  {
+    "type": "get",
+    "url": "/v1/tag-template/",
+    "title": "Get Tag-template",
+    "version": "1.0.0",
+    "name": "Get_Tag-template",
+    "group": "Tag-template",
+    "permission": [
+      {
+        "name": "Everyone"
+      }
+    ],
+    "description": "<p>Get Tag-template</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/tag-template/",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Tag-template"
+  },
+  {
+    "type": "put",
+    "url": "/v1/tag-template/",
+    "title": "Put Tag-template",
+    "version": "1.0.0",
+    "name": "Put_Tag-template",
+    "group": "Tag-template",
+    "permission": [
+      {
+        "name": "Everyone"
+      }
+    ],
+    "description": "<p>Put Tag-template</p>",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "curl -i https://sns-dev-api.gemiso.com/v1/tag-template/",
+        "type": "json"
+      }
+    ],
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Tag-template"
+  },
+  {
     "type": "post",
     "url": "/v1/upload/{store}",
-    "title": "upload store",
+    "title": "Upload Store",
     "version": "1.0.0",
-    "name": "upload_store",
+    "name": "Upload_Store",
     "group": "Upload",
     "permission": [
       {
         "name": "Everyone"
       }
     ],
-    "description": "<p>upload</p>",
+    "description": "<p>Upload Store</p>",
     "examples": [
       {
         "title": "Example usage:",
@@ -4362,18 +4442,52 @@
     "groupTitle": "Upload"
   },
   {
-    "type": "delete",
-    "url": "/v1/users/{id}",
-    "title": "users delete {id}",
+    "type": "post",
+    "url": "/v1/users/",
+    "title": "Create User",
     "version": "1.0.0",
-    "name": "users_delete_{id}",
+    "name": "Create_User",
     "group": "Users",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>사용자 삭제</p>",
+    "description": "<p>User creation</p>",
+    "parameter": {
+      "examples": [
+        {
+          "title": "Post-Body:",
+          "content": " {\n\"user_id\": \"20210115-01\", // (required) Login ID\n\"password\": \"password\", // (required) login password\n\"name\": \"Test user\", // (required) username\n\"tel\": \"02-1111-2222\", // (optional) contact\n\"locale\": \"ko\", // (optional) UI language setting code\n\"active_yn\": \"Y\", // (required) whether active\n\"channels\": [1,3,6], // (optional) List of selected channel IDs\n\"departments\": [10], // (optional) List of selected channel group IDs\n\"roles\": [2] // (required) list of authorization group ids\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n  \"result\": true,\n  \"locale\": \"ko\",\n  \"message\": null,\n\"data\": {// user-generated information\n... (user information)\n  }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Users"
+  },
+  {
+    "type": "delete",
+    "url": "/v1/users/{id}",
+    "title": "Delete One",
+    "version": "1.0.0",
+    "name": "Delete_One",
+    "group": "Users",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Delete user</p>",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -4382,7 +4496,7 @@
             "type": "int",
             "optional": false,
             "field": "user_id",
-            "description": "<p>사용자 id</p>"
+            "description": "<p>user id</p>"
           }
         ]
       }
@@ -4401,31 +4515,35 @@
   },
   {
     "type": "get",
-    "url": "/v1/users/",
-    "title": "users get",
+    "url": "/v1/users/{id}",
+    "title": "Get One",
     "version": "1.0.0",
-    "name": "users_get",
+    "name": "Get_One",
     "group": "Users",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>사용자  리스트 조회</p>",
+    "description": "<p>User Lookup</p>",
     "parameter": {
-      "examples": [
-        {
-          "title": "Get-Parameter:",
-          "content": " params={\n  \"page\" : 1, //  (선택) 페이지(기본값 1)\n  \"page_size\" : 30, // (선택) 페이지크기(기본값 10)\n  \"order\" : \"created_at desc\", // (선택) 정렬 [created_at:등록일(기본값), name:권한그룹명] [asc -오름차순, desc - 내림차순(기본값)]\n  \"departments\": [ 1, 3, ...], // (선택) 채널그룹\n  \"duration\" : { // (선택) 기간검색\n      \"start_date\":\"\", // 검색시작일\n      \"end_date\":\"\", // 검색종료일\n      \"scope\":\"\" // 기간필드 [created_at:등록일, last_logined_at:최종로그인일시]\n  },\n  \"keyword\":{ // 키워드 검색\n      \"keyword\":\"\", // 검색키워드\n      \"scope\":[] // (선택) 검색 필드 (name:사용자명, user_id:로그인ID, 기본값(전체))\n  },\n  \"active_yn\": \"Y\" // (선택) // 활성화 여부\n}",
-          "type": "json"
-        }
-      ]
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "user_id",
+            "description": "<p>User id</p>"
+          }
+        ]
+      }
     },
     "success": {
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "{\n   \"result\": true,\n   \"locale\": \"ko\",\n   \"message\": null,\n   \"data\": {\n       \"list\": [\n           {\n               \"id\": 45, // 사용자 id\n               \"user_id\": \"alsdud116\", // 로그인ID\n               \"name\": \"test1\", // 사용자명\n               \"tel\": \"test1\", // 전화번호\n               \"locale\": null, // UI 언어코드 설정\n               \"profile_id\": null, // 프로필 이미지 Url\n               \"active_yn\": \"N\", // 활성여부\n               \"last_logined_at\": null, // 최종로그인일시\n               \"deleted_at\": null, // 삭제여부(일시)\n               \"created_at\": \"2021.01.06 06:35:13\", // 등록 일시\n               \"updated_at\": \"2021.01.07 09:04:25\", // 최종수정 일시\n               \"is_admin\": false, // 관리자 권한그룹 소속 여부\n               \"departments\": [ // 채널그룹(부서) 정보\n                   {\n                       \"name\": \"테스트부서\",\n                       ... (채널그룹 정보)\n                   }, ...\n               ],\n               \"roles\": [ // 권한그룹 \n                   {\n                       \"display_name\": \"일반사용자\",\n                       ... (권한그룹 정보)\n                   }\n               ]\n           }, ...\n       ],\n       \"paging\": {\n           \"current_page\": 1, // 현재페이지\n           \"first_page_url\": \"http://localhost/v1/users?page_size=10&order=created_at%20desc&keyword%5Bkeyword%5D=&keyword%5Bscope%5D%5B0%5D=name&departments%5B0%5D=10&page=1\",\n           \"from\": 1,\n           \"last_page\": 1,\n           \"last_page_url\": \"http://localhost/v1/users?page_size=10&order=created_at%20desc&keyword%5Bkeyword%5D=&keyword%5Bscope%5D%5B0%5D=name&departments%5B0%5D=10&page=1\",\n           \"next_page_url\": null,\n           \"path\": \"http://localhost/v1/users\",\n           \"per_page\": 10,\n           \"prev_page_url\": null,\n           \"to\": 4,\n           \"total\": 4 // 총 건수\n       }\n   }\n }",
+          "content": "{\n   \"result\": true,\n   \"locale\": \"ko\",\n   \"message\": null,\n   \"data\": {\n\"id\": 2, // user id\n\"user_id\": \"admin\", // login ID\n\"name\": \"administrator\", // username\n\"tel\": \"11111\", // phone number\n\"locale\": \"ko\", // UI setting language code\n\"profile_id\": null, // profile image id\n\"active_yn\": \"Y\", // active or not\n\"last_logined_at\": \"2021.01.15 14:38:20\", // Last login date\n\"deleted_at\": null, // Whether to delete (date)\n\"created_at\": \"2020.08.14 08:27:58\", // Creation date\n\"updated_at\": \"2021.01.15 05:38:20\", // date and time of modification\n\"profile_url\": \"https://sns-dev-static.gemiso.com/images/profiles/1609824865.PNG\", // Profile image URL\n\"is_admin\": true, // whether or not you belong to the administrator authority group\n\"channels\": [// List of channels to which permission is assigned (checked in the affiliated channel group)\n{\n... (channel information)\n}, ...\n],\n\"departments\": [// affiliated channel group\n{\n... (channel group information)\n}, ...\n],\n\"roles\": [// permission group\n{\n... (permission group information)\n}\n]\n   }\n }",
           "type": "json"
         }
       ]
@@ -4436,75 +4554,37 @@
   {
     "type": "get",
     "url": "/v1/users/shortcuts/",
-    "title": "users get shortcuts",
+    "title": "Get Shortcuts",
     "version": "1.0.0",
-    "name": "users_get_shortcuts",
+    "name": "Get_Shortcuts",
     "group": "Users",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>users get shortcuts</p>",
+    "description": "<p>Get Shortcuts</p>",
     "filename": "apidocs/v1/all.js",
     "groupTitle": "Users"
   },
   {
     "type": "get",
-    "url": "/v1/users/{id}",
-    "title": "users get {id}",
-    "version": "1.0.0",
-    "name": "users_get_{id}",
-    "group": "Users",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>사용자 조회</p>",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "int",
-            "optional": false,
-            "field": "user_id",
-            "description": "<p>사용자 id</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "examples": [
-        {
-          "title": "Success-Response:",
-          "content": "{\n   \"result\": true,\n   \"locale\": \"ko\",\n   \"message\": null,\n   \"data\": {\n       \"id\": 2, // 사용자 id\n       \"user_id\": \"admin\", // 로그인 ID\n       \"name\": \"관리자\", // 사용자명\n       \"tel\": \"11111\", // 전화번호\n       \"locale\": \"ko\", // UI 설정 언어 코드\n       \"profile_id\": null, // 프로필 이미지 id\n       \"active_yn\": \"Y\", // 활성여부\n       \"last_logined_at\": \"2021.01.15 14:38:20\", // 최종로그인 일시\n       \"deleted_at\": null, // 삭제여부(일시)\n       \"created_at\": \"2020.08.14 08:27:58\", // 생성일시\n       \"updated_at\": \"2021.01.15 05:38:20\", // 수정일시\n       \"profile_url\": \"https://sns-dev-static.gemiso.com/images/profiles/1609824865.PNG\", // 프로필 이미지 Url        \n       \"is_admin\": true, // 관리자 권힌그룹 소속여부\n       \"channels\": [ // 권한 할당된 채널 목록 (소속 채널그룹에 체크된 건)\n           {\n               ... (채널정보)\n           }, ...\n       ],\n       \"departments\": [ // 소속 채널그룹\n           {\n               ... (채널그룹 정보)\n           }, ...\n       ],\n       \"roles\": [ // 권한그룹\n           {\n               ... (권한그룹 정보)\n           }\n       ]\n   }\n }",
-          "type": "json"
-        }
-      ]
-    },
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Users"
-  },
-  {
-    "type": "post",
     "url": "/v1/users/",
-    "title": "users post",
+    "title": "Get Users",
     "version": "1.0.0",
-    "name": "users_post",
+    "name": "Get_Users",
     "group": "Users",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>사용자 생성</p>",
+    "description": "<p>User list inquiry</p>",
     "parameter": {
       "examples": [
         {
-          "title": "Post-Body:",
-          "content": " {\n  \"user_id\": \"20210115-01\", // (필수) 로그인 ID\n  \"password\": \"비밀번호\", // (필수) 로그인 비밀번호\n  \"name\": \"테스트사용자\", // (필수) 사용자명\n  \"tel\": \"02-1111-2222\", // (선택) 연락처\n  \"locale\": \"ko\", // (선택) UI 언어세팅 코드\n  \"active_yn\": \"Y\", // (필수) 활성화 여부\n  \"channels\": [1,3,6], // (선택) 선택된 채널id 목록\n  \"departments\": [10], // (선택) 선택된 채널그룹id 목록\n  \"roles\": [2] // (필수) 권한 그룹 id 목록\n}",
+          "title": "Get-Parameter:",
+          "content": "params={\n\"page\": 1, // (optional) page (default 1)\n\"page_size\": 30, // (optional) page size (default 10)\n\"order\": \"created_at desc\", // (optional) sort [created_at: registration date (default), name: authority group name] [asc -ascending order, desc-descending order (default)]\n\"departments\": [1, 3, ...], // (optional) channel group\n\"duration\": {// (optional) period search\n\"start_date\":\"\", // search start date\n\"end_date\":\"\", // search end date\n\"scope\":\"\" // Period field [created_at: registration date, last_logined_at: last login date]\n},\n\"keyword\":{ // keyword search\n\"keyword\":\"\", // search keyword\n\"scope\":[] // (optional) search field (name: username, user_id: login ID, default (all))\n},\n\"active_yn\": \"Y\" // (optional) // whether active\n}",
           "type": "json"
         }
       ]
@@ -4513,7 +4593,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "{\n  \"result\": true,\n  \"locale\": \"ko\",\n  \"message\": null,\n  \"data\": { // 사용자 생성 정보\n      ... (사용자 정보)\n  }\n}",
+          "content": "{\n   \"result\": true,\n   \"locale\": \"ko\",\n   \"message\": null,\n   \"data\": {\n       \"list\": [\n           {\n\"id\": 45, // user id\n\"user_id\": \"alsdud116\", // login ID\n\"name\": \"test1\", // username\n\"tel\": \"test1\", // phone number\n\"locale\": null, // UI language code setting\n\"profile_id\": null, // Profile image Url\n\"active_yn\": \"N\", // active or not\n\"last_logined_at\": null, // last login date and time\n\"deleted_at\": null, // Whether to delete (date)\n\"created_at\": \"2021.01.06 06:35:13\", // registration date\n\"updated_at\": \"2021.01.07 09:04:25\", // last modified date\n\"is_admin\": false, // belong to the administrator authority group\n\"departments\": [// Channel group (department) information\n{\n\"name\": \"test department\",\n... (channel group information)\n}, ...\n],\n\"roles\": [// permission group\n{\n\"display_name\": \"general user\",\n... (permission group information)\n}\n]\n           }, ...\n       ],\n       \"paging\": {\n           \"current_page\": 1, // 현재페이지\n           \"first_page_url\": \"http://localhost/v1/users?page_size=10&order=created_at%20desc&keyword%5Bkeyword%5D=&keyword%5Bscope%5D%5B0%5D=name&departments%5B0%5D=10&page=1\",\n           \"from\": 1,\n           \"last_page\": 1,\n           \"last_page_url\": \"http://localhost/v1/users?page_size=10&order=created_at%20desc&keyword%5Bkeyword%5D=&keyword%5Bscope%5D%5B0%5D=name&departments%5B0%5D=10&page=1\",\n           \"next_page_url\": null,\n           \"path\": \"http://localhost/v1/users\",\n           \"per_page\": 10,\n           \"prev_page_url\": null,\n           \"to\": 4,\n           \"total\": 4 // 총 건수\n       }\n   }\n }",
           "type": "json"
         }
       ]
@@ -4524,21 +4604,21 @@
   {
     "type": "post",
     "url": "/v1/users/remove-multi",
-    "title": "users post remove-multi",
+    "title": "Post Remove-multi",
     "version": "1.0.0",
-    "name": "users_post_remove-multi",
+    "name": "Post_Remove-multi",
     "group": "Users",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>사용자 일괄삭제</p>",
+    "description": "<p>Batch delete users</p>",
     "parameter": {
       "examples": [
         {
           "title": "Post-Body:",
-          "content": "{\n  \"ids\": [1, 2], // (필수) 사용자 id array\n}",
+          "content": "{\n  \"ids\": [1, 2], // (Required) user id array\n}",
           "type": "json"
         }
       ]
@@ -4557,38 +4637,83 @@
   },
   {
     "type": "put",
-    "url": "/v1/users/shortcuts/",
-    "title": "users put shortcuts",
+    "url": "/v1/users/{id}",
+    "title": "Put One",
     "version": "1.0.0",
-    "name": "users_put_shortcuts",
+    "name": "Put_One",
     "group": "Users",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>users put shortcuts</p>",
+    "description": "<p>User modification</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "user_id",
+            "description": "<p>user id</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Put-Body",
+          "content": "{\n\"user_id\": \"20210115-01\", // (required) Login ID\n\"password\": \"password\", // (required) login password\n\"name\": \"Test user\", // (required) username\n\"tel\": \"02-1111-2222\", // (optional) contact\n\"locale\": \"ko\", // (optional) UI language setting code\n\"active_yn\": \"Y\", // (required) whether active\n\"channels\": [1,3,6], // (optional) List of selected channel IDs\n\"departments\": [10], // (optional) List of selected channel group IDs\n\"roles\": [2] // (required) list of authorization group ids\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n  \"result\": true,\n  \"locale\": \"ko\",\n  \"message\": null,\n\"data\": {// user-generated information\n... (user information)\n  }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "apidocs/v1/all.js",
+    "groupTitle": "Users"
+  },
+  {
+    "type": "put",
+    "url": "/v1/users/shortcuts/",
+    "title": "Put Shortcuts",
+    "version": "1.0.0",
+    "name": "Put_Shortcuts",
+    "group": "Users",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Put Shortcuts</p>",
     "filename": "apidocs/v1/all.js",
     "groupTitle": "Users"
   },
   {
     "type": "put",
     "url": "/v1/users/update-multi",
-    "title": "users put update-multi",
+    "title": "Put Update-multi",
     "version": "1.0.0",
-    "name": "users_put_update-multi",
+    "name": "Put_Update-multi",
     "group": "Users",
     "permission": [
       {
         "name": "Auth"
       }
     ],
-    "description": "<p>사용자 일괄수정</p>",
+    "description": "<p>User batch modification</p>",
     "parameter": {
       "examples": [
         {
           "title": "Put-Body:",
-          "content": "{\n  \"ids\": [1, 2], // (필수) 사용자 id array\n  \"data\": {\n      \"active_yn\": \"Y\" // 활성화 여부\n  }\n}",
+          "content": "{\n  \"ids\": [1, 2], // (Required) user id array\n  \"data\": {\n      \"active_yn\": \"Y\" // Activated or not\n  }\n}",
           "type": "json"
         }
       ]
@@ -4604,165 +4729,5 @@
     },
     "filename": "apidocs/v1/all.js",
     "groupTitle": "Users"
-  },
-  {
-    "type": "put",
-    "url": "/v1/users/{id}",
-    "title": "users put {id}",
-    "version": "1.0.0",
-    "name": "users_put_{id}",
-    "group": "Users",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>사용자 수정</p>",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "int",
-            "optional": false,
-            "field": "user_id",
-            "description": "<p>사용자 id</p>"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Put-Body",
-          "content": "{\n  \"user_id\": \"20210115-01\", // (필수) 로그인 ID\n  \"password\": \"비밀번호\", // (필수) 로그인 비밀번호\n  \"name\": \"테스트사용자\", // (필수) 사용자명\n  \"tel\": \"02-1111-2222\", // (선택) 연락처\n  \"locale\": \"ko\", // (선택) UI 언어세팅 코드\n  \"active_yn\": \"Y\", // (필수) 활성화 여부\n  \"channels\": [1,3,6], // (선택) 선택된 채널id 목록\n  \"departments\": [10], // (선택) 선택된 채널그룹id 목록\n  \"roles\": [2] // (필수) 권한 그룹 id 목록\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "success": {
-      "examples": [
-        {
-          "title": "Success-Response:",
-          "content": "{\n  \"result\": true,\n  \"locale\": \"ko\",\n  \"message\": null,\n  \"data\": { // 사용자 생성 정보\n      ... (사용자 정보)\n  }\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "Users"
-  },
-  {
-    "type": "get",
-    "url": "/v1/dashboard/",
-    "title": "dashboard",
-    "version": "1.0.0",
-    "name": "dashboard",
-    "group": "dashboard",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>get dashboard</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/dashboard/",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "dashboard"
-  },
-  {
-    "type": "get",
-    "url": "/v1/dashboard/analytics",
-    "title": "dashboard analytics",
-    "version": "1.0.0",
-    "name": "dashboard_analytics",
-    "group": "dashboard",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>get dashboard analytics</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/dashboard/analytics",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "dashboard"
-  },
-  {
-    "type": "get",
-    "url": "/v1/dashboard/scheduled",
-    "title": "dashboard scheduled",
-    "version": "1.0.0",
-    "name": "dashboard_scheduled",
-    "group": "dashboard",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>get dashboard scheduled</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/dashboard/scheduled",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "dashboard"
-  },
-  {
-    "type": "get",
-    "url": "/v1/tag-template/",
-    "title": "tag-template",
-    "version": "1.0.0",
-    "name": "tag-template",
-    "group": "tag-template",
-    "permission": [
-      {
-        "name": "Everyone"
-      }
-    ],
-    "description": "<p>get tag-template</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/tag-template/",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "tag-template"
-  },
-  {
-    "type": "put",
-    "url": "/v1/tag-template/",
-    "title": "tag-template",
-    "version": "1.0.0",
-    "name": "tag-template",
-    "group": "tag-template",
-    "permission": [
-      {
-        "name": "Everyone"
-      }
-    ],
-    "description": "<p>put tag-template</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/tag-template/",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/all.js",
-    "groupTitle": "tag-template"
   }
 ]
