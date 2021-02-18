@@ -19,7 +19,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -42,7 +42,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -65,7 +65,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -88,7 +88,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -111,7 +111,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -134,7 +134,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -157,7 +157,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -180,7 +180,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -203,7 +203,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -226,7 +226,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -249,7 +249,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -272,7 +272,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -295,7 +295,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -318,7 +318,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -341,7 +341,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -364,7 +364,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -387,7 +387,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -410,7 +410,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -433,7 +433,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -456,7 +456,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -479,7 +479,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -502,7 +502,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -525,7 +525,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -548,7 +548,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -571,7 +571,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -594,7 +594,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -617,7 +617,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -640,7 +640,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -663,7 +663,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -686,7 +686,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -709,7 +709,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -732,7 +732,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -755,7 +755,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -778,7 +778,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -801,7 +801,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -824,7 +824,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -847,7 +847,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -870,7 +870,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -893,7 +893,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -916,7 +916,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -939,7 +939,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -962,7 +962,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -985,7 +985,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1008,7 +1008,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1031,7 +1031,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1054,7 +1054,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1077,7 +1077,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1100,7 +1100,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1123,7 +1123,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1146,7 +1146,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1169,7 +1169,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1192,7 +1192,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1215,7 +1215,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1238,7 +1238,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1261,7 +1261,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1284,7 +1284,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1307,7 +1307,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1330,7 +1330,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1353,7 +1353,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1376,7 +1376,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1399,7 +1399,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1422,7 +1422,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics"
   },
   {
@@ -1445,7 +1445,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/archive.js",
     "groupTitle": "Archive"
   },
   {
@@ -1468,7 +1468,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/archive.js",
     "groupTitle": "Archive"
   },
   {
@@ -1491,7 +1491,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/archive.js",
     "groupTitle": "Archive"
   },
   {
@@ -1514,7 +1514,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/archive.js",
     "groupTitle": "Archive"
   },
   {
@@ -1537,7 +1537,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/archive.js",
     "groupTitle": "Archive"
   },
   {
@@ -1560,7 +1560,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/archive.js",
     "groupTitle": "Archive"
   },
   {
@@ -1583,7 +1583,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/archive.js",
     "groupTitle": "Archive"
   },
   {
@@ -1599,7 +1599,7 @@
       }
     ],
     "description": "<p>Auth</p>",
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/auth.js",
     "groupTitle": "Auth"
   },
   {
@@ -1624,7 +1624,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/auth.js",
     "groupTitle": "Auth"
   },
   {
@@ -1640,7 +1640,7 @@
       }
     ],
     "description": "<p>Logout</p>",
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/auth.js",
     "groupTitle": "Auth"
   },
   {
@@ -1656,7 +1656,7 @@
       }
     ],
     "description": "<p>refresh</p>",
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/auth.js",
     "groupTitle": "Auth"
   },
   {
@@ -1702,7 +1702,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -1725,7 +1725,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -1748,7 +1748,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -1771,7 +1771,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -1794,7 +1794,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -1817,7 +1817,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -1840,7 +1840,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -1863,7 +1863,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -1886,7 +1886,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -1909,7 +1909,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -1932,7 +1932,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -1955,7 +1955,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -1978,7 +1978,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -2001,7 +2001,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -2024,7 +2024,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/channels.js",
     "groupTitle": "Channels"
   },
   {
@@ -2070,7 +2070,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/dashboard.js",
     "groupTitle": "Dashboard"
   },
   {
@@ -2093,7 +2093,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/dashboard.js",
     "groupTitle": "Dashboard"
   },
   {
@@ -2116,7 +2116,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/dashboard.js",
     "groupTitle": "Dashboard"
   },
   {
@@ -2139,7 +2139,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/departments.js",
     "groupTitle": "Departments"
   },
   {
@@ -2162,7 +2162,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/departments.js",
     "groupTitle": "Departments"
   },
   {
@@ -2185,7 +2185,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/departments.js",
     "groupTitle": "Departments"
   },
   {
@@ -2201,7 +2201,7 @@
       }
     ],
     "description": "<p>Get Departments</p>",
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/departments.js",
     "groupTitle": "Departments"
   },
   {
@@ -2224,7 +2224,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/departments.js",
     "groupTitle": "Departments"
   },
   {
@@ -2247,7 +2247,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/departments.js",
     "groupTitle": "Departments"
   },
   {
@@ -2270,7 +2270,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/departments.js",
     "groupTitle": "Departments"
   },
   {
@@ -2293,7 +2293,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/departments.js",
     "groupTitle": "Departments"
   },
   {
@@ -2316,7 +2316,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/downloads.js",
     "groupTitle": "Downloads"
   },
   {
@@ -2339,7 +2339,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/downloads.js",
     "groupTitle": "Downloads"
   },
   {
@@ -2362,7 +2362,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/downloads.js",
     "groupTitle": "Downloads"
   },
   {
@@ -2385,7 +2385,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/downloads.js",
     "groupTitle": "Downloads"
   },
   {
@@ -2408,7 +2408,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/downloads.js",
     "groupTitle": "Downloads"
   },
   {
@@ -2431,7 +2431,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/downloads.js",
     "groupTitle": "Downloads"
   },
   {
@@ -2454,7 +2454,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/downloads.js",
     "groupTitle": "Downloads"
   },
   {
@@ -2477,7 +2477,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/downloads.js",
     "groupTitle": "Downloads"
   },
   {
@@ -2500,7 +2500,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/groups.js",
     "groupTitle": "Groups"
   },
   {
@@ -2523,7 +2523,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/groups.js",
     "groupTitle": "Groups"
   },
   {
@@ -2546,7 +2546,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/groups.js",
     "groupTitle": "Groups"
   },
   {
@@ -2569,7 +2569,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/groups.js",
     "groupTitle": "Groups"
   },
   {
@@ -2592,7 +2592,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/groups.js",
     "groupTitle": "Groups"
   },
   {
@@ -2615,7 +2615,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/groups.js",
     "groupTitle": "Groups"
   },
   {
@@ -2684,7 +2684,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/live.js",
     "groupTitle": "Live"
   },
   {
@@ -2707,7 +2707,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/live.js",
     "groupTitle": "Live"
   },
   {
@@ -2730,7 +2730,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/live.js",
     "groupTitle": "Live"
   },
   {
@@ -2753,7 +2753,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/live.js",
     "groupTitle": "Live"
   },
   {
@@ -2776,7 +2776,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/archive.js",
     "groupTitle": "Live"
   },
   {
@@ -2792,7 +2792,7 @@
       }
     ],
     "description": "<p>Get all menu with permission</p>",
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/menu.js",
     "groupTitle": "Menu"
   },
   {
@@ -2808,7 +2808,7 @@
       }
     ],
     "description": "<p>Get 'child_menu' with user permission (or admin)</p>",
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/menu.js",
     "groupTitle": "Menu"
   },
   {
@@ -2840,7 +2840,7 @@
       }
     ],
     "description": "<p>get shortcuts</p>",
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/menu.js",
     "groupTitle": "Menu"
   },
   {
@@ -2886,7 +2886,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/monitoring.js",
     "groupTitle": "Monitoring"
   },
   {
@@ -2909,7 +2909,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/monitoring.js",
     "groupTitle": "Monitoring"
   },
   {
@@ -2932,7 +2932,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/notice.js",
     "groupTitle": "Notice"
   },
   {
@@ -2955,7 +2955,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/notice.js",
     "groupTitle": "Notice"
   },
   {
@@ -2978,7 +2978,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/notice.js",
     "groupTitle": "Notice"
   },
   {
@@ -3001,7 +3001,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/notice.js",
     "groupTitle": "Notice"
   },
   {
@@ -3024,7 +3024,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/notice.js",
     "groupTitle": "Notice"
   },
   {
@@ -3070,7 +3070,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/notice.js",
     "groupTitle": "Notice"
   },
   {
@@ -3093,7 +3093,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/notice.js",
     "groupTitle": "Notice"
   },
   {
@@ -3139,7 +3139,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/playlist.js",
     "groupTitle": "Playlist"
   },
   {
@@ -3162,7 +3162,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/playlist.js",
     "groupTitle": "Playlist"
   },
   {
@@ -3185,7 +3185,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/playlist.js",
     "groupTitle": "Playlist"
   },
   {
@@ -3208,7 +3208,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/playlist.js",
     "groupTitle": "Playlist"
   },
   {
@@ -3231,7 +3231,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/playlist.js",
     "groupTitle": "Playlist"
   },
   {
@@ -3254,7 +3254,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/playlist.js",
     "groupTitle": "Playlist"
   },
   {
@@ -3277,7 +3277,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/playlist.js",
     "groupTitle": "Playlist"
   },
   {
@@ -3300,7 +3300,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/playlist.js",
     "groupTitle": "Playlist"
   },
   {
@@ -3323,7 +3323,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/playlist.js",
     "groupTitle": "Playlist"
   },
   {
@@ -3346,7 +3346,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/playlist.js",
     "groupTitle": "Playlist"
   },
   {
@@ -3369,7 +3369,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/playlist.js",
     "groupTitle": "Playlist"
   },
   {
@@ -3392,7 +3392,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3415,7 +3415,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3438,7 +3438,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3461,7 +3461,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3484,7 +3484,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3507,7 +3507,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3530,7 +3530,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3553,7 +3553,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3576,7 +3576,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3599,7 +3599,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3622,7 +3622,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3645,7 +3645,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3668,7 +3668,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3691,7 +3691,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3714,7 +3714,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3737,7 +3737,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3760,7 +3760,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3783,7 +3783,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3806,7 +3806,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3829,7 +3829,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3852,7 +3852,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3875,7 +3875,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3898,7 +3898,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3921,7 +3921,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3944,7 +3944,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3967,7 +3967,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -3990,7 +3990,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -4013,7 +4013,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -4036,7 +4036,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -4059,7 +4059,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -4082,7 +4082,7 @@
         "type": "json"
       }
     ],
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/publish.js",
     "groupTitle": "Publish"
   },
   {
@@ -4120,7 +4120,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/roles.js",
     "groupTitle": "Roles"
   },
   {
@@ -4179,7 +4179,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/roles.js",
     "groupTitle": "Roles"
   },
   {
@@ -4213,7 +4213,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/roles.js",
     "groupTitle": "Roles"
   },
   {
@@ -4251,7 +4251,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/roles.js",
     "groupTitle": "Roles"
   },
   {
@@ -4288,7 +4288,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/roles.js",
     "groupTitle": "Roles"
   },
   {
@@ -4333,7 +4333,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/roles.js",
     "groupTitle": "Roles"
   },
   {
@@ -4369,7 +4369,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/roles.js",
     "groupTitle": "Roles"
   },
   {
@@ -4472,7 +4472,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/users.js",
     "groupTitle": "Users"
   },
   {
@@ -4510,7 +4510,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/users.js",
     "groupTitle": "Users"
   },
   {
@@ -4548,7 +4548,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/users.js",
     "groupTitle": "Users"
   },
   {
@@ -4564,7 +4564,7 @@
       }
     ],
     "description": "<p>Get Shortcuts</p>",
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/users.js",
     "groupTitle": "Users"
   },
   {
@@ -4598,7 +4598,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/users.js",
     "groupTitle": "Users"
   },
   {
@@ -4632,7 +4632,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/users.js",
     "groupTitle": "Users"
   },
   {
@@ -4677,7 +4677,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/users.js",
     "groupTitle": "Users"
   },
   {
@@ -4693,7 +4693,7 @@
       }
     ],
     "description": "<p>Put Shortcuts</p>",
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/users.js",
     "groupTitle": "Users"
   },
   {
@@ -4727,7 +4727,7 @@
         }
       ]
     },
-    "filename": "apidocs/v1/apidocs.js",
+    "filename": "apidocs/v1/users.js",
     "groupTitle": "Users"
   }
 ]
