@@ -20,7 +20,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/engage"
+      }
+    ]
   },
   {
     "type": "get",
@@ -43,7 +48,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/engage-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -66,7 +76,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/engage-detail"
+      }
+    ]
   },
   {
     "type": "get",
@@ -89,7 +104,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/impression-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -112,7 +132,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -135,7 +160,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/playlist-views-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -158,7 +188,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/publish"
+      }
+    ]
   },
   {
     "type": "get",
@@ -181,7 +216,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/publish-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -204,7 +244,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/reach"
+      }
+    ]
   },
   {
     "type": "get",
@@ -227,7 +272,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/reach-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -250,7 +300,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/reach-by-traffic-source"
+      }
+    ]
   },
   {
     "type": "get",
@@ -273,7 +328,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/revenue"
+      }
+    ]
   },
   {
     "type": "get",
@@ -296,7 +356,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/subscribers"
+      }
+    ]
   },
   {
     "type": "get",
@@ -319,7 +384,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/subscribers-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -342,7 +412,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/summary"
+      }
+    ]
   },
   {
     "type": "get",
@@ -365,7 +440,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/top/{count}/{order}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -388,7 +468,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/views"
+      }
+    ]
   },
   {
     "type": "get",
@@ -411,7 +496,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/views-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -434,7 +524,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/watch"
+      }
+    ]
   },
   {
     "type": "get",
@@ -457,7 +552,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/watch-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -480,7 +580,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/comments"
+      }
+    ]
   },
   {
     "type": "get",
@@ -503,7 +608,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/comments-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -526,7 +636,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/likes"
+      }
+    ]
   },
   {
     "type": "get",
@@ -549,7 +664,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/likes-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -572,7 +692,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -595,7 +720,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -618,7 +748,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/revenue"
+      }
+    ]
   },
   {
     "type": "get",
@@ -641,7 +776,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/revenue-by-ad-type"
+      }
+    ]
   },
   {
     "type": "get",
@@ -664,7 +804,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/revenue-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -687,7 +832,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/shares"
+      }
+    ]
   },
   {
     "type": "get",
@@ -710,7 +860,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/shares-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -733,7 +888,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/tags"
+      }
+    ]
   },
   {
     "type": "get",
@@ -756,7 +916,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/trend"
+      }
+    ]
   },
   {
     "type": "get",
@@ -779,7 +944,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/views"
+      }
+    ]
   },
   {
     "type": "get",
@@ -802,7 +972,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/views-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -825,7 +1000,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/views-by-traffic-source"
+      }
+    ]
   },
   {
     "type": "get",
@@ -848,7 +1028,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/group/watch"
+      }
+    ]
   },
   {
     "type": "get",
@@ -871,7 +1056,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/comments"
+      }
+    ]
   },
   {
     "type": "get",
@@ -894,7 +1084,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/comments-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -917,7 +1112,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/likes"
+      }
+    ]
   },
   {
     "type": "get",
@@ -940,7 +1140,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -963,7 +1168,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -986,7 +1196,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/revenue"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1009,7 +1224,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/revenue-by-ad-type"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1032,7 +1252,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/revenue-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1055,7 +1280,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/shares"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1078,7 +1308,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/shares-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1101,7 +1336,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/summary"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1124,7 +1364,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/tags"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1147,7 +1392,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/top/{count}/{order}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1170,7 +1420,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/trend"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1193,7 +1448,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/views"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1216,7 +1476,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/views-by-date"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1239,7 +1504,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/views-by-traffic-source"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1262,7 +1532,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/watch"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1285,7 +1560,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/publish/sync-publish-statistics"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1308,7 +1588,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/report/{platform}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1331,7 +1616,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/report/tags"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1354,7 +1644,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/report/tags-by-page"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1377,7 +1672,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/report/trend"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1400,7 +1700,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/summary/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1423,7 +1728,12 @@
       }
     ],
     "filename": "apidocs/v1/analytics.js",
-    "groupTitle": "Analytics"
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/summary/top/{count}/{order}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1446,7 +1756,12 @@
       }
     ],
     "filename": "apidocs/v1/archive.js",
-    "groupTitle": "Archive"
+    "groupTitle": "Archive",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/archive/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1469,7 +1784,12 @@
       }
     ],
     "filename": "apidocs/v1/archive.js",
-    "groupTitle": "Archive"
+    "groupTitle": "Archive",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/archive/{id}/download"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1492,7 +1812,12 @@
       }
     ],
     "filename": "apidocs/v1/archive.js",
-    "groupTitle": "Archive"
+    "groupTitle": "Archive",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/archive/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1515,7 +1840,12 @@
       }
     ],
     "filename": "apidocs/v1/archive.js",
-    "groupTitle": "Archive"
+    "groupTitle": "Archive",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/archive/{id}/download/preview"
+      }
+    ]
   },
   {
     "type": "patch",
@@ -1538,7 +1868,12 @@
       }
     ],
     "filename": "apidocs/v1/archive.js",
-    "groupTitle": "Archive"
+    "groupTitle": "Archive",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/archive/{id}/thumbnail/{thumbnail_id}"
+      }
+    ]
   },
   {
     "type": "post",
@@ -1561,7 +1896,12 @@
       }
     ],
     "filename": "apidocs/v1/archive.js",
-    "groupTitle": "Archive"
+    "groupTitle": "Archive",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/archive/remove-multi"
+      }
+    ]
   },
   {
     "type": "put",
@@ -1584,7 +1924,12 @@
       }
     ],
     "filename": "apidocs/v1/archive.js",
-    "groupTitle": "Archive"
+    "groupTitle": "Archive",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/archive/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1598,9 +1943,63 @@
         "name": "Everyone"
       }
     ],
-    "description": "<p>Auth</p>",
+    "description": "<p>Authenticated user information inquiry</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer  {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": \"성공\",\n    \"data\": {\n        \"id\": 2,\n        \"user_id\": \"admin\",\n        \"name\": \"관리자\",\n        \"tel\": \"11111\",\n        \"locale\": \"ko\",\n        \"profile_id\": 367,\n        \"alram_settings\": {}...},\n        \"active_yn\": \"Y\",\n        \"last_logined_at\": \"2021.02.19 12:37:46\",\n        \"deleted_at\": null,\n        \"created_at\": \"2020.08.14 08:27:58\",\n        \"updated_at\": \"2021.02.19 03:37:46\",\n        \"use_analytics_dashboard\": true,\n        \"profile_url\": \"https://sns-dev-static.gemiso.com/images/profiles/1609824865.PNG\",\n        \"recent_notifications\": [...],\n        \"roles\": {...},\n        \"profile\": {\n            \"id\": 367,\n            \"file_path\": \"/images/profiles/\",\n            \"file_name\": \"gsma-logo.PNG\",\n            \"save_file_name\": \"1609824865.PNG\",\n            \"file_size\": 11179,\n            \"creater_id\": 9,\n            \"deleted_at\": null,\n            \"created_at\": \"2021.01.05 14:34:25\",\n            \"updated_at\": \"2021.01.05 14:34:25\"\n        }\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>access token</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 401 Unauthorized\n{\n    \"result\": false,\n    \"message\": \"Unauthorized request.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/auth.js",
-    "groupTitle": "Auth"
+    "groupTitle": "Auth",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/auth/"
+      }
+    ]
   },
   {
     "type": "post",
@@ -1614,18 +2013,73 @@
         "name": "Everyone"
       }
     ],
-    "description": "<p>login and get access token</p>",
+    "description": "<p>login and get access_token</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "user_id",
+            "description": "<p>ID of user, on params</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "password",
+            "description": "<p>Password of user</p>"
+          }
+        ]
+      }
+    },
     "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "access_token",
+            "description": "<p>access token of user</p>"
+          }
+        ]
+      },
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": \"성공\",\n    \"data\": {\n        \"access_token\":\n     ...}\n}",
+          "content": "HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": \"성공\",\n    \"data\": {\n        \"access_token\": \"eyJ0eXAiOiJKV1QiL...\",\n        \"refresh_token\": \"eyJ0eXAiOiJKV1QiL...\",\n        \"token_type\": \"bearer\",\n        \"expires_in\": 86400,\n        \"id\": 2,\n        \"user_id\": \"admin\",\n        \"name\": \"관리자\",\n        \"tel\": \"11111\",\n        \"locale\": \"ko\",\n        \"profile_id\": 367,\n     ...}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"result\": false,\n    \"locale\": \"ko\",\n    \"message\": \"입력한 정보가 일치하지 않습니다. 다시 확인해 주세요.\",\n    \"data\": null,\n    \"errors\": \"입력한 정보가 일치하지 않습니다. 다시 확인해 주세요.\"\n}",
           "type": "json"
         }
       ]
     },
     "filename": "apidocs/v1/auth.js",
-    "groupTitle": "Auth"
+    "groupTitle": "Auth",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/auth/login"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1636,12 +2090,66 @@
     "group": "Auth",
     "permission": [
       {
-        "name": "Everyone"
+        "name": "Auth"
       }
     ],
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer  {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
     "description": "<p>Logout</p>",
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": \"Successfully logged out\",\n    \"data\": null\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>access token</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 500 Internal Server Error\n{\n    \"result\": false,\n    \"locale\": \"ko\",\n    \"code\": 0,\n    \"message\": \"Token could not be parsed from the request.\",\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/auth.js",
-    "groupTitle": "Auth"
+    "groupTitle": "Auth",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/auth/logout"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1655,9 +2163,63 @@
         "name": "Everyone"
       }
     ],
-    "description": "<p>refresh</p>",
+    "description": "<p>refresh token</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer  {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": \"성공\",\n    \"data\": {\n        \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvc25zLWRldi1hcGkuZ2VtaXNvLmNvbVwvdjFcL2F1dGhcL3JlZnJlc2giLCJpYXQiOjE2MTM3MDU4NjYsImV4cCI6MTYxMzc5Mjk0NCwibmJmIjoxNjEzNzA2NTQ0LCJqdGkiOiJKamxEM21NaTdNeGVvdHZpIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.uxLiSSgYtCDY7xceT6ErivSlGyGFpgoAhiibjDb6edw\",\n        \"refresh_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvc25zLWRldi1hcGkuZ2VtaXNvLmNvbVwvdjFcL2F1dGhcL3JlZnJlc2giLCJpYXQiOjE2MTM3MDU4NjYsImV4cCI6MTYxMzc5Mjk0NCwibmJmIjoxNjEzNzA2NTQ0LCJqdGkiOiJKamxEM21NaTdNeGVvdHZpIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.uxLiSSgYtCDY7xceT6ErivSlGyGFpgoAhiibjDb6edw\",\n        \"token_type\": \"bearer\",\n        \"expires_in\": 86400\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>access token</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 403 Forbidden\n{\n    \"result\": false,\n    \"locale\": \"ko\",\n    \"message\": \"인증이 만료되었습니다.\\\\n다시 로그인 해 주시기 바랍니다.\",\n    \"data\": null,\n    \"errors\": \"Token could not be parsed from the request.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/auth.js",
-    "groupTitle": "Auth"
+    "groupTitle": "Auth",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/auth/refresh"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1680,7 +2242,12 @@
       }
     ],
     "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Categories"
+    "groupTitle": "Categories",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/categories/{platform}"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -1703,7 +2270,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/{id}/{platform}/revoke-sns-token"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1726,7 +2298,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/all"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1749,7 +2326,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1772,7 +2354,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/fb/pages"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1795,7 +2382,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -1818,7 +2410,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/{id}/{platform}"
+      }
+    ]
   },
   {
     "type": "patch",
@@ -1841,7 +2438,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/{id}/{platform}/set-channel-image"
+      }
+    ]
   },
   {
     "type": "patch",
@@ -1864,7 +2466,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/{id}/{platform}/sync-channel-image"
+      }
+    ]
   },
   {
     "type": "patch",
@@ -1887,7 +2494,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/{id}/{platform}/sync-channel-statistics"
+      }
+    ]
   },
   {
     "type": "patch",
@@ -1910,7 +2522,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/{id}/{platform}/sync-publish"
+      }
+    ]
   },
   {
     "type": "patch",
@@ -1933,7 +2550,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/{id}/{platform}/sync-publish-statistics"
+      }
+    ]
   },
   {
     "type": "post",
@@ -1956,7 +2578,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/{id}/{platform}/get-auth-url"
+      }
+    ]
   },
   {
     "type": "post",
@@ -1979,7 +2606,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/remove-multi"
+      }
+    ]
   },
   {
     "type": "put",
@@ -2002,7 +2634,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/update-multi"
+      }
+    ]
   },
   {
     "type": "put",
@@ -2025,7 +2662,12 @@
       }
     ],
     "filename": "apidocs/v1/channels.js",
-    "groupTitle": "Channels"
+    "groupTitle": "Channels",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/channels/{id}/{platform}/update-sns-token"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2048,7 +2690,12 @@
       }
     ],
     "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Countries"
+    "groupTitle": "Countries",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/countries"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2071,7 +2718,12 @@
       }
     ],
     "filename": "apidocs/v1/dashboard.js",
-    "groupTitle": "Dashboard"
+    "groupTitle": "Dashboard",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/dashboard/analytics"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2094,7 +2746,12 @@
       }
     ],
     "filename": "apidocs/v1/dashboard.js",
-    "groupTitle": "Dashboard"
+    "groupTitle": "Dashboard",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/dashboard/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2117,7 +2774,12 @@
       }
     ],
     "filename": "apidocs/v1/dashboard.js",
-    "groupTitle": "Dashboard"
+    "groupTitle": "Dashboard",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/dashboard/scheduled"
+      }
+    ]
   },
   {
     "type": "post",
@@ -2140,7 +2802,12 @@
       }
     ],
     "filename": "apidocs/v1/departments.js",
-    "groupTitle": "Departments"
+    "groupTitle": "Departments",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/departments/"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -2163,7 +2830,12 @@
       }
     ],
     "filename": "apidocs/v1/departments.js",
-    "groupTitle": "Departments"
+    "groupTitle": "Departments",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/departments/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2186,7 +2858,12 @@
       }
     ],
     "filename": "apidocs/v1/departments.js",
-    "groupTitle": "Departments"
+    "groupTitle": "Departments",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/departments/all"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2202,7 +2879,12 @@
     ],
     "description": "<p>Get Departments</p>",
     "filename": "apidocs/v1/departments.js",
-    "groupTitle": "Departments"
+    "groupTitle": "Departments",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/departments/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2225,7 +2907,12 @@
       }
     ],
     "filename": "apidocs/v1/departments.js",
-    "groupTitle": "Departments"
+    "groupTitle": "Departments",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/departments/{id}"
+      }
+    ]
   },
   {
     "type": "post",
@@ -2248,7 +2935,12 @@
       }
     ],
     "filename": "apidocs/v1/departments.js",
-    "groupTitle": "Departments"
+    "groupTitle": "Departments",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/departments/remove-multi"
+      }
+    ]
   },
   {
     "type": "put",
@@ -2271,7 +2963,12 @@
       }
     ],
     "filename": "apidocs/v1/departments.js",
-    "groupTitle": "Departments"
+    "groupTitle": "Departments",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/departments/{id}"
+      }
+    ]
   },
   {
     "type": "put",
@@ -2294,7 +2991,12 @@
       }
     ],
     "filename": "apidocs/v1/departments.js",
-    "groupTitle": "Departments"
+    "groupTitle": "Departments",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/departments/update-multi"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -2317,7 +3019,12 @@
       }
     ],
     "filename": "apidocs/v1/downloads.js",
-    "groupTitle": "Downloads"
+    "groupTitle": "Downloads",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/downloads/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2340,7 +3047,12 @@
       }
     ],
     "filename": "apidocs/v1/downloads.js",
-    "groupTitle": "Downloads"
+    "groupTitle": "Downloads",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/downloads/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2363,7 +3075,12 @@
       }
     ],
     "filename": "apidocs/v1/downloads.js",
-    "groupTitle": "Downloads"
+    "groupTitle": "Downloads",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/downloads/{id}"
+      }
+    ]
   },
   {
     "type": "post",
@@ -2386,7 +3103,12 @@
       }
     ],
     "filename": "apidocs/v1/downloads.js",
-    "groupTitle": "Downloads"
+    "groupTitle": "Downloads",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/downloads/"
+      }
+    ]
   },
   {
     "type": "post",
@@ -2409,7 +3131,12 @@
       }
     ],
     "filename": "apidocs/v1/downloads.js",
-    "groupTitle": "Downloads"
+    "groupTitle": "Downloads",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/downloads/remove-multi"
+      }
+    ]
   },
   {
     "type": "post",
@@ -2432,7 +3159,12 @@
       }
     ],
     "filename": "apidocs/v1/downloads.js",
-    "groupTitle": "Downloads"
+    "groupTitle": "Downloads",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/downloads/retry-multi"
+      }
+    ]
   },
   {
     "type": "post",
@@ -2455,7 +3187,12 @@
       }
     ],
     "filename": "apidocs/v1/downloads.js",
-    "groupTitle": "Downloads"
+    "groupTitle": "Downloads",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/downloads/stop-multi"
+      }
+    ]
   },
   {
     "type": "put",
@@ -2478,7 +3215,12 @@
       }
     ],
     "filename": "apidocs/v1/downloads.js",
-    "groupTitle": "Downloads"
+    "groupTitle": "Downloads",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/downloads/{id}"
+      }
+    ]
   },
   {
     "type": "post",
@@ -2501,7 +3243,12 @@
       }
     ],
     "filename": "apidocs/v1/groups.js",
-    "groupTitle": "Groups"
+    "groupTitle": "Groups",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/groups/"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -2524,7 +3271,12 @@
       }
     ],
     "filename": "apidocs/v1/groups.js",
-    "groupTitle": "Groups"
+    "groupTitle": "Groups",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/groups/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2547,7 +3299,12 @@
       }
     ],
     "filename": "apidocs/v1/groups.js",
-    "groupTitle": "Groups"
+    "groupTitle": "Groups",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/groups/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2570,7 +3327,12 @@
       }
     ],
     "filename": "apidocs/v1/groups.js",
-    "groupTitle": "Groups"
+    "groupTitle": "Groups",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/groups/{id}"
+      }
+    ]
   },
   {
     "type": "post",
@@ -2593,7 +3355,12 @@
       }
     ],
     "filename": "apidocs/v1/groups.js",
-    "groupTitle": "Groups"
+    "groupTitle": "Groups",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/groups/remove-multi"
+      }
+    ]
   },
   {
     "type": "put",
@@ -2616,7 +3383,12 @@
       }
     ],
     "filename": "apidocs/v1/groups.js",
-    "groupTitle": "Groups"
+    "groupTitle": "Groups",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/groups/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2639,7 +3411,12 @@
       }
     ],
     "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Languages"
+    "groupTitle": "Languages",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/languages"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2662,7 +3439,12 @@
       }
     ],
     "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Languages"
+    "groupTitle": "Languages",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/youtube-languages"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -2685,7 +3467,12 @@
       }
     ],
     "filename": "apidocs/v1/live.js",
-    "groupTitle": "Live"
+    "groupTitle": "Live",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/live/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2708,7 +3495,12 @@
       }
     ],
     "filename": "apidocs/v1/live.js",
-    "groupTitle": "Live"
+    "groupTitle": "Live",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/live/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2731,7 +3523,12 @@
       }
     ],
     "filename": "apidocs/v1/live.js",
-    "groupTitle": "Live"
+    "groupTitle": "Live",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/live/{id}"
+      }
+    ]
   },
   {
     "type": "put",
@@ -2754,7 +3551,12 @@
       }
     ],
     "filename": "apidocs/v1/live.js",
-    "groupTitle": "Live"
+    "groupTitle": "Live",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/live/{id}"
+      }
+    ]
   },
   {
     "type": "post",
@@ -2777,7 +3579,12 @@
       }
     ],
     "filename": "apidocs/v1/archive.js",
-    "groupTitle": "Live"
+    "groupTitle": "Live",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/archive/upload"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2793,7 +3600,12 @@
     ],
     "description": "<p>Get all menu with permission</p>",
     "filename": "apidocs/v1/menu.js",
-    "groupTitle": "Menu"
+    "groupTitle": "Menu",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/menu/all"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2809,7 +3621,12 @@
     ],
     "description": "<p>Get 'child_menu' with user permission (or admin)</p>",
     "filename": "apidocs/v1/menu.js",
-    "groupTitle": "Menu"
+    "groupTitle": "Menu",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/menu/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2825,7 +3642,12 @@
     ],
     "description": "<p>Get Notification</p>",
     "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Menu"
+    "groupTitle": "Menu",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/notification/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2841,7 +3663,12 @@
     ],
     "description": "<p>get shortcuts</p>",
     "filename": "apidocs/v1/menu.js",
-    "groupTitle": "Menu"
+    "groupTitle": "Menu",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/menu/shortcuts"
+      }
+    ]
   },
   {
     "type": "post",
@@ -2864,7 +3691,12 @@
       }
     ],
     "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Menu"
+    "groupTitle": "Menu",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/notification/mark-as-read"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2887,7 +3719,12 @@
       }
     ],
     "filename": "apidocs/v1/monitoring.js",
-    "groupTitle": "Monitoring"
+    "groupTitle": "Monitoring",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/monitoring/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2910,7 +3747,12 @@
       }
     ],
     "filename": "apidocs/v1/monitoring.js",
-    "groupTitle": "Monitoring"
+    "groupTitle": "Monitoring",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/monitoring/{id}"
+      }
+    ]
   },
   {
     "type": "post",
@@ -2933,7 +3775,12 @@
       }
     ],
     "filename": "apidocs/v1/notice.js",
-    "groupTitle": "Notice"
+    "groupTitle": "Notice",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/notice/"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -2956,7 +3803,12 @@
       }
     ],
     "filename": "apidocs/v1/notice.js",
-    "groupTitle": "Notice"
+    "groupTitle": "Notice",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/notice/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -2979,7 +3831,12 @@
       }
     ],
     "filename": "apidocs/v1/notice.js",
-    "groupTitle": "Notice"
+    "groupTitle": "Notice",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/notice/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3002,7 +3859,12 @@
       }
     ],
     "filename": "apidocs/v1/notice.js",
-    "groupTitle": "Notice"
+    "groupTitle": "Notice",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/notice/{id}"
+      }
+    ]
   },
   {
     "type": "post",
@@ -3025,7 +3887,12 @@
       }
     ],
     "filename": "apidocs/v1/notice.js",
-    "groupTitle": "Notice"
+    "groupTitle": "Notice",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/notice/remove-multi"
+      }
+    ]
   },
   {
     "type": "post",
@@ -3048,7 +3915,12 @@
       }
     ],
     "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Notice"
+    "groupTitle": "Notice",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/sns/sync-facebook-instagram"
+      }
+    ]
   },
   {
     "type": "put",
@@ -3071,7 +3943,12 @@
       }
     ],
     "filename": "apidocs/v1/notice.js",
-    "groupTitle": "Notice"
+    "groupTitle": "Notice",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/notice/{id}"
+      }
+    ]
   },
   {
     "type": "put",
@@ -3094,7 +3971,12 @@
       }
     ],
     "filename": "apidocs/v1/notice.js",
-    "groupTitle": "Notice"
+    "groupTitle": "Notice",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/notice/update-multi"
+      }
+    ]
   },
   {
     "type": "post",
@@ -3117,7 +3999,12 @@
       }
     ],
     "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Others"
+    "groupTitle": "Others",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/localization/translate"
+      }
+    ]
   },
   {
     "type": "post",
@@ -3140,7 +4027,12 @@
       }
     ],
     "filename": "apidocs/v1/playlist.js",
-    "groupTitle": "Playlist"
+    "groupTitle": "Playlist",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/playlist/{id}/add-publish"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -3163,7 +4055,12 @@
       }
     ],
     "filename": "apidocs/v1/playlist.js",
-    "groupTitle": "Playlist"
+    "groupTitle": "Playlist",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/playlist/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3186,7 +4083,12 @@
       }
     ],
     "filename": "apidocs/v1/playlist.js",
-    "groupTitle": "Playlist"
+    "groupTitle": "Playlist",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/playlist/all"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3209,7 +4111,12 @@
       }
     ],
     "filename": "apidocs/v1/playlist.js",
-    "groupTitle": "Playlist"
+    "groupTitle": "Playlist",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/playlist/{id}/list"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3232,7 +4139,12 @@
       }
     ],
     "filename": "apidocs/v1/playlist.js",
-    "groupTitle": "Playlist"
+    "groupTitle": "Playlist",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/playlist/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3255,7 +4167,12 @@
       }
     ],
     "filename": "apidocs/v1/playlist.js",
-    "groupTitle": "Playlist"
+    "groupTitle": "Playlist",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/playlist/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3278,7 +4195,12 @@
       }
     ],
     "filename": "apidocs/v1/playlist.js",
-    "groupTitle": "Playlist"
+    "groupTitle": "Playlist",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/playlist/with-publish/{publish_id}"
+      }
+    ]
   },
   {
     "type": "post",
@@ -3301,7 +4223,12 @@
       }
     ],
     "filename": "apidocs/v1/playlist.js",
-    "groupTitle": "Playlist"
+    "groupTitle": "Playlist",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/playlist/{id}/move-publish"
+      }
+    ]
   },
   {
     "type": "post",
@@ -3324,7 +4251,12 @@
       }
     ],
     "filename": "apidocs/v1/playlist.js",
-    "groupTitle": "Playlist"
+    "groupTitle": "Playlist",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/playlist/{id}/remove-publish"
+      }
+    ]
   },
   {
     "type": "post",
@@ -3347,7 +4279,12 @@
       }
     ],
     "filename": "apidocs/v1/playlist.js",
-    "groupTitle": "Playlist"
+    "groupTitle": "Playlist",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/playlist/"
+      }
+    ]
   },
   {
     "type": "put",
@@ -3370,7 +4307,12 @@
       }
     ],
     "filename": "apidocs/v1/playlist.js",
-    "groupTitle": "Playlist"
+    "groupTitle": "Playlist",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/playlist/{id}"
+      }
+    ]
   },
   {
     "type": "post",
@@ -3393,7 +4335,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -3416,7 +4363,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}/bookmark/remove"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -3439,7 +4391,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -3462,7 +4419,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/{localized_id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3485,7 +4447,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/gets"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3508,7 +4475,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}/download"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3531,7 +4503,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/by-language/{language_code?}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3554,7 +4531,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/channel"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3577,7 +4559,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}/history"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3600,7 +4587,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/{language_code?}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3623,7 +4615,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3646,7 +4643,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3669,7 +4671,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/subtitle/list/{language_code?}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -3692,7 +4699,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/subtitle/list-by-language/{language_code?}"
+      }
+    ]
   },
   {
     "type": "patch",
@@ -3715,7 +4727,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}/thumbnail/{thumbnail_id}"
+      }
+    ]
   },
   {
     "type": "patch",
@@ -3738,7 +4755,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}/video/replace-archive"
+      }
+    ]
   },
   {
     "type": "patch",
@@ -3761,7 +4783,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}/thumbnail/{thumbnail_id}/remove"
+      }
+    ]
   },
   {
     "type": "patch",
@@ -3784,7 +4811,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}/video/add-archive"
+      }
+    ]
   },
   {
     "type": "patch",
@@ -3807,7 +4839,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}/video/remove"
+      }
+    ]
   },
   {
     "type": "post",
@@ -3830,7 +4867,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/"
+      }
+    ]
   },
   {
     "type": "post",
@@ -3853,7 +4895,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/remove-multi"
+      }
+    ]
   },
   {
     "type": "post",
@@ -3876,7 +4923,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}/video/add"
+      }
+    ]
   },
   {
     "type": "post",
@@ -3899,7 +4951,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}/video/replace"
+      }
+    ]
   },
   {
     "type": "put",
@@ -3922,7 +4979,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}/bookmark/add"
+      }
+    ]
   },
   {
     "type": "put",
@@ -3945,7 +5007,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/localization/{localized_id}"
+      }
+    ]
   },
   {
     "type": "put",
@@ -3968,7 +5035,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/"
+      }
+    ]
   },
   {
     "type": "put",
@@ -3991,7 +5063,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/subtitle/"
+      }
+    ]
   },
   {
     "type": "post",
@@ -4014,7 +5091,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/update-multi"
+      }
+    ]
   },
   {
     "type": "post",
@@ -4037,7 +5119,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/upload"
+      }
+    ]
   },
   {
     "type": "post",
@@ -4060,7 +5147,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{publish_id}/subtitle/upload"
+      }
+    ]
   },
   {
     "type": "post",
@@ -4083,7 +5175,12 @@
       }
     ],
     "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publish"
+    "groupTitle": "Publish",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}/thumbnail/upload"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -4121,7 +5218,12 @@
       ]
     },
     "filename": "apidocs/v1/roles.js",
-    "groupTitle": "Roles"
+    "groupTitle": "Roles",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/roles/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -4180,7 +5282,12 @@
       ]
     },
     "filename": "apidocs/v1/roles.js",
-    "groupTitle": "Roles"
+    "groupTitle": "Roles",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/roles/all"
+      }
+    ]
   },
   {
     "type": "get",
@@ -4214,7 +5321,12 @@
       ]
     },
     "filename": "apidocs/v1/roles.js",
-    "groupTitle": "Roles"
+    "groupTitle": "Roles",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/roles/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -4252,7 +5364,12 @@
       ]
     },
     "filename": "apidocs/v1/roles.js",
-    "groupTitle": "Roles"
+    "groupTitle": "Roles",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/roles/{id}"
+      }
+    ]
   },
   {
     "type": "post",
@@ -4289,7 +5406,12 @@
       ]
     },
     "filename": "apidocs/v1/roles.js",
-    "groupTitle": "Roles"
+    "groupTitle": "Roles",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/roles/"
+      }
+    ]
   },
   {
     "type": "put",
@@ -4334,7 +5456,12 @@
       ]
     },
     "filename": "apidocs/v1/roles.js",
-    "groupTitle": "Roles"
+    "groupTitle": "Roles",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/roles/{id}"
+      }
+    ]
   },
   {
     "type": "put",
@@ -4370,7 +5497,12 @@
       ]
     },
     "filename": "apidocs/v1/roles.js",
-    "groupTitle": "Roles"
+    "groupTitle": "Roles",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/roles/update-multi"
+      }
+    ]
   },
   {
     "type": "get",
@@ -4393,7 +5525,12 @@
       }
     ],
     "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Tag-template"
+    "groupTitle": "Tag-template",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/tag-template/"
+      }
+    ]
   },
   {
     "type": "put",
@@ -4416,7 +5553,12 @@
       }
     ],
     "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Tag-template"
+    "groupTitle": "Tag-template",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/tag-template/"
+      }
+    ]
   },
   {
     "type": "post",
@@ -4439,7 +5581,12 @@
       }
     ],
     "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Upload"
+    "groupTitle": "Upload",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/upload/{store}"
+      }
+    ]
   },
   {
     "type": "post",
@@ -4473,7 +5620,12 @@
       ]
     },
     "filename": "apidocs/v1/users.js",
-    "groupTitle": "Users"
+    "groupTitle": "Users",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/users/"
+      }
+    ]
   },
   {
     "type": "delete",
@@ -4511,7 +5663,12 @@
       ]
     },
     "filename": "apidocs/v1/users.js",
-    "groupTitle": "Users"
+    "groupTitle": "Users",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/users/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -4549,7 +5706,12 @@
       ]
     },
     "filename": "apidocs/v1/users.js",
-    "groupTitle": "Users"
+    "groupTitle": "Users",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/users/{id}"
+      }
+    ]
   },
   {
     "type": "get",
@@ -4565,7 +5727,12 @@
     ],
     "description": "<p>Get Shortcuts</p>",
     "filename": "apidocs/v1/users.js",
-    "groupTitle": "Users"
+    "groupTitle": "Users",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/users/shortcuts/"
+      }
+    ]
   },
   {
     "type": "get",
@@ -4599,7 +5766,12 @@
       ]
     },
     "filename": "apidocs/v1/users.js",
-    "groupTitle": "Users"
+    "groupTitle": "Users",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/users/"
+      }
+    ]
   },
   {
     "type": "post",
@@ -4633,7 +5805,12 @@
       ]
     },
     "filename": "apidocs/v1/users.js",
-    "groupTitle": "Users"
+    "groupTitle": "Users",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/users/remove-multi"
+      }
+    ]
   },
   {
     "type": "put",
@@ -4678,7 +5855,12 @@
       ]
     },
     "filename": "apidocs/v1/users.js",
-    "groupTitle": "Users"
+    "groupTitle": "Users",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/users/{id}"
+      }
+    ]
   },
   {
     "type": "put",
@@ -4694,7 +5876,12 @@
     ],
     "description": "<p>Put Shortcuts</p>",
     "filename": "apidocs/v1/users.js",
-    "groupTitle": "Users"
+    "groupTitle": "Users",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/users/shortcuts/"
+      }
+    ]
   },
   {
     "type": "put",
@@ -4728,6 +5915,11 @@
       ]
     },
     "filename": "apidocs/v1/users.js",
-    "groupTitle": "Users"
+    "groupTitle": "Users",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/users/update-multi"
+      }
+    ]
   }
 ]
