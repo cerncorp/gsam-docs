@@ -1940,7 +1940,7 @@ define({ "api": [
     "group": "Auth",
     "permission": [
       {
-        "name": "Everyone"
+        "name": "Auth"
       }
     ],
     "description": "<p>Authenticated user information inquiry</p>",
@@ -2160,7 +2160,7 @@ define({ "api": [
     "group": "Auth",
     "permission": [
       {
-        "name": "Everyone"
+        "name": "Auth"
       }
     ],
     "description": "<p>refresh token</p>",
@@ -2233,14 +2233,94 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>Get Categories</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/categories/{platform}",
-        "type": "json"
+    "description": "<p>Get video categories from platform_slug</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer ",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "platform",
+            "description": "<p>yt, fb, in, tw (Youtube, Facebook, Instagram, Twitter)</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.id",
+            "description": "<p>the ID of the video category</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.platform_id",
+            "description": "<p>the ID of the platform</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.title",
+            "description": "<p>the title of the video category</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": [\n        {\n            \"id\": 20,\n            \"platform_id\": 1,\n            \"title\": \"게임\"\n        },\n        {\n            \"id\": 28,\n            \"platform_id\": 1,\n            \"title\": \"과학기술\"\n        },\n        ...\n    ]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>access token</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 401 Unauthorized\n{\n    \"result\": false,\n    \"message\": \"Unauthorized request.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/apidocs.js",
     "groupTitle": "Categories",
     "sampleRequest": [
@@ -2666,34 +2746,6 @@ define({ "api": [
     "sampleRequest": [
       {
         "url": "https://sns-dev-api.gemiso.com/v1/channels/{id}/{platform}/update-sns-token"
-      }
-    ]
-  },
-  {
-    "type": "get",
-    "url": "/v1/countries",
-    "title": "Get Countries",
-    "version": "1.0.0",
-    "name": "Get_Countries",
-    "group": "Countries",
-    "permission": [
-      {
-        "name": "Everyone"
-      }
-    ],
-    "description": "<p>Get Countries</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/countries",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Countries",
-    "sampleRequest": [
-      {
-        "url": "https://sns-dev-api.gemiso.com/v1/countries"
       }
     ]
   },
@@ -3391,62 +3443,6 @@ define({ "api": [
     ]
   },
   {
-    "type": "get",
-    "url": "/v1/languages",
-    "title": "Get Languages",
-    "version": "1.0.0",
-    "name": "Get_Languages",
-    "group": "Languages",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>Get Languages</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/languages",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Languages",
-    "sampleRequest": [
-      {
-        "url": "https://sns-dev-api.gemiso.com/v1/languages"
-      }
-    ]
-  },
-  {
-    "type": "get",
-    "url": "/v1/youtube-languages",
-    "title": "Get Youtube-languages",
-    "version": "1.0.0",
-    "name": "Get_Youtube-languages",
-    "group": "Languages",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>Get Youtube-languages</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/youtube-languages",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Languages",
-    "sampleRequest": [
-      {
-        "url": "https://sns-dev-api.gemiso.com/v1/youtube-languages"
-      }
-    ]
-  },
-  {
     "type": "delete",
     "url": "/v1/live/{id}",
     "title": "Delete One",
@@ -3588,6 +3584,501 @@ define({ "api": [
   },
   {
     "type": "get",
+    "url": "/v1/countries",
+    "title": "Get Countries",
+    "version": "1.0.0",
+    "name": "Get_Countries",
+    "group": "Localization",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Country List Search</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer ",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.code",
+            "description": "<p>the code of the country</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.country",
+            "description": "<p>the country name</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": [\n        {\n            \"code\": \"GH\",\n            \"country\": \"가나\"\n        },\n        {\n            \"code\": \"GA\",\n            \"country\": \"가봉\"\n        }, ...\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>access token</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 401 Unauthorized\n{\n    \"result\": false,\n    \"message\": \"Unauthorized request.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "apidocs/v1/apidocs.js",
+    "groupTitle": "Localization",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/countries"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/v1/languages",
+    "title": "Get Languages",
+    "version": "1.0.0",
+    "name": "Get_Languages",
+    "group": "Localization",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Search available languages</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer ",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.code",
+            "description": "<p>the code of language</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.name",
+            "description": "<p>the name of language</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.use_yn",
+            "description": "<p>use yes/no</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": [\n        {\n            \"code\": \"gl\",\n            \"name\": \"갈리시아어\",\n            \"use_yn\": \"Y\"\n        },\n        {\n            \"code\": \"gu\",\n            \"name\": \"구자라트어\",\n            \"use_yn\": \"Y\"\n        }, ...\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>access token</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 401 Unauthorized\n{\n    \"result\": false,\n    \"message\": \"Unauthorized request.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "apidocs/v1/apidocs.js",
+    "groupTitle": "Localization",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/languages"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/v1/youtube-languages",
+    "title": "Get Youtube-languages",
+    "version": "1.0.0",
+    "name": "Get_Youtube-languages",
+    "group": "Localization",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>You can get the language for YouTube</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer ",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.code",
+            "description": "<p>the code of language</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.name",
+            "description": "<p>the name of language</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": [\n        {\n            \"code\": \"gl\",\n            \"name\": \"갈리시아어\"\n        },\n        {\n            \"code\": \"gu\",\n            \"name\": \"구자라트어\"\n        },\n        {\n            \"code\": \"el\",\n            \"name\": \"그리스어\"\n        }, ...\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>access token</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 401 Unauthorized\n{\n    \"result\": false,\n    \"message\": \"Unauthorized request.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "apidocs/v1/apidocs.js",
+    "groupTitle": "Localization",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/youtube-languages"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/v1/country",
+    "title": "Get Country",
+    "version": "1.0.0",
+    "name": "Get_country",
+    "group": "Localization",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Country List Search</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer ",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.code",
+            "description": "<p>the code of the country</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.country",
+            "description": "<p>the country name</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": [\n        {\n            \"code\": \"GH\",\n            \"country\": \"가나\"\n        },\n        {\n            \"code\": \"GA\",\n            \"country\": \"가봉\"\n        }, ...\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>access token</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 401 Unauthorized\n{\n    \"result\": false,\n    \"message\": \"Unauthorized request.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "apidocs/v1/apidocs.js",
+    "groupTitle": "Localization",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/country"
+      }
+    ]
+  },
+  {
+    "type": "post",
+    "url": "/v1/localization/translate",
+    "title": "Post Localization Translate",
+    "version": "1.0.0",
+    "name": "Post_Localization_Translate",
+    "group": "Localization",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Run Google Translate</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer ",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "from_language_code",
+            "description": "<p>code consists of 2 characters</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "to_language_code",
+            "description": "<p>code consists of 2 characters</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Object[]",
+            "optional": false,
+            "field": "text",
+            "description": "<p>from_language_code array to be translated</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Request-Example:",
+          "content": "{\n    \"from_language_code\": \"ko\",\n    \"to_language_code\": \"ja\",\n    \"text\" : [\n        \"안녕하세요.\",\n        \"반갑습니다.\"\n    ]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "from_language_code",
+            "description": "<p>from language code</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "to_language_code",
+            "description": "<p>to language code</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "text",
+            "description": "<p>Texts to be translated</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "translate",
+            "description": "<p>Text Array has been translated by google</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"from_language_code\": \"ko\",\n        \"to_language_code\": \"ja\",\n        \"text\": [\n            \"안녕하세요.\",\n            \"반갑습니다.\"\n        ],\n        \"translate\": [\n            \"こんにちは。\",\n            \"うれしいです。\"\n        ]\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "    HTTP/1.1 400 Bad Request\n{\n    \"result\": false,\n    \"locale\": \"ko\",\n    \"code\": 400,\n    \"message\": \"{\\n  \\\"error\\\": {\\n    \\\"code\\\": 400,\\n    \\\"message\\\": \\\"Invalid Value\\\",\\n    \\\"errors\\\": [\\n      {\\n        \\\"message\\\": \\\"Invalid Value\\\",\\n        \\\"domain\\\": \\\"global\\\",\\n        \\\"reason\\\": \\\"invalid\\\"\\n      }\\n    ]\\n  }\\n}\\n\",\n    \"trace\": [...]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "apidocs/v1/apidocs.js",
+    "groupTitle": "Localization",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/localization/translate"
+      }
+    ]
+  },
+  {
+    "type": "get",
     "url": "/v1/menu/all",
     "title": "Get All",
     "version": "1.0.0",
@@ -3710,14 +4201,81 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>Get Many</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/monitoring/",
-        "type": "json"
-      }
-    ],
+    "description": "<p>List inquiry monitors SNS Post</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer ",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "json",
+            "optional": true,
+            "field": "paging",
+            "description": "<p>the ID of user</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "list",
+            "description": "<p>SNS Post list</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "list.id",
+            "description": "<p>the ID of SNS Post</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"paging\": { ... },\n        \"list\": [\n              {\n                \"id\": 36577,\n                \"sns_post_id\": \"FXiMeGf0GoA\",\n                \"channel_id\": 6,\n                \"platform_id\": 1,\n                \"metadata_id\": 36612,\n                \"thumbnail_id\": 158371,\n                ... },\n                 ]\n             }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 400 Bad Request\n{\n\"result\": false,\n\"locale\": \"ko\",\n\"code\": 400,\n\"message\": \"...\",\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/monitoring.js",
     "groupTitle": "Monitoring",
     "sampleRequest": [
@@ -3738,14 +4296,50 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>Get One</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/monitoring/{id}",
-        "type": "json"
+    "description": "<p>Get a SNS Post Detail</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer ",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>SNS Post</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"publish\": {\n            \"id\": 36567,\n            \"sns_post_id\": \"Q8bm3piVlpg\",\n            \"channel_id\": 9,\n            \"platform_id\": 1,\n            \"metadata_id\": 36602,\n            \"thumbnail_id\": 158478,\n            \"state\": 4,\n            \"open_state\": \"O\",\n            \"on_monitoring\": \"Y\",\n            \"is_live\": \"N\",\n            \"views\": 1664,\n            \"likes\": 13,\n            \"hates\": 9,\n            \"shared\": 0,\n            \"comments\": 14,\n            \"playtimes\": 0,\n            \"duration\": 789,\n            \"publisher_id\": 1,\n            \"published_at\": \"2021.02.18 20:00:06\",\n            \"last_sync_at\": \"2021.02.20 00:01:08\",\n            \"last_analytics_sync_at\": \"2021.02.20 12:50:16\",\n            \"creater_id\": 1,\n            \"updater_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": \"2021.02.19 00:01:39\",\n            \"updated_at\": \"2021.02.20 12:50:16\",\n            \"is_collected\": \"Y\",\n            \"has_archive\": false,\n            \"channel\": {\n                \"id\": 9,\n                \"name\": \"SBS 시사교양 라디오 – 시교라\",\n                \"logo\": \"https://yt3.ggpht.com/a/AATXAJwN8e1PTm5BEbzjdVcl1EJrDhEWxR9SogRpMbsVIg=s88-c-k-c0xffffffff-no-rj-mo\",\n                \"logo_clip_yn\": \"N\",\n                \"use_logo_clip_yn\": \"Y\",\n                \"logo_clip_url\": null,\n                \"logo_thumbnail_yn\": \"N\",\n                \"use_logo_thumbnail_yn\": \"Y\",\n                \"logo_thumbnail_url\": null,\n                \"sns_download_speed\": \"2\",\n                \"active_yn\": \"Y\",\n                \"creater_id\": 2,\n                \"deleted_at\": null,\n                \"created_at\": \"2020.08.28 14:07:39\",\n                \"updated_at\": \"2020.09.08 14:43:08\",\n                \"recommend_tags\": [\n                    \"정치\",\n                    \"시사\",\n                    \"라디오\",\n                    \"이재익\",\n                    \"고현준\",\n                    \"시사교양\",\n                    \"정치쇼\",\n                    \"SBS\",\n                    \"sbs라디오\",\n                    \"이철희\"\n                ]\n            },\n            \"platform_setting\": {\n                \"id\": 14,\n                \"channel_id\": 9,\n                \"platform_id\": 1,\n                \"sns_id\": \"UCLv3v82YNNsa8EsxrcPMjGQ\",\n                \"upload_playlist_id\": \"UULv3v82YNNsa8EsxrcPMjGQ\",\n                \"icon_url\": \"https://yt3.ggpht.com/a/AATXAJwN8e1PTm5BEbzjdVcl1EJrDhEWxR9SogRpMbsVIg=s88-c-k-c0xffffffff-no-rj-mo\",\n                \"cover_url\": \"https://yt3.ggpht.com/hr3pMH10E6ZLRkhPwoacjlcwh9NSWpVCNfZNccBeyornWxNX0WAxlvHWyjNUo0KltrTwKwgvhA=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj\",\n                \"default_category_id\": null,\n                \"default_language_code\": \"ko\",\n                \"default_translatable_language_code\": \"ko,en,vi,fr,zh,ja,id,ru,it,es,pt,de,th,tr\",\n                \"default_open_state\": \"O\",\n                \"default_title\": null,\n                \"default_description\": null,\n                \"default_tags\": null,\n                \"upload_options\": null,\n                \"channel_created_at\": \"2016.12.15 20:08:43\", \n                 ...\n            },\n            \"archives\": [],\n            \"platform\": {\n                \"id\": 1,\n                \"short_name\": \"yt\",\n                \"name\": \"Youtube\",\n                \"image_url\": \"https://sns-dev-static.gemiso.com/images/platforms/cli-yt.png\",\n                \"active_yn\": \"Y\",\n                \"deleted_at\": null\n            },\n            \"metadata\": {\n                \"id\": 36602,\n                \"title\": \"빌 게이츠도 원전이 필요하다는데 탈원전 정책은 맞는 것인가? 빌 게이츠 책, 직접 읽어봤다 [이철희의 정치쇼]\",\n                \"description\": \"'탄소 제로'를 위해 원전이 필요하다는 빌 게이츠의 인터뷰가 보도된 후 탈원전 정책을 비판하는 목소리가 커지고 있는 상황. 빌 게이츠 책을 두고 보궐선거 후보들 사이에서 갑론을박까지 펼쳐지고 있는데... 그래서! 직접 빌 게이츠 책을 읽어본 김준일 '전지적' 기자. \\n빌 게이츠는 어떤 의미로 원자력이 필요하다는 얘기를 한 걸까요?\\n\\n- 김준일 뉴스톱 대표\\n\\n#빌게이츠 #탈원전 #탄소중립 #이철희의정치쇼\",\n                \"default_audio_language_code\": \"ko\",\n                \"open_comment\": \"open\",\n                \"order_comment\": \"recent\",\n                \"category_id\": 25,\n                \"for_child\": \"N\",\n                \"for_adult\": \"N\",\n                \"location\": null,\n                \"sharable\": \"Y\",\n                 ...\n            },\n            \"thumbnails\": [],\n            \"thumbnail\": {\n                \"id\": 158478,\n                \"archive_id\": null,\n                \"sequence\": 0,\n                \"url\": \"https://i.ytimg.com/vi/Q8bm3piVlpg/mqdefault.jpg\",\n                \"original_url\": \"https://i.ytimg.com/vi/Q8bm3piVlpg/maxresdefault.jpg\",\n                \"file_name\": \"https://i.ytimg.com/vi/Q8bm3piVlpg/maxresdefault.jpg\",\n                \"creater_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": \"2021.02.20 00:01:09\",\n                \"updated_at\": \"2021.02.20 00:01:09\"\n            },\n            \"publisher\": {\n                \"id\": 1,\n                \"user_id\": \"system\",\n                \"name\": \"System\",\n                \"tel\": null,\n                \"locale\": \"ko\",\n                \"profile_id\": null,\n                \"active_yn\": \"N\",\n                \"last_logined_at\": null,\n                \"deleted_at\": null,\n                \"created_at\": \"2020.08.14 08:27:58\",\n                \"updated_at\": \"2020.08.14 08:27:58\",\n                \"is_admin\": false\n            },\n            \"playlist\": [\n                {\n                    \"id\": 97,\n                    \"channel_id\": 9,\n                    \"platform_id\": 1,\n                    \"sns_playlist_id\": \"PLSL0Srvxbj-Wtww2qM296mpU0XTw8k0qc\",\n                    \"title\": \"[이철희의 정치쇼] 월~금 09:05~11:00\",\n                    \"description\": \"\",\n                    \"default_language_code\": null,\n                    \"thumbnail_color\": null,\n                    \"thumbnail_id\": 465,\n                    \"open_state\": \"O\",\n                    \"creater_id\": 1,\n                    \"deleted_at\": null,\n                    \"created_at\": \"2020.06.01 09:16:33\",\n                    \"updated_at\": \"2020.12.18 11:03:51\",\n                    \"playlistitem\": {\n                        \"publish_id\": 36567,\n                        \"playlist_id\": 97,\n                        \"sns_playlist_item_id\": \"UExTTDBTcnZ4YmotV3R3dzJxTTI5Nm1wVTBYVHc4azBxYy40MEE4MzM5MDQwOUEyQUZB\",\n                        \"sequence\": 0,\n                        \"added_at\": \"2021-02-18 06:55:58\"\n                    }\n                }\n            ],\n            \"media\": [\n                {\n                    \"id\": 156788,\n                    \"publish_id\": 36567,\n                    \"publish_media_url\": \"https://www.youtube.com/embed/Q8bm3piVlpg\",\n                    \"publish_link_url\": \"https://www.youtube.com/watch?v=Q8bm3piVlpg\",\n                    \"poster_url\": \"https://i.ytimg.com/vi/Q8bm3piVlpg/mqdefault.jpg\",\n                    \"media_type\": \"video\",\n                    \"order\": 1,\n                    \"creater_id\": 1,\n                    \"deleted_at\": null,\n                    \"created_at\": \"2021.02.20 00:01:09\",\n                    \"updated_at\": \"2021.02.20 00:01:09\"\n                }\n            ],\n            \"archive_media\": [],\n            \"creater\": {\n                \"id\": 1,\n                \"user_id\": \"system\",\n                \"name\": \"System\",\n                \"tel\": null,\n                \"locale\": \"ko\",\n                \"profile_id\": null,\n                \"active_yn\": \"N\",\n                \"last_logined_at\": null,\n                \"deleted_at\": null,\n                \"created_at\": \"2020.08.14 08:27:58\",\n                \"updated_at\": \"2020.08.14 08:27:58\",\n                \"is_admin\": false\n            },\n            \"updater\": {\n                \"id\": 1,\n                \"user_id\": \"system\",\n                \"name\": \"System\",\n                \"tel\": null,\n                \"locale\": \"ko\",\n                \"profile_id\": null,\n                \"active_yn\": \"N\",\n                \"last_logined_at\": null,\n                \"deleted_at\": null,\n                \"created_at\": \"2020.08.14 08:27:58\",\n                \"updated_at\": \"2020.08.14 08:27:58\",\n                \"is_admin\": false\n            }\n        },\n        \"update_date\": \"2021.02.20 12:50:16\",\n        \"channel_average\": {\n            \"average_views\": 5355,\n            \"average_likes\": 69,\n            \"average_comments\": 43,\n            \"average_shared\": 6\n        },\n        \"by-time\": [\n            {\n                \"yyyymmdd\": \"20210219\",\n                \"hhmi\": \"0200\",\n                \"views_count\": 164,\n                \"likes_count\": 0,\n                \"comments_count\": 0,\n                \"shares_count\": 0,\n                \"average_views\": 23,\n                \"average_likes\": 0,\n                \"average_comments\": 0,\n                \"average_shared\": 0\n            },\n            ...\n            ],\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/monitoring.js",
     "groupTitle": "Monitoring",
     "sampleRequest": [
@@ -3975,34 +4569,6 @@ define({ "api": [
     "sampleRequest": [
       {
         "url": "https://sns-dev-api.gemiso.com/v1/notice/update-multi"
-      }
-    ]
-  },
-  {
-    "type": "post",
-    "url": "/v1/localization/translate",
-    "title": "Post Localization Translate",
-    "version": "1.0.0",
-    "name": "Post_Localization_Translate",
-    "group": "Others",
-    "permission": [
-      {
-        "name": "Everyone"
-      }
-    ],
-    "description": "<p>Post Localization Translate</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/localization/translate",
-        "type": "json"
-      }
-    ],
-    "filename": "apidocs/v1/apidocs.js",
-    "groupTitle": "Others",
-    "sampleRequest": [
-      {
-        "url": "https://sns-dev-api.gemiso.com/v1/localization/translate"
       }
     ]
   },
