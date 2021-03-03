@@ -12,13 +12,96 @@ define({ "api": [
       }
     ],
     "description": "<p>analytics channel engage</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/engage",
-        "type": "json"
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>duration(default)|accumulated, ex: duration</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"update_date\": \"2021.03.03 04:00:30\",\n        \"duration\": \"2020.09.01 ~ 2020.09.14\",\n        \"engage\": {\n            \"duration\": \"2020.09.01 ~ 2020.09.14\",\n            \"data\": [\n                {\n                    \"views_count\": 5265706,\n                    \"likes_count\": 133908,\n                    \"dislikes_count\": 1976,\n                    \"comments_count\": 6486,\n                    \"shares_count\": 15946,\n                    \"engage_count\": 158316,\n                    \"engage_rate\": 3,\n                    \"bookmarked_count\": 69375,\n                    \"likes_weight\": 2.5,\n                    \"dislikes_weight\": 0,\n                    \"likes_diff\": -67818,\n                    \"dislikes_diff\": -1313,\n                    \"comments_diff\": -4,\n                    \"shares_diff\": -4088,\n                    \"engage_diff\": -73223,\n                    \"bookmarked_diff\": -21597,\n                    \"engage_rate_diff\": -0.6\n                }\n            ]\n        },\n        \"engage_by_time\": [\n            {\n                \"hhmi\": \"0000\",\n                \"engage_count\": 5199\n            },\n            ...\n        ]\n        ...\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -40,13 +123,117 @@ define({ "api": [
       }
     ],
     "description": "<p>analytics channel engage-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/engage-by-date",
-        "type": "json"
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>duration(default)|accumulated, ex: duration</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "period",
+            "description": "<p>date(default)|month|year, ex: date</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "pageSize",
+            "description": "<p>ex: 10</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>ex: 1</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"duration\": \"2020.09.01 ~ 2020.09.14\",\n        \"list\": [\n            {\n                \"yyyymmdd\": \"20200901\",\n                \"engage_count\": 10550,\n                \"previous_engage_count\": 12022\n            },\n            {\n                \"yyyymmdd\": \"20200902\",\n                \"engage_count\": 10441,\n                \"previous_engage_count\": 9845\n            },\n            ...\n        ]\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -68,13 +255,103 @@ define({ "api": [
       }
     ],
     "description": "<p>analytics channel engage-detail</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/engage-detail",
-        "type": "json"
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "pageSize",
+            "description": "<p>ex: 10</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>ex: 1</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"update_date\": \"2021.03.03 04:00:30\",\n        \"duration\": \"2020.09.01 ~ 2020.09.14\",\n        \"list\": [\n            {\n                \"yyyymmdd\": \"20200914\",\n                \"day_name\": \"월\",\n                \"engage_count\": 17907,\n                \"engage_rate\": 4.4,\n                \"views_count\": 399716,\n                \"likes_count\": 15767,\n                \"dislikes_count\": 203,\n                \"comments_count\": 731,\n                \"shares_count\": 1206,\n                \"bookmarked_count\": 6143\n            },\n            ...\n        ],\n        \"paging\": {\n            \"current_page\": 1,\n            \"first_page_url\": \"https://sns-dev-api.gemiso.com/v1/analytics/channel/engage-detail?page=1\",\n            \"from\": 1,\n            \"last_page\": 1,\n            \"last_page_url\": \"https://sns-dev-api.gemiso.com/v1/analytics/channel/engage-detail?page=1\",\n            \"next_page_url\": null,\n            \"path\": \"https://sns-dev-api.gemiso.com/v1/analytics/channel/engage-detail\",\n            \"per_page\": 50,\n            \"prev_page_url\": null,\n            \"to\": 14,\n            \"total\": 14\n        }\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -96,13 +373,117 @@ define({ "api": [
       }
     ],
     "description": "<p>analytics channel impression-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/impression-by-date",
-        "type": "json"
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>duration(default)|accumulated, ex: duration</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "period",
+            "description": "<p>date(default)|month|year, ex: date</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "pageSize",
+            "description": "<p>ex: 10</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>ex: 1</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"duration\": \"2020.09.01 ~ 2020.09.14\",\n        \"list\": [\n            {\n                \"yyyymmdd\": \"20200901\",\n                \"likes_count\": 8450,\n                \"dislikes_count\": 160\n            },\n            {\n                \"yyyymmdd\": \"20200902\",\n                \"likes_count\": 8289,\n                \"dislikes_count\": 170\n            },\n            ...\n        ]\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -123,14 +504,83 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>analytics channel</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/",
-        "type": "json"
+    "description": "<p>Channel- statistics list</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: &quot;2020-09-03&quot;</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>, ex: &quot;2020-09-20&quot;</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>accumulated(default)|others</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"base_date\": \"2020.09.20\",\n        \"list\": [\n            {\n                \"id\": 11,\n                \"name\": \"New-에라오\",\n                \"logo\": \"https://sns-dev-static.gemiso.com/images/channels/1611830076.png\",\n                \"logo_clip_yn\": \"N\",\n                \"use_logo_clip_yn\": \"Y\",\n                \"logo_clip_url\": null,\n                \"logo_thumbnail_yn\": \"N\",\n                \"use_logo_thumbnail_yn\": \"Y\",\n                \"logo_thumbnail_url\": null,\n                \"sns_download_speed\": \"2\",\n                \"active_yn\": \"Y\",\n                \"creater_id\": 2,\n                \"deleted_at\": null,\n                \"created_at\": \"2021.01.14 14:00:17\",\n                \"updated_at\": \"2021.01.28 19:34:46\",\n                \"rank\": 1,\n                \"publish_count\": 15484,\n                \"views_count\": 412805679,\n                \"subscribers_count\": 749180,\n                \"estimated_revenue\": 598658598,\n                \"estimated_watched_hour\": 18229943.25,\n                \"rank_diff\": 0,\n                \"publish_count_diff\": 46,\n                \"views_diff\": 6273289,\n                \"subscribers_diff\": 14130,\n                \"revenue_diff\": 9677722,\n                \"watched_hour_diff\": 352816.05,\n                \"platforms\": [\n                    \"yt\",\n                    \"fb\",\n                    \"in\",\n                    \"tw\"\n                ]\n            },\n            ...\n        ],\n        \"paging\": {\n            \"current_page\": 1,\n            \"first_page_url\": \"https://sns-dev-api.gemiso.com/v1/analytics/channel?page=1\",\n            \"from\": 1,\n            \"last_page\": 2,\n            \"last_page_url\": \"https://sns-dev-api.gemiso.com/v1/analytics/channel?page=2\",\n            \"next_page_url\": \"https://sns-dev-api.gemiso.com/v1/analytics/channel?page=2\",\n            \"path\": \"https://sns-dev-api.gemiso.com/v1/analytics/channel\",\n            \"per_page\": 10,\n            \"prev_page_url\": null,\n            \"to\": 10,\n            \"total\": 12\n        }\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -151,14 +601,118 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>analytics channel playlist-views-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/playlist-views-by-date",
-        "type": "json"
+    "description": "<p>Channel statistics-Playlist hits by date</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>duration(default)|accumulated|duration_and_accumulated, ex: duration</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "period",
+            "description": "<p>date(default)|month|year, ex: date</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "pageSize",
+            "description": "<p>ex: 10</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>ex: 1</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"list\": [\n            {\n                \"id\": 74,\n                \"channel_id\": 7,\n                \"platform_id\": 1,\n                \"sns_playlist_id\": \"PL9hiMmjtznrO8ASpjwTwnXikzOe_Z5HBp\",\n                \"title\": \"두시탈출 컬투쇼 UCC컨테스트\",\n                \"description\": \"컬투도 웃겼다! \\r\\n기발한 컬투쇼 UCC컨테스트 영상들 보고 가세요~\",\n                \"default_language_code\": null,\n                \"thumbnail_color\": null,\n                \"thumbnail_id\": 373,\n                \"open_state\": \"O\",\n                \"creater_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": \"2012.11.27 13:48:25\",\n                \"updated_at\": \"2021.02.05 00:08:59\",\n                \"rank\": 1,\n                \"views_count\": \"9054\",\n                \"views_weight\": \"0.5054\"\n            },\n            ...\n           ],\n        \"paging\": {\n            \"current_page\": 1,\n            \"first_page_url\": \"https://sns-dev-api.gemiso.com/v1/analytics/channel/views-playlist?page=1\",\n            \"from\": 1,\n            \"last_page\": 1,\n            \"last_page_url\": \"https://sns-dev-api.gemiso.com/v1/analytics/channel/views-playlist?page=1\",\n            \"next_page_url\": null,\n            \"path\": \"https://sns-dev-api.gemiso.com/v1/analytics/channel/views-playlist\",\n            \"per_page\": 9999,\n            \"prev_page_url\": null,\n            \"to\": 77,\n            \"total\": 77\n        }\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -179,14 +733,125 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>analytics channel publish</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/publish",
-        "type": "json"
+    "description": "<p>Video statistics list</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "order",
+            "description": "<p>&quot;views_rank&quot;|&quot;likes_rank&quot;|&quot;comments_rank&quot;|&quot;shares_rank&quot;|&quot;watched_rank&quot;|&quot;engage_rank&quot;, ex: views_rank+asc</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>accumulated(default)|others, ex: accumulated</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "pageSize",
+            "description": "<p>ex: 10</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>ex: 1</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "departments",
+            "description": "<p>the department list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"base_date\": \"2021.02.27\",\n        \"list\": [\n            {\n                \"id\": 5276,\n                \"sns_post_id\": \"xhbPbaAcjJs\",\n                \"channel_id\": 7,\n                \"platform_id\": 1,\n                \"metadata_id\": 5277,\n                \"thumbnail_id\": 117925,\n                \"state\": 4,\n                \"open_state\": \"O\",\n                \"on_monitoring\": \"N\",\n                \"is_live\": \"N\",\n                \"views\": 34985409,\n                \"likes\": 614095,\n                \"hates\": 16028,\n                \"shared\": 45006,\n                \"comments\": 25982,\n                \"playtimes\": 104,\n                \"duration\": 214,\n                \"publisher_id\": 1,\n                \"published_at\": \"2017.07.07 11:27:12\",\n                \"last_sync_at\": \"2021.01.28 21:47:43\",\n                \"last_analytics_sync_at\": \"2021.03.01 04:32:46\",\n                ...\n            }\n        ]\n            \n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -207,14 +872,56 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>analytics channel publish-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/publish-by-date",
-        "type": "json"
-      }
-    ],
+    "description": "<p>Video Statistics-Publishing Views by Date</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": [\n        {\n            \"yyyymmdd\": \"20210130\",\n            \"rank_1_views_count\": \"37651\",\n            \"rank_2_views_count\": \"5954\",\n            \"rank_3_views_count\": \"5435\",\n            \"rank_4_views_count\": \"2728\",\n            \"rank_5_views_count\": \"3818\"\n        },\n        {\n            \"yyyymmdd\": \"20210131\",\n            \"rank_1_views_count\": \"31868\",\n            \"rank_2_views_count\": \"5314\",\n            \"rank_3_views_count\": \"4459\",\n            \"rank_4_views_count\": \"2362\",\n            \"rank_5_views_count\": \"3450\"\n        },\n        ...\n    ]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -235,14 +942,90 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>analytics channel reach</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/reach",
-        "type": "json"
+    "description": "<p>Channel Statistics-Reach</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"duration\": \"2020.09.01 ~ 2020.09.08\",\n        \"list\": [\n            {\n                \"yyyymmdd\": \"20200901\",\n                \"show_count\": 0,\n                \"watch_rate\": 0\n            },\n            {\n                \"yyyymmdd\": \"20200902\",\n                \"show_count\": 0,\n                \"watch_rate\": 0\n            },\n            ...\n        ]\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -263,14 +1046,118 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>analytics channel reach-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/reach-by-date",
-        "type": "json"
+    "description": "<p>Channel statistics-Reach trend by date</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "period",
+            "description": "<p>date(default)|month|year, ex: date</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>duration(default)|accumulated, ex: duration</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "pageSize",
+            "description": "<p>ex: 10</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>ex: 1</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"duration\": \"2020.09.01 ~ 2020.09.08\",\n        \"list\": [\n            {\n                \"yyyymmdd\": \"20200901\",\n                \"show_count\": 0,\n                \"watch_rate\": 0\n            },\n            {\n                \"yyyymmdd\": \"20200902\",\n                \"show_count\": 0,\n                \"watch_rate\": 0\n            },\n            ...\n        ]\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -292,13 +1179,96 @@ define({ "api": [
       }
     ],
     "description": "<p>analytics channel reach-by-traffic-source</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/reach-by-traffic-source",
-        "type": "json"
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>duration(default)|accumulated, ex: duration</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"update_date\": \"2021.03.03 04:00:30\",\n        \"duration\": \"2020.10.01 ~ 2020.10.24\",\n        \"list\": [\n            {\n                \"term\": \"twitter.com\",\n                \"views_count\": 1440,\n                \"views_weight\": 17.2,\n                \"estimated_watched_hour\": 79.9,\n                \"estimated_watched_weight\": 19.9\n            },\n            {\n                \"term\": \"Google Search\",\n                \"views_count\": 980,\n                \"views_weight\": 11.7,\n                \"estimated_watched_hour\": 30.4,\n                \"estimated_watched_weight\": 7.6\n            },\n            ...\n        ],\n        \"paging\": {\n            \"current_page\": 1,\n            \"first_page_url\": \"https://sns-dev-api.gemiso.com/v1/analytics/channel/reach-by-traffic-source?page=1\",\n            \"from\": 1,\n            \"last_page\": 1,\n            \"last_page_url\": \"https://sns-dev-api.gemiso.com/v1/analytics/channel/reach-by-traffic-source?page=1\",\n            \"next_page_url\": null,\n            \"path\": \"https://sns-dev-api.gemiso.com/v1/analytics/channel/reach-by-traffic-source\",\n            \"per_page\": 50,\n            \"prev_page_url\": null,\n            \"to\": 40,\n            \"total\": 40\n        }\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -320,13 +1290,110 @@ define({ "api": [
       }
     ],
     "description": "<p>analytics channel revenue</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/revenue",
-        "type": "json"
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>duration(default)|accumulated, ex: duration</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "pageSize",
+            "description": "<p>ex: 10</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>ex: 1</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"update_date\": \"2021.03.03 04:00:30\",\n        \"duration\": \"2020.09.01 ~ 2020.09.30\",\n        \"revenue\": {\n            \"duration\": \"2020.09.01 ~ 2020.09.30\",\n            \"statistics\": [\n                {\n                    \"estimated_revenue\": 14371684,\n                    \"estimated_ad_revenue\": 13382081,\n                    \"estimated_ad_revenue_weight\": 93.1,\n                    \"estimated_red_partner_revenue\": 989603,\n                    \"estimated_red_revenue_weight\": 6.8,\n                    \"estimated_trade_revenue\": 0,\n                    \"estimated_trade_revenue_weight\": 0,\n                    \"gross_revenue\": 24328982,\n                    \"gross_revenue_weight\": 169.2\n                }\n            ]\n        },\n        \"revenue_by_date\": {\n            \"duration\": \"2020.09.01 ~ 2020.09.30\",\n            \"data\": [...]\n        },\n        \"revenue_ad_type_by_date\": {\n            \"duration\": \"2020.09.01 ~ 2020.09.30\",\n            \"list\": [...]\n        },\n        \"revenue_by_ad_type\": {\n            \"duration\": \"2020.09.01 ~ 2020.09.30\",\n            \"data\": [...]\n        }\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -347,14 +1414,97 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>analytics channel subscribers</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/subscribers",
-        "type": "json"
+    "description": "<p>Channel Statistics-Subscribers</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>duration(default)|accumulated, ex: duration</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"update_date\": \"2021.03.03 04:00:30\",\n        \"duration\": \"2020.09.01 ~ 2020.09.08\",\n        \"subscribers\": {\n            \"statistics\": {\n                \"subscribers_count\": 7245,\n                \"subscribers_gained\": 9825,\n                \"subscribers_lost\": 2580,\n                \"total_subscribers_count\": 742538\n            },\n            \"duration\": \"2020.09.01 ~ 2020.09.08\"\n        },\n        \"subscribers_attendance_rate\": [\n            {\n                \"type\": \"non-subscribers\",\n                \"views_count\": 3344621,\n                \"likes_count\": 71969\n            },\n            {\n                \"type\": \"subscribers\",\n                \"views_count\": 131941,\n                \"likes_count\": 8672\n            }\n        ],\n        \"subscribers_by_date\": [\n            {\n                \"yyyymmdd\": \"20200908\",\n                \"subscribers_count\": 742538,\n                \"subscribers_gained\": 1133,\n                \"subscribers_lost\": 332,\n                \"views_count\": 356810,\n                \"likes_count\": 10269,\n                \"dislikes_count\": 144,\n                \"shares_count\": 972\n            },\n            ...\n        ]\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -376,13 +1526,117 @@ define({ "api": [
       }
     ],
     "description": "<p>analytics channel subscribers-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/subscribers-by-date",
-        "type": "json"
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>duration(default)|accumulated, ex: duration</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "period",
+            "description": "<p>date(default)|month|year, ex: date</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "pageSize",
+            "description": "<p>ex: 10</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>ex: 1</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"duration\": \"2021.01.29 ~ 2021.02.27\",\n        \"list\": [\n            {\n                \"yyyymmdd\": \"20210129\",\n                \"subscribers_gained\": 1077600,\n                \"subscribers_lost\": 248234\n            },\n            {\n                \"yyyymmdd\": \"20210130\",\n                \"subscribers_gained\": 1078406,\n                \"subscribers_lost\": 248456\n            },\n            ...\n        ]\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -404,13 +1658,89 @@ define({ "api": [
       }
     ],
     "description": "<p>analytics channel summary</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/summary",
-        "type": "json"
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;, &quot;fb&quot;]</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"update_date\": \"2021.03.03 04:00:30\",\n        \"duration\": \"2020.09.06 ~ 2020.09.06\",\n        \"accumulated_analytics\": {\n            \"publish_count\": 15447,\n            \"views_count\": 408402457,\n            \"subscribers_count\": 741005,\n            \"estimated_revenue\": 591861431,\n            \"estimated_watched\": 64787178900,\n            \"traffic_source_count\": 20929508,\n            \"show_count\": 0,\n            \"watch_count\": 0,\n            \"cpm\": 4257.2,\n            \"rpm\": 1449.2,\n            \"ad_sell_rate\": 60.25\n        },\n        \"new_analytics\": {\n            \"publish_count\": 1,\n            \"views_count\": 396009,\n            \"subscribers_count\": 739,\n            \"estimated_revenue\": 545298,\n            \"estimated_watched\": 80266320,\n            \"traffic_source_count\": 35648,\n            \"show_count\": 0,\n            \"watch_count\": 0,\n            \"cpm\": 3211.95,\n            \"rpm\": 1376.95,\n            \"ad_sell_rate\": 71.25\n        },\n       ...\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -431,14 +1761,76 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>analytics channel/top/{count}/{order}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/top/{count}/{order}",
-        "type": "json"
+    "description": "<p>Channel ranking list inquiry</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "count",
+            "description": "<p>default: 5, on params</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "order",
+            "description": "<p>&quot;views&quot;|&quot;subscribers&quot;|&quot;likes&quot;|&quot;revenue&quot;(default), on params</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"list\": [\n            {\n                \"id\": 7,\n                \"name\": \"SBS Radio - 에라오\",\n                \"logo\": \"https://yt3.ggpht.com/a/AATXAJzkb55OXEMCRguVIUthlHiZv_QNaQ4XbokyiWVKAQ=s88-c-k-c0xffffffff-no-rj-mo\",\n                \"logo_clip_yn\": \"N\",\n                \"use_logo_clip_yn\": \"Y\",\n                \"logo_clip_url\": null,\n                \"logo_thumbnail_yn\": \"N\",\n                \"use_logo_thumbnail_yn\": \"Y\",\n                \"logo_thumbnail_url\": null,\n                \"sns_download_speed\": \"2\",\n                \"active_yn\": \"Y\",\n                \"creater_id\": 2,\n                \"deleted_at\": null,\n                \"created_at\": \"2020.08.28 14:07:39\",\n                \"updated_at\": \"2020.08.28 14:07:39\",\n                \"rank\": 1,\n                \"publish_count\": 15830,\n                \"views_count\": 455354337,\n                \"likes_count\": 6414181,\n                \"subscribers_count\": 845946,\n                \"estimated_revenue\": 668362745,\n                \"platforms\": [\n                    \"yt\",\n                    \"fb\"\n                ]\n            },\n            ...\n        ],\n        \"base_date\": \"2021.02.27\"\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -460,13 +1852,103 @@ define({ "api": [
       }
     ],
     "description": "<p>analytics channel views</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/views",
-        "type": "json"
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>duration(default)|accumulated, ex: duration</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "pageSize",
+            "description": "<p>ex: 10</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>ex: 1</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"update_date\": \"2021.03.03 04:00:30\",\n        \"duration\": \"2021.01.29 ~ 2021.02.27\",\n        \"views\": {\n            \"statistics\": {\n                \"views_count\": 455354337\n            },\n            \"base_date\": \"2021.02.27\"\n        },\n        \"views_by_date\": {},\n        \"views_by_weekdays\": [],\n        \"views_by_hour\": []\n       ...\n        \n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -487,14 +1969,118 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>analytics channel views-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/views-by-date",
-        "type": "json"
+    "description": "<p>Channel statistics- views by date</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>duration(default)|accumulated|duration_and_accumulated, ex: duration</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "period",
+            "description": "<p>date(default)|month|year, ex: date</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "pageSize",
+            "description": "<p>ex: 10</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>ex: 1</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"duration\": \"2020.08.01 ~ 2020.08.08\",\n        \"list\": [\n            {\n                \"yyyymmdd\": \"20200801\",\n                \"views_count\": 409483,\n                \"previous_views_count\": 640527\n            },\n            {\n                \"yyyymmdd\": \"20200802\",\n                \"views_count\": 399972,\n                \"previous_views_count\": 416197\n            },\n            ...\n        ]\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -516,13 +2102,96 @@ define({ "api": [
       }
     ],
     "description": "<p>analytics channel watch</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/watch",
-        "type": "json"
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>duration(default)|accumulated, ex: duration</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"update_date\": \"2021.03.03 04:00:30\",\n        \"duration\": \"2021.01.29 ~ 2021.02.27\",\n        \"watch\": {\n            \"estimated_watched_hour\": 502777.95,\n            \"diff\": 25883.633333999955,\n            \"base_date\": \"2021.02.27\"\n        },\n        \"watch_by_date\": {\n            \"duration\": \"2021.01.29 ~ 2021.02.27\",\n            \"list\": [\n                {\n                    \"yyyymmdd\": \"20210129\",\n                    \"estimated_watched_hour\": 16384,\n                    \"previous_estimated_watched_hour\": 14440.85\n                },\n                ...\n            ]\n        }\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -543,19 +2212,248 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>analytics channel watch-by-date</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/channel/watch-by-date",
-        "type": "json"
+    "description": "<p>Channel statistics-Trend of viewing information by date</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>duration(default)|accumulated, ex: duration</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "period",
+            "description": "<p>date(default)|month|year, ex: date</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "pageSize",
+            "description": "<p>ex: 10</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>ex: 1</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"duration\": \"2020.08.01 ~ 2020.09.08\",\n        \"list\": [\n            {\n                \"yyyymmdd\": \"20200801\",\n                \"estimated_watched_hour\": 19460.8,\n                \"previous_estimated_watched_hour\": 22215.1\n            },\n            {\n                \"yyyymmdd\": \"20200802\",\n                \"estimated_watched_hour\": 18895.85,\n                \"previous_estimated_watched_hour\": 47583.15\n            },\n            ...\n        ]\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
       {
         "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/watch-by-date"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/v1/analytics/channel/views-playlist",
+    "title": "Channel Get views-playlist",
+    "version": "1.0.0",
+    "name": "Channel_Get_views-playlist",
+    "group": "Analytics",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Channel statistics- views-playlist</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Date, ex: 2020-09-06</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "scope",
+            "description": "<p>duration(default)|accumulated|duration_and_accumulated, ex: duration</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "pageSize",
+            "description": "<p>ex: 10</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>ex: 1</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number[]",
+            "optional": false,
+            "field": "channels",
+            "description": "<p>the channel list, ex: [6,7]</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String[]",
+            "optional": false,
+            "field": "platforms",
+            "description": "<p>ex: [&quot;yt&quot;]</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"duration\": \"2020.01.01 ~ 2020.12.31\",\n        \"list\": [\n            {\n                \"yyyy\": \"2020\",\n                \"views_count\": 1506535\n            }\n        ]\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "apidocs/v1/analytics.js",
+    "groupTitle": "Analytics",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/analytics/channel/views-playlist"
       }
     ]
   },
@@ -1691,14 +3589,56 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>analytics summary</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/summary/",
-        "type": "json"
-      }
-    ],
+    "description": "<p>Statistics-Overview</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"update_date\": \"2021.03.03 04:00:30\",\n        \"publishings\": {\n            \"base_date\": \"2021.02.27\",\n            \"duration\": \"lifetime\",\n            \"data\": {\n                \"total_publish_count\": 18654,\n                \"diff\": 1\n            }\n        },\n        \"publishings_by_date\": {},\n        \"subscribers\": {\n            \"base_date\": \"2021.02.27\",\n            \"duration\": \"lifetime\",\n            \"data\": {\n                \"total_subscriber_count\": 929660,\n                \"diff\": 618\n            }\n        },\n        \"subscribers_by_date\": {\n            \"duration\": \"2021.01.29 ~ 2021.02.27\",\n            \"data\": []\n        },\n        \"impressions\": {\n            \"base_date\": \"2021.02.27\",\n            \"duration\": \"lifetime\",\n            \"data\": {\n                \"total_views_count\": 467212244,\n                \"total_likes_count\": 6555754,\n                \"total_dislikes_count\": 126068\n            }\n        },\n        \"impressions_by_date\": {\n            \"duration\": \"2021.01.29 ~ 2021.02.27\",\n            \"data\": []\n        },\n        \"countries\": {\n            \"duration\": \"2020.11.27 ~ 2021.02.27\",\n            \"data\": [ ]\n        },\n        \"platforms\": {\n            \"duration\": \"2020.11.27 ~ 2021.02.27\",\n            \"data\": []\n        },\n        \"channels\": {\n            \"list\": [],\n            \"base_date\": \"2021.02.27\"\n        }\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>access token</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 401 Unauthorized\n{\n    \"result\": false,\n    \"message\": \"Unauthorized request.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -1719,14 +3659,76 @@ define({ "api": [
         "name": "Auth"
       }
     ],
-    "description": "<p>analytics summary top {count} {order}</p>",
-    "examples": [
-      {
-        "title": "Example usage:",
-        "content": "curl -i https://sns-dev-api.gemiso.com/v1/analytics/summary/top/{count}/{order}",
-        "type": "json"
+    "description": "<p>Video Statistics-Ranking</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "count",
+            "description": "<p>default: 5, on params</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "order",
+            "description": "<p>&quot;new&quot;|&quot;revenue&quot;|&quot;views&quot;(default), on params</p>"
+          }
+        ]
       }
-    ],
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"base_date\": \"2021.02.27\",\n        \"list\": [\n            {\n                \"id\": 5276,\n                \"sns_post_id\": \"xhbPbaAcjJs\",\n                \"channel_id\": 7,\n                \"platform_id\": 1,\n                \"metadata_id\": 5277,\n                \"thumbnail_id\": 117925,\n                \"state\": 4,\n                \"open_state\": \"O\",\n                \"on_monitoring\": \"N\",\n                \"is_live\": \"N\",\n                \"views\": 34985409,\n                \"likes\": 614095,\n                \"hates\": 16028,\n                \"shared\": 45006,\n                \"comments\": 25982,\n                \"playtimes\": 104,\n                \"duration\": 214,\n                \"publisher_id\": 1,\n                \"published_at\": \"2017.07.07 11:27:12\",\n                \"last_sync_at\": \"2021.01.28 21:47:43\",\n                \"last_analytics_sync_at\": \"2021.03.01 04:32:46\",\n                \"creater_id\": 25,\n                \"updater_id\": 2,\n                \"deleted_at\": null,\n                \"created_at\": \"2020.09.23 14:10:10\",\n                \"updated_at\": \"2021.03.03 00:05:24\",\n                \"rank\": 1,\n                \"views_count\": 35058409,\n                \"estimated_revenue\": 15300939,\n                \"channel\": {\n                    \"id\": 7,\n                    \"name\": \"SBS Radio - 에라오\",\n                    \"logo\": \"https://yt3.ggpht.com/a/AATXAJzkb55OXEMCRguVIUthlHiZv_QNaQ4XbokyiWVKAQ=s88-c-k-c0xffffffff-no-rj-mo\",\n                    \"logo_clip_yn\": \"N\",\n                    \"use_logo_clip_yn\": \"Y\",\n                    \"logo_clip_url\": null,\n                    \"logo_thumbnail_yn\": \"N\",\n                    \"use_logo_thumbnail_yn\": \"Y\",\n                    \"logo_thumbnail_url\": null,\n                    \"sns_download_speed\": \"2\",\n                    \"active_yn\": \"Y\",\n                    \"creater_id\": 2,\n                    \"deleted_at\": null,\n                    \"created_at\": \"2020.08.28 14:07:39\",\n                    \"updated_at\": \"2020.08.28 14:07:39\"\n                },\n                \"platform\": {\n                    \"id\": 1,\n                    \"short_name\": \"yt\",\n                    \"name\": \"Youtube\",\n                    \"image_url\": \"https://sns-dev-static.gemiso.com/images/platforms/cli-yt.png\",\n                    \"active_yn\": \"Y\",\n                    \"deleted_at\": null\n                },\n                \"thumbnail\": {\n                    \"id\": 117925,\n                    \"archive_id\": null,\n                    \"sequence\": 0,\n                    \"url\": \"https://i.ytimg.com/vi/xhbPbaAcjJs/mqdefault.jpg\",\n                    \"original_url\": \"https://i.ytimg.com/vi/xhbPbaAcjJs/maxresdefault.jpg\",\n                    \"file_name\": \"https://i.ytimg.com/vi/xhbPbaAcjJs/maxresdefault.jpg\",\n                    \"creater_id\": 2,\n                    \"deleted_at\": null,\n                    \"created_at\": \"2021.01.28 21:47:49\",\n                    \"updated_at\": \"2021.01.28 21:47:49\"\n                },\n                \"metadata\": {\n                    \"id\": 5277,\n                    \"title\": \"블랙핑크(BLACKPINK), 마지막처럼 [SBS 박소현의 러브게임]\",\n                    \"description\": \"2017년7월5일,박소현의 러브게임\\nhttp://radio.sbs.co.kr/lovegame/\",\n                    \"default_audio_language_code\": \"ko\",\n                    \"open_comment\": \"open\",\n                    \"order_comment\": \"recent\",\n                    \"category_id\": 10,\n                    \"for_child\": \"N\",\n                    \"for_adult\": \"N\",\n                    \"location\": null,\n                    \"sharable\": \"Y\",\n                    \"ppl\": \"N\",\n                    \"notice_ppl\": \"N\",\n                    \"analytics_proposal\": null,\n                    \"creater_id\": 25,\n                    \"deleted_at\": null,\n                    \"created_at\": \"2020.09.23 14:10:10\",\n                    \"updated_at\": \"2021.01.28 21:47:49\",\n                    \"subtitles_stat\": []\n                }\n            },\n            ...\n           ]\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n    \"result\": false,\n    \"code\": 404,\n    \"locale\": \"ko\",\n    \"message\": \"요청된 Url을 처리할 수 없습니다. Url을 확인하세요.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "filename": "apidocs/v1/analytics.js",
     "groupTitle": "Analytics",
     "sampleRequest": [
@@ -7319,17 +9321,17 @@ define({ "api": [
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Char[2]",
             "optional": false,
             "field": "from_language_code",
-            "description": "<p>code consists of 2 characters</p>"
+            "description": "<p>From language code</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Char[2]",
             "optional": false,
             "field": "to_language_code",
-            "description": "<p>code consists of 2 characters</p>"
+            "description": "<p>To language code</p>"
           },
           {
             "group": "Parameter",
@@ -9619,7 +11621,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/v1/publish/",
-    "title": "Create One",
+    "title": "Publish-Create One",
     "version": "1.0.0",
     "name": "Create_One",
     "group": "Publishing",
@@ -10228,7 +12230,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/v1/publish/gets",
-    "title": "Get All",
+    "title": "Publish-Get All",
     "version": "1.0.0",
     "name": "Get_All",
     "group": "Publishing",
@@ -10482,7 +12484,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/v1/publish/channel",
-    "title": "Get Channel",
+    "title": "Publish-Get Channel",
     "version": "1.0.0",
     "name": "Get_Channel",
     "group": "Publishing",
@@ -10572,7 +12574,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/v1/publish/{id}/history",
-    "title": "Get History",
+    "title": "Publish-Get History",
     "version": "1.0.0",
     "name": "Get_History",
     "group": "Publishing",
@@ -10767,7 +12769,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/v1/publish/",
-    "title": "Get List",
+    "title": "Publish-Get List",
     "version": "1.0.0",
     "name": "Get_List",
     "group": "Publishing",
@@ -10825,7 +12827,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/v1/publish/{id}",
-    "title": "Get One",
+    "title": "Publish-Get One",
     "version": "1.0.0",
     "name": "Get_One",
     "group": "Publishing",
@@ -11441,7 +13443,7 @@ define({ "api": [
   {
     "type": "patch",
     "url": "/v1/publish/{id}/thumbnail/{thumbnail_id}",
-    "title": "Patch A Thumbnail",
+    "title": "Publish-Patch A Thumbnail",
     "version": "1.0.0",
     "name": "Patch_A_Thumbnail",
     "group": "Publishing",
@@ -11530,89 +13532,10 @@ define({ "api": [
   },
   {
     "type": "patch",
-    "url": "/v1/publish/{id}/video/replace-archive",
-    "title": "Patch Replace-archive",
-    "version": "1.0.0",
-    "name": "Patch_Replace-archive",
-    "group": "Publishing",
-    "permission": [
-      {
-        "name": "Auth"
-      }
-    ],
-    "description": "<p>Publishing-Select from video archive to change. Used to change the registered image by importing it from the archive when changing the registered image.</p>",
-    "header": {
-      "fields": {
-        "Header": [
-          {
-            "group": "Header",
-            "type": "String",
-            "optional": false,
-            "field": "Authorization",
-            "defaultValue": "Bearer access_token",
-            "description": "<p>Bearer access_token json web token to access to data</p>"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Header-Example:",
-          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "parameter": {
-      "examples": [
-        {
-          "title": "Patch-Body",
-          "content": "{\n    \"archive_id\": 293\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "success": {
-      "examples": [
-        {
-          "title": "Success-Response:",
-          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"id\": 33,\n        \"sns_post_id\": null,\n        \"channel_id\": 2,\n        \"platform_id\": 1,\n        \"metadata_id\": 33,\n        \"thumbnail_id\": 9,\n        \"state\": 5,\n        \"open_state\": \"C\",\n        \"on_monitoring\": null,\n        \"is_live\": null,\n        \"views\": 29602,\n        \"likes\": 7169,\n        \"hates\": 4689,\n        \"shared\": 832,\n        \"comments\": 627,\n        \"playtimes\": 0,\n        \"duration\": null,\n        \"publisher_id\": 2,\n        \"published_at\": \"2020.08.08 14:28:04\",\n        \"last_sync_at\": null,\n        \"last_analytics_sync_at\": null,\n        \"creater_id\": 2,\n        \"updater_id\": 2,\n        \"deleted_at\": null,\n        \"created_at\": \"2020.08.14 17:28:04\",\n        \"updated_at\": \"2020.08.14 17:28:04\",\n        \"is_collected\": \"N\",\n        \"has_archive\": false,\n        \"channel\": {\n            \"id\": 2,\n            \"name\": \"나혼자산다\",\n            \"logo\": \"https://sns-dev-static.gemiso.com/images/channels/layer-609.png\",\n            \"logo_clip_yn\": \"N\",\n            \"use_logo_clip_yn\": \"Y\",\n            \"logo_clip_url\": null,\n            \"logo_thumbnail_yn\": \"N\",\n            \"use_logo_thumbnail_yn\": \"Y\",\n            \"logo_thumbnail_url\": null,\n            \"sns_download_speed\": \"2\",\n            \"active_yn\": \"Y\",\n            \"creater_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": \"2020.08.27 18:16:53\",\n            \"updated_at\": \"2021.02.18 10:27:43\",\n            \"recommend_tags\": []\n        },\n      ...\n    }\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "invalid",
-            "description": "<p>input data</p>"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "title": "Error-Response:",
-          "content": "    HTTP/1.1 500 Internal Server Error\n{\n    \"result\": false,\n    \"locale\": \"ko\",\n    \"code\": 0,\n    \"message\": \"The HTTP status code \\\"23000\\\" is not valid.\",\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "filename": "apidocs/v1/publish.js",
-    "groupTitle": "Publishing",
-    "sampleRequest": [
-      {
-        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}/video/replace-archive"
-      }
-    ]
-  },
-  {
-    "type": "patch",
     "url": "/v1/publish/{id}/thumbnail/{thumbnail_id}/remove",
-    "title": "Patch Thumbnail Remove",
+    "title": "Publish-Patch Remove Thumbnail",
     "version": "1.0.0",
-    "name": "Patch_Thumbnail_Remove",
+    "name": "Patch_Remove_Thumbnail",
     "group": "Publishing",
     "permission": [
       {
@@ -11699,8 +13622,87 @@ define({ "api": [
   },
   {
     "type": "patch",
+    "url": "/v1/publish/{id}/video/replace-archive",
+    "title": "Publish-Patch Replace-archive",
+    "version": "1.0.0",
+    "name": "Patch_Replace-archive",
+    "group": "Publishing",
+    "permission": [
+      {
+        "name": "Auth"
+      }
+    ],
+    "description": "<p>Publishing-Select from video archive to change. Used to change the registered image by importing it from the archive when changing the registered image.</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "defaultValue": "Bearer access_token",
+            "description": "<p>Bearer access_token json web token to access to data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n \"Authorization\": \"Bearer {{access_token}}\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "examples": [
+        {
+          "title": "Patch-Body",
+          "content": "{\n    \"archive_id\": 293\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"result\": true,\n    \"locale\": \"ko\",\n    \"message\": null,\n    \"data\": {\n        \"id\": 33,\n        \"sns_post_id\": null,\n        \"channel_id\": 2,\n        \"platform_id\": 1,\n        \"metadata_id\": 33,\n        \"thumbnail_id\": 9,\n        \"state\": 5,\n        \"open_state\": \"C\",\n        \"on_monitoring\": null,\n        \"is_live\": null,\n        \"views\": 29602,\n        \"likes\": 7169,\n        \"hates\": 4689,\n        \"shared\": 832,\n        \"comments\": 627,\n        \"playtimes\": 0,\n        \"duration\": null,\n        \"publisher_id\": 2,\n        \"published_at\": \"2020.08.08 14:28:04\",\n        \"last_sync_at\": null,\n        \"last_analytics_sync_at\": null,\n        \"creater_id\": 2,\n        \"updater_id\": 2,\n        \"deleted_at\": null,\n        \"created_at\": \"2020.08.14 17:28:04\",\n        \"updated_at\": \"2020.08.14 17:28:04\",\n        \"is_collected\": \"N\",\n        \"has_archive\": false,\n        \"channel\": {\n            \"id\": 2,\n            \"name\": \"나혼자산다\",\n            \"logo\": \"https://sns-dev-static.gemiso.com/images/channels/layer-609.png\",\n            \"logo_clip_yn\": \"N\",\n            \"use_logo_clip_yn\": \"Y\",\n            \"logo_clip_url\": null,\n            \"logo_thumbnail_yn\": \"N\",\n            \"use_logo_thumbnail_yn\": \"Y\",\n            \"logo_thumbnail_url\": null,\n            \"sns_download_speed\": \"2\",\n            \"active_yn\": \"Y\",\n            \"creater_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": \"2020.08.27 18:16:53\",\n            \"updated_at\": \"2021.02.18 10:27:43\",\n            \"recommend_tags\": []\n        },\n      ...\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "invalid",
+            "description": "<p>input data</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "    HTTP/1.1 500 Internal Server Error\n{\n    \"result\": false,\n    \"locale\": \"ko\",\n    \"code\": 0,\n    \"message\": \"The HTTP status code \\\"23000\\\" is not valid.\",\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "apidocs/v1/publish.js",
+    "groupTitle": "Publishing",
+    "sampleRequest": [
+      {
+        "url": "https://sns-dev-api.gemiso.com/v1/publish/{id}/video/replace-archive"
+      }
+    ]
+  },
+  {
+    "type": "patch",
     "url": "/v1/publish/{id}/video/add-archive",
-    "title": "Patch Video Archive",
+    "title": "Publish-Patch Video Archive",
     "version": "1.0.0",
     "name": "Patch_Video_Archive",
     "group": "Publishing",
@@ -11790,7 +13792,7 @@ define({ "api": [
   {
     "type": "patch",
     "url": "/v1/publish/{id}/video/remove",
-    "title": "Patch Video Remove",
+    "title": "Publish-Patch Video Remove",
     "version": "1.0.0",
     "name": "Patch_Video_Remove",
     "group": "Publishing",
@@ -11970,7 +13972,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/v1/publish/remove-multi",
-    "title": "Post Remove-Multi",
+    "title": "Publish-Post Remove-Multi",
     "version": "1.0.0",
     "name": "Post_Remove-Multi",
     "group": "Publishing",
@@ -12060,7 +14062,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/v1/publish/{id}/video/add",
-    "title": "Post Video Add",
+    "title": "Publish-Post Video Add",
     "version": "1.0.0",
     "name": "Post_Video_Add",
     "group": "Publishing",
@@ -12150,7 +14152,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/v1/publish/{id}/video/replace",
-    "title": "Post Video Replace",
+    "title": "Publish-Post Video Replace",
     "version": "1.0.0",
     "name": "Post_Video_Replace",
     "group": "Publishing",
@@ -12521,7 +14523,7 @@ define({ "api": [
   {
     "type": "put",
     "url": "/v1/publish/",
-    "title": "Put Many",
+    "title": "Publish-Put Many",
     "version": "1.0.0",
     "name": "Put_Many",
     "group": "Publishing",
@@ -12794,7 +14796,7 @@ define({ "api": [
   {
     "type": "put",
     "url": "/v1/publish/update-multi",
-    "title": "Update Many",
+    "title": "Publish-Update Many",
     "version": "1.0.0",
     "name": "Update_Many",
     "group": "Publishing",
@@ -12884,7 +14886,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/v1/publish/upload",
-    "title": "Upload One",
+    "title": "Publish-Upload One",
     "version": "1.0.0",
     "name": "Upload_One",
     "group": "Publishing",
@@ -13071,7 +15073,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/v1/publish/{id}/thumbnail/upload",
-    "title": "Upload Thumbnail",
+    "title": "Publish-Upload Thumbnail",
     "version": "1.0.0",
     "name": "Upload_Thumbnail",
     "group": "Publishing",
@@ -13161,7 +15163,7 @@ define({ "api": [
   {
     "type": "get",
     "url": "/v1/publish/{id}/download",
-    "title": "Video Download",
+    "title": "Publish-Video Download",
     "version": "1.0.0",
     "name": "Video_Download",
     "group": "Publishing",
