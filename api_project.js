@@ -1,15 +1,15 @@
 define({
   "name": "GSAM",
   "version": "1.0.0",
-  "description": "apiDoc GSAM",
-  "title": "Document API GSAM",
+  "description": "G-SAM documents",
+  "title": "G-SAM API",
   "url": "https://sns-dev-api.gemiso.com",
-  "sampleUrl": false,
+  "sampleUrl": "https://sns-dev-api.gemiso.com",
   "defaultVersion": "0.0.0",
   "apidoc": "0.3.0",
   "generator": {
     "name": "apidoc",
-    "time": "2021-02-02T09:36:49.490Z",
+    "time": "2021-04-27T07:48:21.272Z",
     "url": "https://apidocjs.com",
     "version": "0.26.0"
   }
