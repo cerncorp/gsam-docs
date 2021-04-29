@@ -20173,6 +20173,13 @@ define({ "api": [
           },
           {
             "group": "Parameter",
+            "type": "Object",
+            "optional": true,
+            "field": "alram_settings",
+            "description": "<p>(optional) alarm setting history</p>"
+          },
+          {
+            "group": "Parameter",
             "type": "String",
             "optional": true,
             "field": "locale",
@@ -20211,7 +20218,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Put-Body",
-          "content": "{\n    \"old-password\": \"1111\",\n    \"new-password\": \"2222\",\n    \"name\": \"테스트사용자\",\n    \"tel\": \"02-1111-33331\",\n    \"locale\": \"ko\",\n     \"profile_id\": 18,\n    \"active_yn\": \"Y\",\n    \"channels\": [1,3,6],\n    \"departments\": [10],\n    \"roles\": [1]\n}",
+          "content": "{\n    \"old-password\": \"1111\",\n    \"new-password\": \"2222\",\n    \"name\": \"테스트사용자\",\n    \"tel\": \"02-1111-33331\",\n    \"locale\": \"ko\",\n     \"profile_id\": 18,\n     \"alram_settings\": { // 알람세팅 내역\n            \"announce-type\": [\"badge\"], // 알림방식 (badge:뱃지, message: 메세지박스, sms)\n            \"class\": [ // 받을 알림 구분(서버에서 정의한 푸시 class)\n                \"notice\", // 공지사항\n                \"alert\", // 경고\n                \"fail\" // 실패\n            ]\n        },\n    \"active_yn\": \"Y\",\n    \"channels\": [1,3,6],\n    \"departments\": [10],\n    \"roles\": [1]\n}",
           "type": "json"
         }
       ]
