@@ -9025,7 +9025,7 @@ define({ "api": [
       "examples": [
         {
           "title": "patch-Body",
-          "content": "{\n    \"days\": 7\n}",
+          "content": "{\n   \"start_date\": \"2021-05-13\",\n   \"end_date\": \"2021-05-14\"\n}",
           "type": "json"
         }
       ]
@@ -17665,10 +17665,28 @@ define({ "api": [
       ]
     },
     "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>the publishing id</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Object",
+            "optional": false,
+            "field": "publishing_info",
+            "description": "<p>upload infomation: type, api_type, split time</p>"
+          }
+        ]
+      },
       "examples": [
         {
           "title": "Put-Body",
-          "content": "[{\n  \"id\": 20405,\n  \"state\": 0,\n  \"open_state\": \"C\",\n  \"metadata\": {\n    \"id\": 20429,\n    \"title\": \"테스트\",\n    \"description\": \"테스트 영상으로 설명 교체\",\n    \"for_child\": \"N\",\n    \"for_adult\": \"N\",\n    \"sharable\": \"Y\"\n  }\n}]",
+          "content": "[\n{\n    \"id\":229,\n    \"channel_id\":2,\n    \"platform\":{\n        \"id\":3,\n        \"short_name\":\"in\",\n        \"name\":\"Instagram\",\n        \"image_url\":\"http:\\/\\/192.168.32.192:8080\\/images\\/platforms\\/cli-insta.png\",\n        \"active_yn\":\"Y\",\n        \"deleted_at\":null\n    },\n    \"platform_id\":3,\n    \"metadata_id\":56,\n    \"thumbnail_id\":76,\n    \"state\":5,\n    \"open_state\":\"C\",\n    \"published_at\":null,\n    \"metadata\":{\n        \"id\":179,\n        \"title\":\"Lisa Lisa\",\n        \"description\":\"google facebook\",\n        \"default_audio_language_code\":null,\n        \"open_comment\":\"open\",\n        \"order_comment\":\"recent\",\n        \"category_id\":null,\n        \"for_child\":\"N\",\n        \"for_adult\":\"N\",\n        \"location\":null,\n        \"sharable\":\"Y\",\n        \"ppl\":\"N\",\n        \"notice_ppl\":\"N\",\n        \"analytics_proposal\":null,\n        \"creater_id\":2,\n        \"deleted_at\":null,\n        \"created_at\":\"2021.05.13 04:06:20\",\n        \"updated_at\":\"2021.05.13 04:06:20\",\n        \"subtitles_stat\":[\n            \n        ],\n        \"category\":null,\n        \"default_audio_language\":null,\n        \"tags\":[\n            \n        ]\n\n    },\n    \"playlist\":[\n        \n    ],\n    \"archive_media\":[\n        {\n            \"id\":91,\n            \"archive_id\":39,\n            \"publish_id\":null,\n            \"order\":0,\n            \"in\":0,\n            \"out\":26,\n            \"file_path\":\"\\/movies\\/\",\n            \"file_name\":\"1620878780.mp4\",\n            \"file_size\":1639980,\n            \"duration\":26,\n            \"preview\":\"http:\\/\\/192.168.32.192:8080\\/movies\\/previews\\/1620878780.mp4\",\n            \"status\":\"C\",\n            \"creater_id\":2,\n            \"deleted_at\":null,\n            \"created_at\":\"2021.05.13 04:06:27\",\n            \"updated_at\":\"2021.05.13 04:06:30\"\n        },\n        {\n            \"id\":92,\n            \"archive_id\":39,\n            \"publish_id\":56,\n            \"order\":1,\n            \"in\":0,\n            \"out\":26,\n            \"file_path\":\"\\/movies\\/\",\n            \"file_name\":\"1620878780.mp4\",\n            \"file_size\":1639980,\n            \"duration\":26,\n            \"preview\":\"http:\\/\\/192.168.32.192:8080\\/movies\\/previews\\/1620878780.mp4\",\n            \"status\":\"C\",\n            \"creater_id\":2,\n            \"deleted_at\":null,\n            \"created_at\":\"2021.05.13 04:06:27\",\n            \"updated_at\":\"2021.05.13 04:06:30\"\n        }\n    ],\n    \"publishing_info\": {\n        \"type\": \"single_videos\",\n        \"api_type\": \"third_party\",\n        \"split_list\": [\n            {\n                \"in\": 0,\n                \"out\": 10\n            },\n            {\n                \"in\": 10,\n                \"out\": 20\n            },\n            {\n                \"in\": 20,\n                \"out\": 30\n            }\n        ]\n        \n    },\n    \"creater_id\":2\n}\n]",
           "type": "json"
         }
       ]
